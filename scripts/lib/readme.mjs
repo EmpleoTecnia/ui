@@ -16,7 +16,10 @@ function grilla(entradas, carpetaDe) {
     const carpeta = carpetaDe(e)
     const img = e.preview_webp ? `${carpeta}preview.webp` : e.preview_png ? `${carpeta}preview.png` : null
     const imagen = img ? `<a href="${carpeta}"><img src="${img}" width="100%" alt="${esc(e.nombre)}"></a><br>` : ''
-    return `<td width="33%" valign="top">\n${imagen}<b><a href="${carpeta}">${esc(e.nombre)}</a></b> · ${e.estado}<br>\n<sub>${esc(e.por_que_entro)}</sub>\n</td>`
+    // El webp cuenta poco: el enlace al original es para verlo funcionando de verdad.
+    const urlOrigen = e.origen?.url
+    const original = urlOrigen ? `<br>\n<sub><a href="${esc(urlOrigen)}">Ver original en ${esc(e.origen?.nombre || 'su sitio')} ↗</a></sub>` : ''
+    return `<td width="33%" valign="top">\n${imagen}<b><a href="${carpeta}">${esc(e.nombre)}</a></b> · ${e.estado}<br>\n<sub>${esc(e.por_que_entro)}</sub>${original}\n</td>`
   })
   const filas = []
   for (let i = 0; i < celdas.length; i += 3) filas.push(`<tr>\n${celdas.slice(i, i + 3).join('\n')}\n</tr>`)
@@ -59,6 +62,6 @@ export function renderBloqueRaiz(entradas) {
 export function renderRegistro(entradas) {
   const adoptados = entradas.filter(e => e.estado === 'adoptado')
   const imports = adoptados.map((e, i) => `import d${i} from '../${e.ruta}/demo'`).join('\n')
-  const filas = adoptados.map((e, i) => `  { slug: ${JSON.stringify(e.slug)}, nombre: ${JSON.stringify(e.nombre)}, tipo: ${JSON.stringify(e.tipo)}, categoria: ${JSON.stringify(e.categoria)}, por_que_entro: ${JSON.stringify(e.por_que_entro)}, url_github: ${JSON.stringify(e.url_github)}, demos: d${i} },`).join('\n')
-  return `// Generado por scripts/catalogar.mjs. No editar a mano.\nimport type { Demo } from '../lib/demo'\n${imports}\n\nexport type Entrada = {\n  slug: string\n  nombre: string\n  tipo: 'components' | 'patterns'\n  categoria: string\n  por_que_entro: string\n  url_github: string\n  demos: Demo[]\n}\n\nexport const registro: Entrada[] = [\n${filas}\n]\n`
+  const filas = adoptados.map((e, i) => `  { slug: ${JSON.stringify(e.slug)}, nombre: ${JSON.stringify(e.nombre)}, tipo: ${JSON.stringify(e.tipo)}, categoria: ${JSON.stringify(e.categoria)}, por_que_entro: ${JSON.stringify(e.por_que_entro)}, url_github: ${JSON.stringify(e.url_github)}, origen_url: ${JSON.stringify(e.origen?.url || '')}, origen_nombre: ${JSON.stringify(e.origen?.nombre || '')}, demos: d${i} },`).join('\n')
+  return `// Generado por scripts/catalogar.mjs. No editar a mano.\nimport type { Demo } from '../lib/demo'\n${imports}\n\nexport type Entrada = {\n  slug: string\n  nombre: string\n  tipo: 'components' | 'patterns'\n  categoria: string\n  por_que_entro: string\n  url_github: string\n  origen_url: string\n  origen_nombre: string\n  demos: Demo[]\n}\n\nexport const registro: Entrada[] = [\n${filas}\n]\n`
 }
