@@ -16,9 +16,9 @@
 <sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/number-field/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="rich-text-editor/"><img src="rich-text-editor/preview.png" width="100%" alt="Editor de texto"></a><br><b><a href="rich-text-editor/">Editor de texto</a></b> · referencia<br>
+<a href="rich-text-editor/"><img src="rich-text-editor/preview.webp" width="100%" alt="Editor de texto"></a><br><b><a href="rich-text-editor/">Editor de texto</a></b> · adoptado<br>
 <sub>No tiene las opciones fijas arriba: se van mostrando a medida que seleccionás una parte del texto.</sub><br>
-<sub><a href="https://uiarc.dev/components/rich-text-editor">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/rich-text-editor">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/rich-text-editor/">Probarlo ↗</a></sub>
 </td>
 </tr>
 <tr>

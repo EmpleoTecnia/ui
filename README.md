@@ -43,7 +43,7 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-18 entradas, 9 adoptadas.
+18 entradas, 11 adoptadas.
 
 - **[Componentes](components/)** (18): [buttons](components/buttons/) · [feedback](components/feedback/) · [fields](components/fields/) · [menus](components/menus/) · [pickers](components/pickers/) · [toggles](components/toggles/)
 
@@ -57,9 +57,9 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/action-button/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="components/buttons/confirm-morph/"><img src="components/buttons/confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="components/buttons/confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>
+<a href="components/buttons/confirm-morph/"><img src="components/buttons/confirm-morph/preview.webp" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="components/buttons/confirm-morph/">Confirmar con deshacer</a></b> · adoptado<br>
 <sub>Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.</sub><br>
-<sub><a href="https://uiarc.dev/components/confirm-morph">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/confirm-morph">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/confirm-morph/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="components/buttons/hold-to-confirm/"><img src="components/buttons/hold-to-confirm/preview.png" width="100%" alt="Mantener para confirmar"></a><br><b><a href="components/buttons/hold-to-confirm/">Mantener para confirmar</a></b> · referencia<br>

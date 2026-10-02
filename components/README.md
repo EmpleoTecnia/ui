@@ -16,9 +16,9 @@
 <sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/action-button/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="buttons/confirm-morph/"><img src="buttons/confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="buttons/confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>
+<a href="buttons/confirm-morph/"><img src="buttons/confirm-morph/preview.webp" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="buttons/confirm-morph/">Confirmar con deshacer</a></b> · adoptado<br>
 <sub>Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.</sub><br>
-<sub><a href="https://uiarc.dev/components/confirm-morph">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/confirm-morph">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/confirm-morph/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="buttons/hold-to-confirm/"><img src="buttons/hold-to-confirm/preview.png" width="100%" alt="Mantener para confirmar"></a><br><b><a href="buttons/hold-to-confirm/">Mantener para confirmar</a></b> · referencia<br>
@@ -45,9 +45,9 @@
 </tr>
 <tr>
 <td width="33%" valign="top">
-<a href="fields/rich-text-editor/"><img src="fields/rich-text-editor/preview.png" width="100%" alt="Editor de texto"></a><br><b><a href="fields/rich-text-editor/">Editor de texto</a></b> · referencia<br>
+<a href="fields/rich-text-editor/"><img src="fields/rich-text-editor/preview.webp" width="100%" alt="Editor de texto"></a><br><b><a href="fields/rich-text-editor/">Editor de texto</a></b> · adoptado<br>
 <sub>No tiene las opciones fijas arriba: se van mostrando a medida que seleccionás una parte del texto.</sub><br>
-<sub><a href="https://uiarc.dev/components/rich-text-editor">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/rich-text-editor">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/rich-text-editor/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="fields/password-strength/"><img src="fields/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="fields/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>

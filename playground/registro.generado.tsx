@@ -1,14 +1,16 @@
 // Generado por scripts/catalogar.mjs. No editar a mano.
 import type { Demo } from '../lib/demo'
 import d0 from '../components/buttons/action-button/demo'
-import d1 from '../components/feedback/status-mark/demo'
-import d2 from '../components/fields/number-field/demo'
-import d3 from '../components/fields/password-strength/demo'
-import d4 from '../components/fields/phone-input/demo'
-import d5 from '../components/menus/select/demo'
-import d6 from '../components/menus/user-menu/demo'
-import d7 from '../components/pickers/signature-pad/demo'
-import d8 from '../components/toggles/billing-toggle/demo'
+import d1 from '../components/buttons/confirm-morph/demo'
+import d2 from '../components/feedback/status-mark/demo'
+import d3 from '../components/fields/number-field/demo'
+import d4 from '../components/fields/rich-text-editor/demo'
+import d5 from '../components/fields/password-strength/demo'
+import d6 from '../components/fields/phone-input/demo'
+import d7 from '../components/menus/select/demo'
+import d8 from '../components/menus/user-menu/demo'
+import d9 from '../components/pickers/signature-pad/demo'
+import d10 from '../components/toggles/billing-toggle/demo'
 
 export type Entrada = {
   slug: string
@@ -24,12 +26,14 @@ export type Entrada = {
 
 export const registro: Entrada[] = [
   { slug: "action-button", nombre: "Botón con estado", tipo: "components", categoria: "buttons", por_que_entro: "Muy simple, pero tiene movimiento y la acción ahí mismo, sin depender de un label o mensajes fuera del botón: guardar, guardando, guardado.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/buttons/action-button", origen_url: "https://uiarc.dev/components/action-button", origen_nombre: "Arc UI", demos: d0 },
-  { slug: "status-mark", nombre: "Marca de estado", tipo: "components", categoria: "feedback", por_que_entro: "Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/feedback/status-mark", origen_url: "https://reactbits.dev/micro/status-mark", origen_nombre: "React Bits", demos: d1 },
-  { slug: "number-field", nombre: "Campo numérico", tipo: "components", categoria: "fields", por_que_entro: "La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/number-field", origen_url: "https://uiarc.dev/components/number-field", origen_nombre: "Arc UI", demos: d2 },
-  { slug: "password-strength", nombre: "Fuerza de contraseña", tipo: "components", categoria: "fields", por_que_entro: "Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/password-strength", origen_url: "https://uiarc.dev/components/password-strength", origen_nombre: "Arc UI", demos: d3 },
-  { slug: "phone-input", nombre: "Teléfono con país", tipo: "components", categoria: "fields", por_que_entro: "Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/phone-input", origen_url: "https://uiarc.dev/components/phone-input", origen_nombre: "Arc UI", demos: d4 },
-  { slug: "select", nombre: "Desplegable", tipo: "components", categoria: "menus", por_que_entro: "Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/select", origen_url: "https://uiarc.dev/components/select", origen_nombre: "Arc UI", demos: d5 },
-  { slug: "user-menu", nombre: "Menú de usuario", tipo: "components", categoria: "menus", por_que_entro: "El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/user-menu", origen_url: "https://uiarc.dev/components/user-menu", origen_nombre: "Arc UI", demos: d6 },
-  { slug: "signature-pad", nombre: "Firma", tipo: "components", categoria: "pickers", por_que_entro: "Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/signature-pad", origen_url: "https://uiarc.dev/components/signature-pad", origen_nombre: "Arc UI", demos: d7 },
-  { slug: "billing-toggle", nombre: "Mensual o anual", tipo: "components", categoria: "toggles", por_que_entro: "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/toggles/billing-toggle", origen_url: "https://uiarc.dev/components/billing-toggle", origen_nombre: "Arc UI", demos: d8 },
+  { slug: "confirm-morph", nombre: "Confirmar con deshacer", tipo: "components", categoria: "buttons", por_que_entro: "Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/buttons/confirm-morph", origen_url: "https://uiarc.dev/components/confirm-morph", origen_nombre: "Arc UI", demos: d1 },
+  { slug: "status-mark", nombre: "Marca de estado", tipo: "components", categoria: "feedback", por_que_entro: "Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/feedback/status-mark", origen_url: "https://reactbits.dev/micro/status-mark", origen_nombre: "React Bits", demos: d2 },
+  { slug: "number-field", nombre: "Campo numérico", tipo: "components", categoria: "fields", por_que_entro: "La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/number-field", origen_url: "https://uiarc.dev/components/number-field", origen_nombre: "Arc UI", demos: d3 },
+  { slug: "rich-text-editor", nombre: "Editor de texto", tipo: "components", categoria: "fields", por_que_entro: "No tiene las opciones fijas arriba: se van mostrando a medida que seleccionás una parte del texto.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/rich-text-editor", origen_url: "https://uiarc.dev/components/rich-text-editor", origen_nombre: "Arc UI", demos: d4 },
+  { slug: "password-strength", nombre: "Fuerza de contraseña", tipo: "components", categoria: "fields", por_que_entro: "Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/password-strength", origen_url: "https://uiarc.dev/components/password-strength", origen_nombre: "Arc UI", demos: d5 },
+  { slug: "phone-input", nombre: "Teléfono con país", tipo: "components", categoria: "fields", por_que_entro: "Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/phone-input", origen_url: "https://uiarc.dev/components/phone-input", origen_nombre: "Arc UI", demos: d6 },
+  { slug: "select", nombre: "Desplegable", tipo: "components", categoria: "menus", por_que_entro: "Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/select", origen_url: "https://uiarc.dev/components/select", origen_nombre: "Arc UI", demos: d7 },
+  { slug: "user-menu", nombre: "Menú de usuario", tipo: "components", categoria: "menus", por_que_entro: "El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/user-menu", origen_url: "https://uiarc.dev/components/user-menu", origen_nombre: "Arc UI", demos: d8 },
+  { slug: "signature-pad", nombre: "Firma", tipo: "components", categoria: "pickers", por_que_entro: "Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/signature-pad", origen_url: "https://uiarc.dev/components/signature-pad", origen_nombre: "Arc UI", demos: d9 },
+  { slug: "billing-toggle", nombre: "Mensual o anual", tipo: "components", categoria: "toggles", por_que_entro: "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/toggles/billing-toggle", origen_url: "https://uiarc.dev/components/billing-toggle", origen_nombre: "Arc UI", demos: d10 },
 ]

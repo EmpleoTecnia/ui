@@ -2,7 +2,7 @@
   "slug": "rich-text-editor",
   "nombre": "Editor de texto",
   "categoria": "fields",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/rich-text-editor",
@@ -23,18 +23,34 @@
     "seleccion",
     "flotante"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-dur",
+    "--ui-ease",
+    "--ui-ink",
+    "--ui-bg",
+    "--ui-ink-soft",
+    "--ui-font-text",
+    "--ui-radius-lg",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-ink-muted",
+    "--ui-surface-2",
+    "--ui-accent",
+    "--ui-font-display",
+    "--ui-radius",
+    "--ui-accent-ink"
+  ],
   "dependencias": [
-    "lucide-react",
-    "motion"
+    "motion",
+    "lucide-react"
   ],
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "sutil",
     "tono": "sobrio",
     "densidad": "aire"
-  }
+  },
+  "captura_de": "96dd9a4472a6"
 }

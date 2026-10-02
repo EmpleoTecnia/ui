@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T17:33:05.633Z",
+  "generado": "2026-10-02T17:35:04.534Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -69,7 +69,7 @@
       "slug": "confirm-morph",
       "nombre": "Confirmar con deshacer",
       "categoria": "buttons",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/confirm-morph",
@@ -90,7 +90,19 @@
         "boton",
         "morph"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-accent",
+        "--ui-dur",
+        "--ui-ink",
+        "--ui-surface",
+        "--ui-line",
+        "--ui-bg",
+        "--ui-ink-soft",
+        "--ui-ease",
+        "--ui-ink-muted",
+        "--ui-font-text",
+        "--ui-radius-lg"
+      ],
       "dependencias": [
         "lucide-react",
         "motion"
@@ -98,18 +110,21 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "marcado",
         "tono": "sobrio",
         "densidad": "compacto"
       },
+      "captura_de": "ca2329a12d58",
       "tipo": "components",
       "ruta": "components/buttons/confirm-morph",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/buttons/confirm-morph",
       "preview_png": "components/buttons/confirm-morph/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/buttons/confirm-morph/preview.webp",
+      "archivos_codigo": [
+        "ConfirmMorph.tsx",
+        "DemoConfirmMorph.tsx"
+      ]
     },
     {
       "slug": "hold-to-confirm",
@@ -329,7 +344,7 @@
       "slug": "rich-text-editor",
       "nombre": "Editor de texto",
       "categoria": "fields",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/rich-text-editor",
@@ -351,19 +366,21 @@
         "flotante"
       ],
       "tokens": [
-        "--ui-ink",
-        "--ui-ink-soft",
-        "--ui-ink-muted",
-        "--ui-surface",
-        "--ui-surface-2",
-        "--ui-line",
-        "--ui-accent",
-        "--ui-accent-ink",
-        "--ui-radius",
-        "--ui-font-display",
-        "--ui-font-text",
         "--ui-dur",
-        "--ui-ease"
+        "--ui-ease",
+        "--ui-ink",
+        "--ui-bg",
+        "--ui-ink-soft",
+        "--ui-font-text",
+        "--ui-radius-lg",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-ink-muted",
+        "--ui-surface-2",
+        "--ui-accent",
+        "--ui-font-display",
+        "--ui-radius",
+        "--ui-accent-ink"
       ],
       "dependencias": [
         "motion",
@@ -372,18 +389,21 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "sutil",
         "tono": "sobrio",
         "densidad": "aire"
       },
+      "captura_de": "96dd9a4472a6",
       "tipo": "components",
       "ruta": "components/fields/rich-text-editor",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/rich-text-editor",
       "preview_png": "components/fields/rich-text-editor/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/fields/rich-text-editor/preview.webp",
+      "archivos_codigo": [
+        "DemoRichTextEditor.tsx",
+        "RichTextEditor.tsx"
+      ]
     },
     {
       "slug": "password-strength",
