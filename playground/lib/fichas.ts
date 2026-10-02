@@ -36,7 +36,11 @@ const REPO_RAW = 'https://raw.githubusercontent.com/EmpleoTecnia/ui/main'
 const catalogo = JSON.parse(readFileSync(join(raiz, 'catalog.json'), 'utf8')) as { entradas: Ficha[] }
 
 /** Todas las entradas vivas, en el orden del catálogo (tipo, categoría, nombre). */
-export const fichas: Ficha[] = catalogo.entradas.filter(e => e.estado !== 'retirado')
+const titulo = (e: Ficha) => e.slug.replace(/-/g, ' ')
+export const fichas: Ficha[] = catalogo.entradas
+  .filter(e => e.estado !== 'retirado')
+  // El catálogo ordena por el nombre en español; el sitio muestra el título en inglés, así que ordena por ese.
+  .sort((a, b) => a.tipo.localeCompare(b.tipo) || a.categoria.localeCompare(b.categoria) || titulo(a).localeCompare(titulo(b)))
 export const fichaPorSlug = (slug: string) => fichas.find(e => e.slug === slug)
 export const rutaDe = (e: Ficha) => `/c/${e.categoria}/${e.slug}/`
 
