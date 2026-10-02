@@ -43,14 +43,19 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-3 entradas, 2 adoptadas.
+4 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (3): [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
+- **[Componentes](components/)** (4): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
 
 ### Últimas que entraron
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="components/buttons/hold-to-confirm/"><img src="components/buttons/hold-to-confirm/preview.png" width="100%" alt="Mantener para confirmar"></a><br><b><a href="components/buttons/hold-to-confirm/">Mantener para confirmar</a></b> · referencia<br>
+<sub>Confirmar manteniendo apretado, sin pop-up: para eliminar algo importante pero no tan importante.</sub><br>
+<sub><a href="https://uiarc.dev/components/hold-to-confirm">Ver original en Arc UI ↗</a></sub>
+</td>
 <td width="33%" valign="top">
 <a href="components/feedback/status-mark/"><img src="components/feedback/status-mark/preview.webp" width="100%" alt="Marca de estado"></a><br><b><a href="components/feedback/status-mark/">Marca de estado</a></b> · adoptado<br>
 <sub>Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.</sub><br>
@@ -61,6 +66,8 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="components/navigation/user-menu/"><img src="components/navigation/user-menu/preview.png" width="100%" alt="Menú de usuario"></a><br><b><a href="components/navigation/user-menu/">Menú de usuario</a></b> · referencia<br>
 <sub>El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.</sub><br>

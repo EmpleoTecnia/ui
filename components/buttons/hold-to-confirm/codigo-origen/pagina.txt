@@ -1,0 +1,268 @@
+Arc
+Components
+Blocks
+Docs
+Pricing
+Try the demo
+Search
+⌘ K
+Appearance
+Sign in
+Ctrl K
+All
+Free
+Pro
+More
+Docs
+Introduction
+Installation
+Theming
+Motion
+AI and MCP
+Changelog
+Components
+107
+Buttons
+9
+Button
+Action button
+Split button
+Button group
+New
+Floating button group
+New
+Expanding button group
+New
+Copy button
+Confirm morph
+New
+Theme switcher
+Gestures
+2
+Hold to confirm
+Swipe actions
+Menus
+3
+Dropdown menu
+Context menu
+User menu
+Text fields
+7
+Input
+Textarea
+Password field
+Password strength
+Search field
+Expanding search
+Inline edit
+Special inputs
+5
+Number field
+Phone input
+New
+Tag input
+Mention input
+New
+Shortcut recorder
+New
+Selects
+4
+Select
+Combobox
+Multi-select
+Chip group
+Toggles
+6
+Radio cards
+New
+Billing toggle
+New
+Checkbox
+Radio group
+Switch
+Segmented control
+Sliders
+1
+Slider
+Pickers
+5
+Calendar
+Date picker
+Date range picker
+New
+Time picker
+Color picker
+New
+Editors
+3
+Rich text editor
+New
+Signature pad
+New
+File dropzone
+Navigation
+3
+Tabs
+Breadcrumb
+Pagination
+Expand
+4
+Scroll area
+New
+Accordion
+Expandable card
+Resizable panels
+Overlays
+6
+Dialog
+Drawer
+Bottom sheet
+Popover
+Hover card
+Tooltip
+Messages
+4
+Alert
+Toast
+Toast stack
+Announcement bar
+New
+Progress
+4
+Progress
+Skeleton
+Stepper
+Usage meter
+Avatars
+3
+Avatar
+Avatar group
+Badge
+Cards
+3
+Card
+Metric card
+Empty state
+Charts
+13
+Line chart
+New
+Bar chart
+Donut chart
+New
+Streamgraph
+New
+Brush chart
+New
+Waffle chart
+New
+Slope chart
+New
+Sparkline
+Gauge
+Activity heatmap
+Animated counter
+Ridgeline
+New
+Treemap
+New
+Advanced charts
+7
+Pro
+Sunburst
+New
+Sankey flow
+New
+Funnel chart
+New
+Radar chart
+New
+Realtime stream
+New
+Race bar chart
+New
+Data grid
+New
+Tables
+5
+Sortable data table
+Tree view
+Filter toolbar
+Code block
+JSON viewer
+New
+Activity
+3
+Timeline
+Comment thread
+New
+Chat thread
+New
+Media
+3
+Image compare
+Carousel
+Card stack
+Text effects
+4
+Text reveal
+In-view title
+Text morph
+Text shimmer
+Blocks
+77
+Special components
+34
+What’s new
+84 new
+Components
+Hold to confirm
+Hold to confirm
+
+Confirm a destructive action by holding, not tapping.
+
+$
+pnpm dlx shadcn@latest add @uiarc/hold-to-confirm
+Copy page
+Copied
+Copy failed
+Preview
+Code
+Live · keyboard ready
+Atlas web app
+
+Design team · 128 files
+
+Active
+
+Deleting removes the project, its files, and every shared link for the Design team.
+
+Hold to delete project
+Hold to delete project
+Press and hold for 1.2 seconds to confirm. With a keyboard, hold Space or Enter.
+
+Hold for 1.2 seconds, or hold Space
+
+When to use
+Destructive actions like delete or revoke where the consequence is already visible on screen.
+Replacing a confirm dialog with a deliberate press in compact settings rows.
+Actions that should not fire on an accidental tap on touch devices.
+When not to use
+Use dialog when people need to read what will happen before confirming.
+Use button or action-button for safe, easily undone actions.
+Use swipe-actions for delete in touch lists.
+Installation
+
+Add Hold to confirm with the shadcn CLI, or copy the source by hand.
+
+CLI
+Manual
+pnpm
+npm
+yarn
+bun
+Copy
+Copied
+Failed
+$
+pn
