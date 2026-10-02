@@ -1,0 +1,23 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Tests del catalogador
+        run: npm test
+      - name: Catalogar y comprobar que lo generado está commiteado
+        run: |
+          node scripts/catalogar.mjs
+          git diff --exit-code -- catalog.json README.md components patterns playground/registro.generado.tsx || (echo "::error::Hay salidas generadas sin commitear. Corré npm run catalogar y commiteá." && exit 1)
+      - name: Build del playground
+        run: npm run build
