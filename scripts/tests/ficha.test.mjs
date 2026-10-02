@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest'
 import { validarFicha } from '../lib/ficha.mjs'
 
 const buena = () => ({
-  slug: 'boton-iman',
+  slug: 'magnet-button',
   nombre: 'Botón imán',
-  categoria: 'botones',
+  categoria: 'buttons',
   estado: 'adoptado',
   origen: { nombre: 'EmpleoTecnia', url: '', licencia: 'propia' },
   publicable: true,
@@ -20,7 +20,7 @@ const buena = () => ({
   fecha: '2026-10-02',
 })
 
-const ctx = { carpeta: 'boton-iman', tipo: 'components' }
+const ctx = { carpeta: 'magnet-button', tipo: 'components' }
 
 describe('validarFicha', () => {
   it('acepta una ficha completa', () => {
@@ -29,7 +29,7 @@ describe('validarFicha', () => {
 
   it('exige que la carpeta se llame como el slug', () => {
     const errores = validarFicha(buena(), { carpeta: 'Boton-Iman', tipo: 'components' })
-    expect(errores.join('\n')).toMatch(/carpeta "Boton-Iman".*slug "boton-iman"/)
+    expect(errores.join('\n')).toMatch(/carpeta "Boton-Iman".*slug "magnet-button"/)
   })
 
   it('rechaza slugs con mayúsculas, acentos o guiones dobles', () => {

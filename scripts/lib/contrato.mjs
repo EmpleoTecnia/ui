@@ -26,8 +26,8 @@ export const CLASES = {
 }
 
 export const CATEGORIAS = {
-  components: ['botones', 'tarjetas', 'navegacion', 'formularios', 'fondos', 'animaciones', 'secciones', 'feedback'],
-  patterns: ['landing', 'perfil', 'onboarding', 'dashboard', 'auth', 'pricing'],
+  components: ['buttons', 'cards', 'navigation', 'forms', 'backgrounds', 'animations', 'sections', 'feedback'],
+  patterns: ['landing', 'profile', 'onboarding', 'dashboard', 'auth', 'pricing'],
 }
 
 export const ESTADOS = ['referencia', 'adoptado', 'retirado']

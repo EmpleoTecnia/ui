@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @source "../../components";
 @source "../../patterns";
+@source not "../../components/**/codigo-origen";
+@source not "../../patterns/**/codigo-origen";
 @import "../../tokens.css";
 @import "../../temas/mi.css";
 @import "../../temas/etconecta.css";

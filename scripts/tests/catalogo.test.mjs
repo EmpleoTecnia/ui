@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os'
 import { construirCatalogo, escribirSalidas, hashCodigo } from '../lib/catalogo.mjs'
 
 const ficha = (extra = {}) => ({
-  slug: 'boton-iman', nombre: 'Botón imán', categoria: 'botones', estado: 'referencia',
+  slug: 'magnet-button', nombre: 'Botón imán', categoria: 'buttons', estado: 'referencia',
   origen: { nombre: 'EmpleoTecnia', url: '', licencia: 'propia' }, publicable: true,
   por_que_entro: 'El botón se corre hacia el cursor y vuelve con un resorte; se siente vivo sin gritar.',
   sirve_para: ['CTA'], etiquetas: ['hover'], tokens: [], agregado_por: 'franco', fecha: '2026-10-02', ...extra,
@@ -31,51 +31,51 @@ beforeEach(() => {
 
 describe('construirCatalogo', () => {
   it('lee una referencia con su png y arma la entrada', async () => {
-    entrada('components', 'botones', 'boton-iman', ficha(), { 'preview.png': png })
+    entrada('components', 'buttons', 'magnet-button', ficha(), { 'preview.png': png })
     const { entradas, errores } = await construirCatalogo(raiz)
     expect(errores).toEqual([])
     expect(entradas).toHaveLength(1)
     expect(entradas[0]).toMatchObject({
-      tipo: 'components', ruta: 'components/botones/boton-iman',
-      url_github: 'https://github.com/EmpleoTecnia/ui/tree/main/components/botones/boton-iman',
-      preview_png: 'components/botones/boton-iman/preview.png', preview_webp: null,
+      tipo: 'components', ruta: 'components/buttons/magnet-button',
+      url_github: 'https://github.com/EmpleoTecnia/ui/tree/main/components/buttons/magnet-button',
+      preview_png: 'components/buttons/magnet-button/preview.png', preview_webp: null,
     })
   })
 
   it('dice archivo y línea cuando el JSON está roto', async () => {
-    entrada('components', 'botones', 'boton-iman', '{ "slug": "boton-iman", }')
+    entrada('components', 'buttons', 'magnet-button', '{ "slug": "magnet-button", }')
     const { errores } = await construirCatalogo(raiz)
-    expect(errores[0]).toMatch(/components\/botones\/boton-iman\/meta\.json/)
+    expect(errores[0]).toMatch(/components\/buttons\/magnet-button\/meta\.json/)
     expect(errores[0]).toMatch(/JSON/)
     expect(errores[0]).toMatch(/línea 1/)
   })
 
   it('una ficha null o sin nombre da un error con ruta, no un stack trace', async () => {
-    entrada('components', 'botones', 'a-uno', 'null')
+    entrada('components', 'buttons', 'a-uno', 'null')
     const sinNombre = ficha({ slug: 'b-dos' }); delete sinNombre.nombre
-    entrada('components', 'botones', 'b-dos', sinNombre, { 'preview.png': png })
+    entrada('components', 'buttons', 'b-dos', sinNombre, { 'preview.png': png })
     const { errores } = await construirCatalogo(raiz)
     expect(errores.join('\n')).toMatch(/a-uno: la ficha no es un objeto/)
     expect(errores.join('\n')).toMatch(/b-dos: falta nombre/)
   })
 
   it('rechaza slugs repetidos entre tipos', async () => {
-    entrada('components', 'botones', 'boton-iman', ficha(), { 'preview.png': png })
-    entrada('patterns', 'landing', 'boton-iman', ficha({ categoria: 'landing' }), { 'preview.png': png })
+    entrada('components', 'buttons', 'magnet-button', ficha(), { 'preview.png': png })
+    entrada('patterns', 'landing', 'magnet-button', ficha({ categoria: 'landing' }), { 'preview.png': png })
     const { errores } = await construirCatalogo(raiz)
-    expect(errores.join()).toMatch(/slug "boton-iman" repetido/)
+    expect(errores.join()).toMatch(/slug "magnet-button" repetido/)
   })
 
   it('una referencia sin preview.png falla', async () => {
-    entrada('components', 'botones', 'boton-iman', ficha())
+    entrada('components', 'buttons', 'magnet-button', ficha())
     const { errores } = await construirCatalogo(raiz)
     expect(errores.join()).toMatch(/preview\.png/)
   })
 
   it('un adoptado que usa un token no declarado falla', async () => {
     const meta = ficha({ estado: 'adoptado', tokens: ['--ui-accent', '--ui-radius'] })
-    entrada('components', 'botones', 'boton-iman', meta, {
-      'BotonIman.tsx': 'export const B = () => <button className="bg-ui-accent rounded-ui text-ui-ink" />',
+    entrada('components', 'buttons', 'magnet-button', meta, {
+      'MagnetButton.tsx': 'export const B = () => <button className="bg-ui-accent rounded-ui text-ui-ink" />',
       'demo.tsx': 'export default []',
       'preview.png': png, 'preview.webp': webp,
     })
@@ -85,8 +85,8 @@ describe('construirCatalogo', () => {
 
   it('un adoptado con token declarado y no usado falla', async () => {
     const meta = ficha({ estado: 'adoptado', tokens: ['--ui-accent', '--ui-line'] })
-    entrada('components', 'botones', 'boton-iman', meta, {
-      'BotonIman.tsx': 'export const B = () => <button className="bg-ui-accent" />',
+    entrada('components', 'buttons', 'magnet-button', meta, {
+      'MagnetButton.tsx': 'export const B = () => <button className="bg-ui-accent" />',
       'demo.tsx': 'export default []', 'preview.png': png, 'preview.webp': webp,
     })
     const { errores } = await construirCatalogo(raiz)
@@ -95,18 +95,18 @@ describe('construirCatalogo', () => {
 
   it('un adoptado con color crudo falla con archivo y línea', async () => {
     const meta = ficha({ estado: 'adoptado', tokens: ['--ui-accent'] })
-    entrada('components', 'botones', 'boton-iman', meta, {
-      'BotonIman.tsx': 'const a = 1\nexport const B = () => <button className="bg-ui-accent" style={{ color: "#f00" }} />',
+    entrada('components', 'buttons', 'magnet-button', meta, {
+      'MagnetButton.tsx': 'const a = 1\nexport const B = () => <button className="bg-ui-accent" style={{ color: "#f00" }} />',
       'demo.tsx': 'export default []', 'preview.png': png, 'preview.webp': webp,
     })
     const { errores } = await construirCatalogo(raiz)
-    expect(errores.join('\n')).toMatch(/BotonIman\.tsx:2.*#f00/)
+    expect(errores.join('\n')).toMatch(/MagnetButton\.tsx:2.*#f00/)
   })
 
   it('con sinCapturas no exige png ni webp pero sí todo lo demás', async () => {
     const meta = ficha({ estado: 'adoptado', tokens: ['--ui-accent'] })
-    entrada('components', 'botones', 'boton-iman', meta, {
-      'BotonIman.tsx': 'export const B = () => <button className="bg-ui-accent" />', 'demo.tsx': 'export default []',
+    entrada('components', 'buttons', 'magnet-button', meta, {
+      'MagnetButton.tsx': 'export const B = () => <button className="bg-ui-accent" />', 'demo.tsx': 'export default []',
     })
     const { errores } = await construirCatalogo(raiz, { sinCapturas: true })
     expect(errores).toEqual([])
@@ -114,8 +114,8 @@ describe('construirCatalogo', () => {
 
   it('un webp que pasa el tope falla con el tamaño', async () => {
     const meta = ficha({ estado: 'adoptado', tokens: ['--ui-accent'] })
-    entrada('components', 'botones', 'boton-iman', meta, {
-      'BotonIman.tsx': 'export const B = () => <button className="bg-ui-accent" />', 'demo.tsx': 'export default []',
+    entrada('components', 'buttons', 'magnet-button', meta, {
+      'MagnetButton.tsx': 'export const B = () => <button className="bg-ui-accent" />', 'demo.tsx': 'export default []',
       'preview.png': png, 'preview.webp': Buffer.alloc(401 * 1024),
     })
     const { errores } = await construirCatalogo(raiz)
@@ -125,7 +125,7 @@ describe('construirCatalogo', () => {
 
 describe('hashCodigo', () => {
   it('cambia si cambia el código y no si cambian las capturas', async () => {
-    const dir = entrada('components', 'botones', 'boton-iman', ficha(), { 'A.tsx': 'a', 'preview.png': png })
+    const dir = entrada('components', 'buttons', 'magnet-button', ficha(), { 'A.tsx': 'a', 'preview.png': png })
     const h1 = hashCodigo(dir)
     writeFileSync(join(dir, 'preview.png'), Buffer.alloc(5))
     expect(hashCodigo(dir)).toBe(h1)
@@ -137,11 +137,11 @@ describe('hashCodigo', () => {
 
 describe('escribirSalidas', () => {
   it('escribe catalog.json, READMEs generados, el bloque del raíz y el registro', async () => {
-    entrada('components', 'botones', 'boton-iman', ficha({ estado: 'adoptado', tokens: ['--ui-accent'] }), {
-      'BotonIman.tsx': 'export const B = () => <button className="bg-ui-accent" />', 'demo.tsx': 'export default []',
+    entrada('components', 'buttons', 'magnet-button', ficha({ estado: 'adoptado', tokens: ['--ui-accent'] }), {
+      'MagnetButton.tsx': 'export const B = () => <button className="bg-ui-accent" />', 'demo.tsx': 'export default []',
       'preview.png': png, 'preview.webp': webp,
     })
-    entrada('components', 'tarjetas', 'tarjeta-vidrio', ficha({ slug: 'tarjeta-vidrio', nombre: 'Tarjeta vidrio', categoria: 'tarjetas', estado: 'retirado', por_que_salio: 'Pesada.' }), { 'preview.png': png })
+    entrada('components', 'cards', 'glass-card', ficha({ slug: 'glass-card', nombre: 'Tarjeta vidrio', categoria: 'cards', estado: 'retirado', por_que_salio: 'Pesada.' }), { 'preview.png': png })
     const { entradas, errores } = await construirCatalogo(raiz)
     expect(errores).toEqual([])
     escribirSalidas(raiz, entradas)
@@ -150,28 +150,28 @@ describe('escribirSalidas', () => {
     expect(catalogo.entradas).toHaveLength(2)
     expect(catalogo.generado).toMatch(/^\d{4}-\d{2}-\d{2}T/)
 
-    const cat = readFileSync(join(raiz, 'components/botones/README.md'), 'utf8')
-    expect(cat).toMatch(/<img src="boton-iman\/preview\.webp"/)
+    const cat = readFileSync(join(raiz, 'components/buttons/README.md'), 'utf8')
+    expect(cat).toMatch(/<img src="magnet-button\/preview\.webp"/)
     expect(cat).toMatch(/Botón imán/)
 
     const tipo = readFileSync(join(raiz, 'components/README.md'), 'utf8')
-    expect(tipo).toMatch(/\[botones\]\(botones\/\)/)
-    expect(tipo).toMatch(/<img src="botones\/boton-iman\/preview\.webp"/)
-    expect(tipo).not.toMatch(/<img src="tarjetas\/tarjeta-vidrio/)
-    expect(tipo).toMatch(/Retirados[\s\S]*tarjetas\/tarjeta-vidrio/)
+    expect(tipo).toMatch(/\[buttons\]\(buttons\/\)/)
+    expect(tipo).toMatch(/<img src="buttons\/magnet-button\/preview\.webp"/)
+    expect(tipo).not.toMatch(/<img src="cards\/glass-card/)
+    expect(tipo).toMatch(/Retirados[\s\S]*cards\/glass-card/)
 
     const raizMd = readFileSync(join(raiz, 'README.md'), 'utf8')
     expect(raizMd).not.toMatch(/viejo/)
-    expect(raizMd).toMatch(/<!-- catalogo:inicio -->[\s\S]*components\/botones\/boton-iman[\s\S]*<!-- catalogo:fin -->/)
+    expect(raizMd).toMatch(/<!-- catalogo:inicio -->[\s\S]*components\/buttons\/magnet-button[\s\S]*<!-- catalogo:fin -->/)
 
     const registro = readFileSync(join(raiz, 'playground/registro.generado.tsx'), 'utf8')
-    expect(registro).toMatch(/import d0 from '\.\.\/components\/botones\/boton-iman\/demo'/)
-    expect(registro).toMatch(/slug: "boton-iman"/)
-    expect(registro).not.toMatch(/tarjeta-vidrio/)
+    expect(registro).toMatch(/import d0 from '\.\.\/components\/buttons\/magnet-button\/demo'/)
+    expect(registro).toMatch(/slug: "magnet-button"/)
+    expect(registro).not.toMatch(/glass-card/)
   })
 
   it('no reescribe catalog.json si las entradas no cambiaron', async () => {
-    entrada('components', 'botones', 'boton-iman', ficha(), { 'preview.png': png })
+    entrada('components', 'buttons', 'magnet-button', ficha(), { 'preview.png': png })
     const { entradas } = await construirCatalogo(raiz)
     escribirSalidas(raiz, entradas)
     const generado1 = JSON.parse(readFileSync(join(raiz, 'catalog.json'), 'utf8')).generado
