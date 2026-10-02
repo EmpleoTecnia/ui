@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:58:42.951Z",
+  "generado": "2026-10-02T17:28:20.874Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -28,10 +28,22 @@
         "boton",
         "feedback"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-accent",
+        "--ui-accent-ink",
+        "--ui-ink",
+        "--ui-ink-muted",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-radius",
+        "--ui-radius-lg",
+        "--ui-font-text",
+        "--ui-dur",
+        "--ui-ease"
+      ],
       "dependencias": [
-        "lucide-react",
-        "motion"
+        "motion",
+        "lucide-react"
       ],
       "usado_en": [],
       "agregado_por": "francovassallo",
@@ -270,7 +282,21 @@
         "stepper",
         "licencias"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-font-text",
+        "--ui-font-display",
+        "--ui-ink",
+        "--ui-ink-soft",
+        "--ui-ink-muted",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-surface-2",
+        "--ui-radius",
+        "--ui-radius-lg",
+        "--ui-accent",
+        "--ui-dur",
+        "--ui-ease"
+      ],
       "dependencias": [
         "lucide-react",
         "motion"
@@ -280,7 +306,7 @@
       "fecha": "2026-10-02",
       "capturas": "manual",
       "caracter": {
-        "movimiento": "sutil",
+        "movimiento": "marcado",
         "tono": "sobrio",
         "densidad": "compacto"
       },
@@ -316,10 +342,24 @@
         "seleccion",
         "flotante"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-ink",
+        "--ui-ink-soft",
+        "--ui-ink-muted",
+        "--ui-surface",
+        "--ui-surface-2",
+        "--ui-line",
+        "--ui-accent",
+        "--ui-accent-ink",
+        "--ui-radius",
+        "--ui-font-display",
+        "--ui-font-text",
+        "--ui-dur",
+        "--ui-ease"
+      ],
       "dependencias": [
-        "lucide-react",
-        "motion"
+        "motion",
+        "lucide-react"
       ],
       "usado_en": [],
       "agregado_por": "francovassallo",
@@ -430,7 +470,19 @@
         "whatsapp",
         "formulario"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-font-text",
+        "--ui-ink",
+        "--ui-ink-soft",
+        "--ui-ink-muted",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-surface-2",
+        "--ui-radius",
+        "--ui-accent",
+        "--ui-dur",
+        "--ui-ease"
+      ],
       "dependencias": [
         "lucide-react",
         "motion"
@@ -440,7 +492,7 @@
       "fecha": "2026-10-02",
       "capturas": "manual",
       "caracter": {
-        "movimiento": "sutil",
+        "movimiento": "marcado",
         "tono": "sobrio",
         "densidad": "compacto"
       },
@@ -474,7 +526,18 @@
         "opciones",
         "filtros"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-surface",
+        "--ui-surface-2",
+        "--ui-ink",
+        "--ui-ink-muted",
+        "--ui-line",
+        "--ui-accent",
+        "--ui-radius",
+        "--ui-font-text",
+        "--ui-dur",
+        "--ui-ease"
+      ],
       "dependencias": [
         "@radix-ui/react-select",
         "lucide-react",
@@ -500,7 +563,7 @@
       "slug": "user-menu",
       "nombre": "Menú de usuario",
       "categoria": "menus",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/user-menu",
@@ -523,7 +586,19 @@
         "cerrar-sesion",
         "cabecera"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-accent",
+        "--ui-ink-muted",
+        "--ui-dur",
+        "--ui-ease",
+        "--ui-ink",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-radius-lg",
+        "--ui-ink-soft",
+        "--ui-surface-2",
+        "--ui-font-text"
+      ],
       "dependencias": [
         "lucide-react",
         "motion"
@@ -531,18 +606,21 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "sutil",
         "tono": "sobrio",
         "densidad": "compacto"
       },
+      "captura_de": "58d99dac0cb1",
       "tipo": "components",
       "ruta": "components/menus/user-menu",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/user-menu",
       "preview_png": "components/menus/user-menu/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/menus/user-menu/preview.webp",
+      "archivos_codigo": [
+        "DemoUserMenu.tsx",
+        "UserMenu.tsx"
+      ]
     },
     {
       "slug": "multi-select",
@@ -655,7 +733,19 @@
         "documentos",
         "certificados"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-ink",
+        "--ui-ink-soft",
+        "--ui-ink-muted",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-surface-2",
+        "--ui-accent",
+        "--ui-radius",
+        "--ui-font-text",
+        "--ui-dur",
+        "--ui-ease"
+      ],
       "dependencias": [
         "lucide-react",
         "motion"

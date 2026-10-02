@@ -11,9 +11,9 @@
 <sub><a href="https://uiarc.dev/components/select">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="user-menu/"><img src="user-menu/preview.png" width="100%" alt="Menú de usuario"></a><br><b><a href="user-menu/">Menú de usuario</a></b> · referencia<br>
+<a href="user-menu/"><img src="user-menu/preview.webp" width="100%" alt="Menú de usuario"></a><br><b><a href="user-menu/">Menú de usuario</a></b> · adoptado<br>
 <sub>El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.</sub><br>
-<sub><a href="https://uiarc.dev/components/user-menu">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/user-menu">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/menus/user-menu/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="multi-select/"><img src="multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="multi-select/">Selección múltiple</a></b> · referencia<br>

@@ -2,7 +2,7 @@
   "slug": "user-menu",
   "nombre": "Menú de usuario",
   "categoria": "menus",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/user-menu",
@@ -25,7 +25,19 @@
     "cerrar-sesion",
     "cabecera"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-accent",
+    "--ui-ink-muted",
+    "--ui-dur",
+    "--ui-ease",
+    "--ui-ink",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-radius-lg",
+    "--ui-ink-soft",
+    "--ui-surface-2",
+    "--ui-font-text"
+  ],
   "dependencias": [
     "lucide-react",
     "motion"
@@ -33,10 +45,10 @@
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "sutil",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "58d99dac0cb1"
 }
