@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { Search } from 'lucide-react'
 import { nombreCategoria } from '../lib/categorias'
 
@@ -15,6 +15,8 @@ export function Buscador({ indice }: { indice: Indexado[] }) {
   const [activo, setActivo] = useState(0)
   const campo = useRef<HTMLInputElement>(null)
   const router = useRouter()
+  const ruta = usePathname().replace(/\/$/, '')
+  const esActual = (e: Indexado) => e.href.replace(/\/$/, '') === ruta
 
   useEffect(() => {
     const atajo = (e: KeyboardEvent) => {
@@ -28,7 +30,9 @@ export function Buscador({ indice }: { indice: Indexado[] }) {
   const resultados = palabras.length === 0 ? [] : indice.filter(e => palabras.every(p => e.texto.includes(p))).slice(0, 8)
 
   function ir(e: Indexado) {
-    setQ(''); setAbierto(false)
+    setQ(''); setAbierto(false); campo.current?.blur()
+    // Ya estamos en esa página: navegar no se vería; subimos al título.
+    if (esActual(e)) { window.scrollTo({ top: 0, behavior: 'smooth' }); return }
     router.push(e.href)
   }
 
@@ -61,7 +65,7 @@ export function Buscador({ indice }: { indice: Indexado[] }) {
             <li key={e.slug} role="option" aria-selected={i === activo}>
               <button type="button" onMouseDown={() => ir(e)} onMouseEnter={() => setActivo(i)} className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm ${i === activo ? 'bg-ui-surface-2 text-ui-ink' : 'text-ui-ink-soft'}`}>
                 <span>{e.nombre}</span>
-                <span className="text-xs text-ui-ink-muted">{nombreCategoria(e.categoria)}{e.estado === 'referencia' ? ' · idea' : ''}</span>
+                <span className="text-xs text-ui-ink-muted">{nombreCategoria(e.categoria)}{e.estado === 'referencia' ? ' · idea' : ''}{esActual(e) ? ' · you’re here' : ''}</span>
               </button>
             </li>
           ))}
