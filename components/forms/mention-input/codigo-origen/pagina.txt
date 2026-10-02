@@ -1,0 +1,268 @@
+Arc
+Components
+Blocks
+Docs
+Pricing
+Try the demo
+Search
+⌘ K
+Appearance
+Sign in
+Ctrl K
+All
+Free
+Pro
+More
+Docs
+Introduction
+Installation
+Theming
+Motion
+AI and MCP
+Changelog
+Components
+107
+Buttons
+9
+Button
+Action button
+Split button
+Button group
+New
+Floating button group
+New
+Expanding button group
+New
+Copy button
+Confirm morph
+New
+Theme switcher
+Gestures
+2
+Hold to confirm
+Swipe actions
+Menus
+3
+Dropdown menu
+Context menu
+User menu
+Text fields
+7
+Input
+Textarea
+Password field
+Password strength
+Search field
+Expanding search
+Inline edit
+Special inputs
+5
+Number field
+Phone input
+New
+Tag input
+Mention input
+New
+Shortcut recorder
+New
+Selects
+4
+Select
+Combobox
+Multi-select
+Chip group
+Toggles
+6
+Radio cards
+New
+Billing toggle
+New
+Checkbox
+Radio group
+Switch
+Segmented control
+Sliders
+1
+Slider
+Pickers
+5
+Calendar
+Date picker
+Date range picker
+New
+Time picker
+Color picker
+New
+Editors
+3
+Rich text editor
+New
+Signature pad
+New
+File dropzone
+Navigation
+3
+Tabs
+Breadcrumb
+Pagination
+Expand
+4
+Scroll area
+New
+Accordion
+Expandable card
+Resizable panels
+Overlays
+6
+Dialog
+Drawer
+Bottom sheet
+Popover
+Hover card
+Tooltip
+Messages
+4
+Alert
+Toast
+Toast stack
+Announcement bar
+New
+Progress
+4
+Progress
+Skeleton
+Stepper
+Usage meter
+Avatars
+3
+Avatar
+Avatar group
+Badge
+Cards
+3
+Card
+Metric card
+Empty state
+Charts
+13
+Line chart
+New
+Bar chart
+Donut chart
+New
+Streamgraph
+New
+Brush chart
+New
+Waffle chart
+New
+Slope chart
+New
+Sparkline
+Gauge
+Activity heatmap
+Animated counter
+Ridgeline
+New
+Treemap
+New
+Advanced charts
+7
+Pro
+Sunburst
+New
+Sankey flow
+New
+Funnel chart
+New
+Radar chart
+New
+Realtime stream
+New
+Race bar chart
+New
+Data grid
+New
+Tables
+5
+Sortable data table
+Tree view
+Filter toolbar
+Code block
+JSON viewer
+New
+Activity
+3
+Timeline
+Comment thread
+New
+Chat thread
+New
+Media
+3
+Image compare
+Carousel
+Card stack
+Text effects
+4
+Text reveal
+In-view title
+Text morph
+Text shimmer
+Blocks
+77
+Special components
+34
+What’s new
+84 new
+Components
+Mention input
+Mention input
+
+A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.
+
+$
+pnpm dlx shadcn@latest add @uiarc/mention-input
+Copy page
+Copied
+Copy failed
+Preview
+Code
+Live · keyboard ready
+
+Jasmine Brooks
+9:42 AM
+
+Onboarding v2 is live for 10% of new teams. 
+Marcus Johnson can you watch the error rate in #frontend today?
+
+Notified Marcus · Shared to #frontend
+
+​
+
+Enter to post
+
+Post
+When to use
+Comment and reply boxes where people are tagged with @ and should be notified by id.
+Chat or task composers that link #channels or projects inline.
+Any text field whose stored value needs structured references alongside the plain text.
+When not to use
+Use textarea for plain notes with no references.
+Use tag-input when the tokens are a separate list rather than part of a sentence.
+Use rich-text-editor when the text also needs headings, lists, or links.
+Installation
+
+Add Mention input with the shadcn CLI, or copy the source by hand.
+
+CLI
+Manual
+pnpm
+npm
+yarn
+bun
+Copy
+Copied
+Failed
+$
+pnpm dlx shadcn@latest add @uiarc/ment

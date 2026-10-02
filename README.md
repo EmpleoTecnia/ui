@@ -43,9 +43,9 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-8 entradas, 2 adoptadas.
+9 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (8): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
+- **[Componentes](components/)** (9): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
 
 ### Últimas que entraron
 
@@ -74,14 +74,14 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub><a href="https://reactbits.dev/micro/status-mark">Ver original en React Bits ↗</a> · <a href="https://empleotecnia.github.io/ui/c/feedback/status-mark/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
+<a href="components/forms/mention-input/"><img src="components/forms/mention-input/preview.png" width="100%" alt="Campo con menciones"></a><br><b><a href="components/forms/mention-input/">Campo con menciones</a></b> · referencia<br>
+<sub>Para etiquetar personas en un chat: la mención resalta muy bien en la conversación.</sub><br>
+<sub><a href="https://uiarc.dev/components/mention-input">Ver original en Arc UI ↗</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="components/forms/number-field/"><img src="components/forms/number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="components/forms/number-field/">Campo numérico</a></b> · referencia<br>
 <sub>La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.</sub><br>
 <sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a></sub>
-</td>
-<td width="33%" valign="top">
-<a href="components/forms/password-strength/"><img src="components/forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="components/forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
-<sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
-<sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
 </tr>
 </table>

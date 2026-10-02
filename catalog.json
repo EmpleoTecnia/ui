@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:40:35.811Z",
+  "generado": "2026-10-02T14:40:47.713Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -198,6 +198,52 @@
       "archivos_codigo": [
         "StatusMark.tsx"
       ]
+    },
+    {
+      "slug": "mention-input",
+      "nombre": "Campo con menciones",
+      "categoria": "forms",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/mention-input",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Para etiquetar personas en un chat: la mención resalta muy bien en la conversación.",
+      "sirve_para": [
+        "chats y comentarios donde se etiqueta gente",
+        "mensajes entre el equipo y con empresas"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "mencion",
+        "chat",
+        "etiquetar",
+        "personas",
+        "comentarios",
+        "arroba"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "equilibrado"
+      },
+      "tipo": "components",
+      "ruta": "components/forms/mention-input",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/mention-input",
+      "preview_png": "components/forms/mention-input/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
     },
     {
       "slug": "number-field",
