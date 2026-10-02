@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { porSlug } from '../../lib/registro'
 import { fichas, rutaDe, capturaDe, type Ficha } from '../../lib/fichas'
-import { TIPOS, nombreCategoria, type Tipo } from '../../lib/categorias'
+import { TIPOS, nombreCategoria, tituloDe, type Tipo } from '../../lib/categorias'
 
 function Tarjeta({ e }: { e: Ficha }) {
   const vivo = porSlug(e.slug)
@@ -19,7 +19,7 @@ function Tarjeta({ e }: { e: Ficha }) {
       </div>
       <div className="flex items-start justify-between gap-3 border-t border-ui-line px-4 py-3">
         <div className="min-w-0">
-          <p className="truncate text-sm font-medium text-ui-ink group-hover:text-ui-accent">{e.nombre}</p>
+          <p className="truncate text-sm font-medium text-ui-ink group-hover:text-ui-accent">{tituloDe(e.slug)}</p>
           <p className="mt-0.5 line-clamp-2 text-xs leading-relaxed text-ui-ink-muted">{e.por_que_entro}</p>
         </div>
         <span className={`mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide ${e.estado === 'adoptado' ? 'bg-ui-accent/12 text-ui-accent' : 'bg-ui-surface-2 text-ui-ink-muted'}`}>

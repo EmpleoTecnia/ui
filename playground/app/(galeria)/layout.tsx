@@ -3,7 +3,7 @@ import { Cabecera } from '../../componentes/Cabecera'
 import { Lateral, type Grupo } from '../../componentes/Lateral'
 import type { Indexado } from '../../componentes/Buscador'
 import { fichas, rutaDe } from '../../lib/fichas'
-import { TIPOS, nombreCategoria } from '../../lib/categorias'
+import { TIPOS, nombreCategoria, tituloDe } from '../../lib/categorias'
 
 const normalizar = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 
@@ -12,13 +12,13 @@ function grupos(): Grupo[] {
   for (const e of fichas) {
     let g = lista.find(x => x.tipo === e.tipo && x.categoria === e.categoria)
     if (!g) { g = { tipo: e.tipo, tipoNombre: TIPOS[e.tipo], categoria: e.categoria, nombre: nombreCategoria(e.categoria), entradas: [] }; lista.push(g) }
-    g.entradas.push({ slug: e.slug, nombre: e.nombre, estado: e.estado, href: rutaDe(e) })
+    g.entradas.push({ slug: e.slug, nombre: tituloDe(e.slug), estado: e.estado, href: rutaDe(e) })
   }
   return lista
 }
 
 const indice: Indexado[] = fichas.map(e => ({
-  slug: e.slug, nombre: e.nombre, categoria: e.categoria, estado: e.estado, href: rutaDe(e),
+  slug: e.slug, nombre: tituloDe(e.slug), categoria: e.categoria, estado: e.estado, href: rutaDe(e),
   texto: normalizar([e.nombre, e.slug, e.categoria, nombreCategoria(e.categoria), ...e.etiquetas, ...e.sirve_para, e.por_que_entro].join(' ')),
 }))
 

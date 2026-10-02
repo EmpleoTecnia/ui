@@ -20,3 +20,6 @@ export const CATEGORIAS: Record<string, string> = {
 }
 
 export const nombreCategoria = (c: string) => CATEGORIAS[c] ?? c
+
+/** The English title of a piece comes from its slug, like the folder: `status-mark` → "Status mark". */
+export const tituloDe = (slug: string) => slug.replace(/-/g, ' ').replace(/^./, c => c.toUpperCase())

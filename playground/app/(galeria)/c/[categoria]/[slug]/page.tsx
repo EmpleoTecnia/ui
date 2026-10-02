@@ -3,11 +3,16 @@ import { notFound } from 'next/navigation'
 import { ArrowUpRight, ChevronRight } from 'lucide-react'
 import { porSlug } from '../../../../../lib/registro'
 import { fichas, fichaPorSlug, documentacion, codigoDe, capturaDe, type Seccion } from '../../../../../lib/fichas'
-import { TIPOS, nombreCategoria } from '../../../../../lib/categorias'
+import { TIPOS, nombreCategoria, tituloDe } from '../../../../../lib/categorias'
 import { Vitrina } from '../../../../../componentes/Vitrina'
 import { Copiar } from '../../../../../componentes/Copiar'
 
 export const dynamicParams = false
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const e = fichaPorSlug(slug)
+  return { title: `${tituloDe(slug)} · UI Library`, description: e?.por_que_entro }
+}
 export function generateStaticParams() {
   return fichas.map(e => ({ categoria: e.categoria, slug: e.slug }))
 }
@@ -55,9 +60,10 @@ export default async function Detalle({ params }: { params: Promise<{ slug: stri
 
         <header className="mt-3">
           <div className="flex flex-wrap items-center gap-3">
-            <h1 className="font-ui-display text-3xl font-semibold tracking-tight text-ui-ink sm:text-4xl">{e.nombre}</h1>
+            <h1 className="font-ui-display text-3xl font-semibold tracking-tight text-ui-ink sm:text-4xl">{tituloDe(e.slug)}</h1>
             <span className={`rounded-full px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide ${vivo ? 'bg-ui-accent/12 text-ui-accent' : 'bg-ui-surface-2 text-ui-ink-muted'}`}>{vivo ? 'Code ready' : 'Saved idea'}</span>
           </div>
+          <p className="mt-1 text-sm text-ui-ink-muted">{e.nombre} · <code className="font-mono text-xs">{e.ruta}</code></p>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ui-ink-soft">{descripcion}</p>
           <div className="mt-5 flex flex-wrap items-center gap-2">
             {vivo && <Copiar texto={`/ui-usar ${e.slug}`} etiqueta={`Copy  /ui-usar ${e.slug}`} />}
@@ -73,7 +79,7 @@ export default async function Detalle({ params }: { params: Promise<{ slug: stri
             <section id="preview" className="scroll-mt-24 overflow-hidden rounded-ui-lg border border-ui-line bg-ui-bg">
               {captura ? (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img src={captura} alt={`Screenshot of ${e.nombre}`} className="mx-auto block max-w-full" />
+                <img src={captura} alt={`Screenshot of ${tituloDe(e.slug)}`} className="mx-auto block max-w-full" />
               ) : <p className="p-8 text-sm text-ui-ink-muted">No screenshot.</p>}
               <p className="border-t border-ui-line bg-ui-surface px-4 py-2 text-xs text-ui-ink-muted">
                 A saved idea, not ported yet. To see it working, <a href={e.origen.url} className="text-ui-accent underline-offset-4 hover:underline">open the original</a>.
