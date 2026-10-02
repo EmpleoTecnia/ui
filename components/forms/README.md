@@ -40,6 +40,11 @@
 </tr>
 <tr>
 <td width="33%" valign="top">
+<a href="date-range-picker/"><img src="date-range-picker/preview.png" width="100%" alt="Rango de fechas"></a><br><b><a href="date-range-picker/">Rango de fechas</a></b> · referencia<br>
+<sub>Me encanta para elegir el período de un gráfico específico, por ejemplo los inscriptos a los cursos.</sub><br>
+<sub><a href="https://uiarc.dev/components/date-range-picker">Ver original en Arc UI ↗</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="multi-select/"><img src="multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="multi-select/">Selección múltiple</a></b> · referencia<br>
 <sub>Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.</sub><br>
 <sub><a href="https://uiarc.dev/components/multi-select">Ver original en Arc UI ↗</a></sub>
