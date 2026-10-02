@@ -2,7 +2,7 @@
   "slug": "confirm-morph",
   "nombre": "Confirmar con deshacer",
   "categoria": "buttons",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/confirm-morph",
@@ -23,7 +23,19 @@
     "boton",
     "morph"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-accent",
+    "--ui-dur",
+    "--ui-ink",
+    "--ui-surface",
+    "--ui-line",
+    "--ui-bg",
+    "--ui-ink-soft",
+    "--ui-ease",
+    "--ui-ink-muted",
+    "--ui-font-text",
+    "--ui-radius-lg"
+  ],
   "dependencias": [
     "lucide-react",
     "motion"
@@ -31,10 +43,10 @@
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "marcado",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "ca2329a12d58"
 }

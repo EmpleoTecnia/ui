@@ -11,9 +11,9 @@
 <sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/action-button/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="confirm-morph/"><img src="confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>
+<a href="confirm-morph/"><img src="confirm-morph/preview.webp" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="confirm-morph/">Confirmar con deshacer</a></b> · adoptado<br>
 <sub>Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.</sub><br>
-<sub><a href="https://uiarc.dev/components/confirm-morph">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/confirm-morph">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/confirm-morph/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="hold-to-confirm/"><img src="hold-to-confirm/preview.png" width="100%" alt="Mantener para confirmar"></a><br><b><a href="hold-to-confirm/">Mantener para confirmar</a></b> · referencia<br>
