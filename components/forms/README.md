@@ -28,6 +28,11 @@
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
+<a href="multi-select/"><img src="multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="multi-select/">Selección múltiple</a></b> · referencia<br>
+<sub>Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.</sub><br>
+<sub><a href="https://uiarc.dev/components/multi-select">Ver original en Arc UI ↗</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="phone-input/"><img src="phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="phone-input/">Teléfono con país</a></b> · referencia<br>
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
 <sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>

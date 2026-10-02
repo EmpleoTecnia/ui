@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:40:55.167Z",
+  "generado": "2026-10-02T14:41:04.440Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -401,6 +401,51 @@
         "NewPasswordForm.tsx",
         "PasswordStrength.tsx"
       ]
+    },
+    {
+      "slug": "multi-select",
+      "nombre": "Selección múltiple",
+      "categoria": "forms",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/multi-select",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.",
+      "sirve_para": [
+        "elegir varias etiquetas, personas o categorías en formularios y filtros"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "multi",
+        "seleccion",
+        "etiquetas",
+        "chips",
+        "formulario",
+        "filtros"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/forms/multi-select",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/multi-select",
+      "preview_png": "components/forms/multi-select/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
     },
     {
       "slug": "phone-input",
