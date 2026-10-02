@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T12:16:29.499Z",
+  "generado": "2026-10-02T14:39:38.217Z",
   "entradas": [
     {
       "slug": "status-mark",
@@ -122,6 +122,54 @@
         "NewPasswordForm.tsx",
         "PasswordStrength.tsx"
       ]
+    },
+    {
+      "slug": "user-menu",
+      "nombre": "Menú de usuario",
+      "categoria": "navigation",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/user-menu",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.",
+      "sirve_para": [
+        "menú de la cuenta en la cabecera de todas las apps",
+        "cambiar el tema",
+        "cerrar sesión"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "menu",
+        "usuario",
+        "cuenta",
+        "dropdown",
+        "tema",
+        "cerrar-sesion",
+        "cabecera"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/navigation/user-menu",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/navigation/user-menu",
+      "preview_png": "components/navigation/user-menu/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
     }
   ]
 }
