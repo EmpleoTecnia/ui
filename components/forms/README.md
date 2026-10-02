@@ -15,5 +15,10 @@
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
+<td width="33%" valign="top">
+<a href="phone-input/"><img src="phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="phone-input/">Teléfono con país</a></b> · referencia<br>
+<sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
+<sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
+</td>
 </tr>
 </table>

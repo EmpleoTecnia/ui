@@ -43,9 +43,9 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-7 entradas, 2 adoptadas.
+8 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (7): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
+- **[Componentes](components/)** (8): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
 
 ### Últimas que entraron
 

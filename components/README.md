@@ -3,7 +3,7 @@
 
 - [buttons](buttons/) · 3
 - [feedback](feedback/) · 1
-- [forms](forms/) · 2
+- [forms](forms/) · 3
 - [navigation](navigation/) · 1
 
 <table>
@@ -42,6 +42,11 @@
 </td>
 </tr>
 <tr>
+<td width="33%" valign="top">
+<a href="forms/phone-input/"><img src="forms/phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="forms/phone-input/">Teléfono con país</a></b> · referencia<br>
+<sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
+<sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
+</td>
 <td width="33%" valign="top">
 <a href="navigation/user-menu/"><img src="navigation/user-menu/preview.png" width="100%" alt="Menú de usuario"></a><br><b><a href="navigation/user-menu/">Menú de usuario</a></b> · referencia<br>
 <sub>El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.</sub><br>
