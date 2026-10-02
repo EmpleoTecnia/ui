@@ -33,12 +33,17 @@
 <sub><a href="https://uiarc.dev/components/rich-text-editor">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
+<a href="signature-pad/"><img src="signature-pad/preview.png" width="100%" alt="Firma"></a><br><b><a href="signature-pad/">Firma</a></b> · referencia<br>
+<sub>Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.</sub><br>
+<sub><a href="https://uiarc.dev/components/signature-pad">Ver original en Arc UI ↗</a></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
 <a href="password-strength/"><img src="password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="billing-toggle/"><img src="billing-toggle/preview.png" width="100%" alt="Mensual o anual"></a><br><b><a href="billing-toggle/">Mensual o anual</a></b> · referencia<br>
 <sub>Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.</sub><br>
@@ -49,13 +54,13 @@
 <sub>Me encanta para elegir el período de un gráfico específico, por ejemplo los inscriptos a los cursos.</sub><br>
 <sub><a href="https://uiarc.dev/components/date-range-picker">Ver original en Arc UI ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="multi-select/"><img src="multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="multi-select/">Selección múltiple</a></b> · referencia<br>
 <sub>Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.</sub><br>
 <sub><a href="https://uiarc.dev/components/multi-select">Ver original en Arc UI ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="color-picker/"><img src="color-picker/preview.png" width="100%" alt="Selector de color"></a><br><b><a href="color-picker/">Selector de color</a></b> · referencia<br>
 <sub>Está genial. Lo único que no tiene y le agregaría es poder elegir en RGB y RGBA.</sub><br>

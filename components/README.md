@@ -3,7 +3,7 @@
 
 - [buttons](buttons/) · 3
 - [feedback](feedback/) · 1
-- [forms](forms/) · 11
+- [forms](forms/) · 12
 - [navigation](navigation/) · 1
 
 <table>
@@ -60,6 +60,11 @@
 </tr>
 <tr>
 <td width="33%" valign="top">
+<a href="forms/signature-pad/"><img src="forms/signature-pad/preview.png" width="100%" alt="Firma"></a><br><b><a href="forms/signature-pad/">Firma</a></b> · referencia<br>
+<sub>Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.</sub><br>
+<sub><a href="https://uiarc.dev/components/signature-pad">Ver original en Arc UI ↗</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="forms/password-strength/"><img src="forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
@@ -69,13 +74,13 @@
 <sub>Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.</sub><br>
 <sub><a href="https://uiarc.dev/components/billing-toggle">Ver original en Arc UI ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="forms/date-range-picker/"><img src="forms/date-range-picker/preview.png" width="100%" alt="Rango de fechas"></a><br><b><a href="forms/date-range-picker/">Rango de fechas</a></b> · referencia<br>
 <sub>Me encanta para elegir el período de un gráfico específico, por ejemplo los inscriptos a los cursos.</sub><br>
 <sub><a href="https://uiarc.dev/components/date-range-picker">Ver original en Arc UI ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="forms/multi-select/"><img src="forms/multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="forms/multi-select/">Selección múltiple</a></b> · referencia<br>
 <sub>Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.</sub><br>
@@ -86,13 +91,13 @@
 <sub>Está genial. Lo único que no tiene y le agregaría es poder elegir en RGB y RGBA.</sub><br>
 <sub><a href="https://uiarc.dev/components/color-picker">Ver original en Arc UI ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="forms/phone-input/"><img src="forms/phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="forms/phone-input/">Teléfono con país</a></b> · referencia<br>
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
 <sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="navigation/user-menu/"><img src="navigation/user-menu/preview.png" width="100%" alt="Menú de usuario"></a><br><b><a href="navigation/user-menu/">Menú de usuario</a></b> · referencia<br>
 <sub>El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.</sub><br>

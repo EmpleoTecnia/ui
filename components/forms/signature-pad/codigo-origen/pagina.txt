@@ -1,0 +1,267 @@
+Arc
+Components
+Blocks
+Docs
+Pricing
+Try the demo
+Search
+⌘ K
+Appearance
+Sign in
+Ctrl K
+All
+Free
+Pro
+More
+Docs
+Introduction
+Installation
+Theming
+Motion
+AI and MCP
+Changelog
+Components
+107
+Buttons
+9
+Button
+Action button
+Split button
+Button group
+New
+Floating button group
+New
+Expanding button group
+New
+Copy button
+Confirm morph
+New
+Theme switcher
+Gestures
+2
+Hold to confirm
+Swipe actions
+Menus
+3
+Dropdown menu
+Context menu
+User menu
+Text fields
+7
+Input
+Textarea
+Password field
+Password strength
+Search field
+Expanding search
+Inline edit
+Special inputs
+5
+Number field
+Phone input
+New
+Tag input
+Mention input
+New
+Shortcut recorder
+New
+Selects
+4
+Select
+Combobox
+Multi-select
+Chip group
+Toggles
+6
+Radio cards
+New
+Billing toggle
+New
+Checkbox
+Radio group
+Switch
+Segmented control
+Sliders
+1
+Slider
+Pickers
+5
+Calendar
+Date picker
+Date range picker
+New
+Time picker
+Color picker
+New
+Editors
+3
+Rich text editor
+New
+Signature pad
+New
+File dropzone
+Navigation
+3
+Tabs
+Breadcrumb
+Pagination
+Expand
+4
+Scroll area
+New
+Accordion
+Expandable card
+Resizable panels
+Overlays
+6
+Dialog
+Drawer
+Bottom sheet
+Popover
+Hover card
+Tooltip
+Messages
+4
+Alert
+Toast
+Toast stack
+Announcement bar
+New
+Progress
+4
+Progress
+Skeleton
+Stepper
+Usage meter
+Avatars
+3
+Avatar
+Avatar group
+Badge
+Cards
+3
+Card
+Metric card
+Empty state
+Charts
+13
+Line chart
+New
+Bar chart
+Donut chart
+New
+Streamgraph
+New
+Brush chart
+New
+Waffle chart
+New
+Slope chart
+New
+Sparkline
+Gauge
+Activity heatmap
+Animated counter
+Ridgeline
+New
+Treemap
+New
+Advanced charts
+7
+Pro
+Sunburst
+New
+Sankey flow
+New
+Funnel chart
+New
+Radar chart
+New
+Realtime stream
+New
+Race bar chart
+New
+Data grid
+New
+Tables
+5
+Sortable data table
+Tree view
+Filter toolbar
+Code block
+JSON viewer
+New
+Activity
+3
+Timeline
+Comment thread
+New
+Chat thread
+New
+Media
+3
+Image compare
+Carousel
+Card stack
+Text effects
+4
+Text reveal
+In-view title
+Text morph
+Text shimmer
+Blocks
+77
+Special components
+34
+What’s new
+84 new
+Components
+Signature pad
+Signature pad
+
+Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.
+
+$
+pnpm dlx shadcn@latest add @uiarc/signature-pad
+Copy page
+Copied
+Copy failed
+Preview
+Code
+Live · keyboard ready
+Lease agreement
+
+1420 Alder Street, unit 3B · 12 months from Oct 1, 2026
+
+Emma Collins
+Sign here
+Save as
+PNG
+SVG
+
+Press Control or Command Z to undo, add Shift to redo, and Delete to clear.
+
+Adopt and sign
+When to use
+Contracts, delivery confirmations, and consent forms that need a drawn signature.
+Initials or quick sketches where pen pressure and natural stroke width matter.
+Flows that need a clean, cropped PNG or SVG of the signature.
+When not to use
+Use input for a typed name when a legal drawn signature is not required.
+Use file-upload when the user already has a scanned signature image.
+Use hold-to-confirm for a simple deliberate confirmation without a signature artifact.
+Installation
+
+Add Signature pad with the shadcn CLI, or copy the source by hand.
+
+CLI
+Manual
+pnpm
+npm
+yarn
+bun
+Copy
+Copied
+Failed
+$
+pnpm dlx shadcn@latest add @uiarc/signature-p
