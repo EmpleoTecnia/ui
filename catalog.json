@@ -1,60 +1,66 @@
 {
-  "generado": "2026-10-02T07:39:46.318Z",
+  "generado": "2026-10-02T08:48:17.409Z",
   "entradas": [
     {
-      "slug": "boton-iman",
-      "nombre": "Botón imán",
-      "categoria": "botones",
+      "slug": "password-strength",
+      "nombre": "Fuerza de contraseña",
+      "categoria": "forms",
       "estado": "adoptado",
       "origen": {
-        "nombre": "EmpleoTecnia",
-        "url": "",
-        "licencia": "propia"
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/password-strength",
+        "licencia": "desconocida"
       },
-      "publicable": true,
-      "por_que_entro": "Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.",
+      "publicable": false,
+      "por_que_entro": "Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.",
       "sirve_para": [
-        "CTA principal de una landing",
-        "el único botón importante de una pantalla"
+        "Elegir o cambiar la contraseña en la pantalla /clave",
+        "alta de cuenta en ET Conecta, miET y el campus"
       ],
       "no_sirve_para": [
-        "listas con muchos botones",
-        "formularios densos"
+        "Iniciar sesión: ahí va un campo común"
       ],
       "etiquetas": [
-        "hover",
-        "cursor",
-        "cta",
-        "resorte",
-        "sutil"
+        "contraseña",
+        "formulario",
+        "validacion",
+        "progreso",
+        "tilde",
+        "micro",
+        "sutil",
+        "español"
       ],
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "premium",
-        "densidad": "aire"
-      },
       "tokens": [
-        "--ui-accent",
-        "--ui-accent-ink",
-        "--ui-radius",
-        "--ui-font-display",
         "--ui-dur",
-        "--ui-ease"
+        "--ui-line",
+        "--ui-accent",
+        "--ui-radius",
+        "--ui-ease",
+        "--ui-font-text",
+        "--ui-ink",
+        "--ui-surface",
+        "--ui-ink-muted",
+        "--ui-surface-2"
       ],
       "dependencias": [
         "motion"
       ],
       "usado_en": [],
-      "agregado_por": "claude",
+      "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "captura_de": "7d24a18924f7",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "equilibrado"
+      },
+      "captura_de": "175d659d2a8a",
       "tipo": "components",
-      "ruta": "components/botones/boton-iman",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/botones/boton-iman",
-      "preview_png": "components/botones/boton-iman/preview.png",
-      "preview_webp": "components/botones/boton-iman/preview.webp",
+      "ruta": "components/forms/password-strength",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/password-strength",
+      "preview_png": "components/forms/password-strength/preview.png",
+      "preview_webp": "components/forms/password-strength/preview.webp",
       "archivos_codigo": [
-        "BotonIman.tsx"
+        "PasswordStrength.tsx"
       ]
     }
   ]

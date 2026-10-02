@@ -45,15 +45,15 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <!-- catalogo:inicio -->
 1 entradas, 1 adoptadas.
 
-- **[Componentes](components/)** (1): [botones](components/botones/)
+- **[Componentes](components/)** (1): [forms](components/forms/)
 
 ### Últimas que entraron
 
 <table>
 <tr>
 <td width="33%" valign="top">
-<a href="components/botones/boton-iman/"><img src="components/botones/boton-iman/preview.webp" width="100%" alt="Botón imán"></a><br><b><a href="components/botones/boton-iman/">Botón imán</a></b> · adoptado<br>
-<sub>Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.</sub>
+<a href="components/forms/password-strength/"><img src="components/forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="components/forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
+<sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub>
 </td>
 </tr>
 </table>

@@ -1,6 +1,6 @@
 // Generado por scripts/catalogar.mjs. No editar a mano.
 import type { Demo } from '../lib/demo'
-import d0 from '../components/botones/boton-iman/demo'
+import d0 from '../components/forms/password-strength/demo'
 
 export type Entrada = {
   slug: string
@@ -13,5 +13,5 @@ export type Entrada = {
 }
 
 export const registro: Entrada[] = [
-  { slug: "boton-iman", nombre: "Botón imán", tipo: "components", categoria: "botones", por_que_entro: "Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/botones/boton-iman", demos: d0 },
+  { slug: "password-strength", nombre: "Fuerza de contraseña", tipo: "components", categoria: "forms", por_que_entro: "Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/password-strength", demos: d0 },
 ]
