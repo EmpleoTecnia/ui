@@ -30,6 +30,7 @@ const solo = args.includes('--solo') ? args[args.indexOf('--solo') + 1] : null
 const PUERTO = 3999
 const BASE = `http://localhost:${PUERTO}`
 const tmp = join(raiz, '.capturas-tmp')
+const FPS_CAPTURA = 12
 
 const { entradas, errores } = await construirCatalogo(raiz, { sinCapturas: true })
 if (errores.length) {
@@ -88,11 +89,23 @@ try {
       await pagina.screenshot({ path: join(dir, 'preview.png') })
       await pagina.close()
 
-      // WebP: grabación del guion en claro
-      const contexto = await navegador.newContext({ viewport: { width: 600, height: 400 }, recordVideo: { dir: tmp, size: { width: 600, height: 400 } } })
+      // WebP: capturas de pantalla reales a 2x, 12 por segundo, mientras corre el guion.
+      // (El video de Playwright comprime mucho y salía pixelado.)
+      const contexto = await navegador.newContext({ viewport: { width: 600, height: 400 }, deviceScaleFactor: 2 })
       const grabando = await contexto.newPage()
       await grabando.goto(`${BASE}/captura/${e.slug}?modo=claro`, { waitUntil: 'networkidle' })
       await grabando.waitForTimeout(400)
+      const cuadros = join(tmp, e.slug)
+      mkdirSync(cuadros, { recursive: true })
+      let grabar = true
+      const muestreo = (async () => {
+        const t0 = Date.now()
+        for (let n = 0; grabar; n++) {
+          writeFileSync(join(cuadros, `f${String(n).padStart(4, '0')}.png`), await grabando.screenshot({ type: 'png', caret: 'hide' }))
+          const espera = t0 + (n + 1) * (1000 / FPS_CAPTURA) - Date.now()
+          if (espera > 0) await new Promise(r => setTimeout(r, espera))
+        }
+      })()
       const rutaGuion = join(dir, 'guion.mjs')
       if (existsSync(rutaGuion)) {
         const { default: guion } = await import(pathToFileURL(rutaGuion).href)
@@ -103,10 +116,10 @@ try {
         await grabando.mouse.move(40, 40, { steps: 20 })
         await grabando.waitForTimeout(1200)
       }
-      const video = grabando.video()
+      grabar = false
+      await muestreo
       await contexto.close()
-      const rutaVideo = await video.path()
-      const { bytes, intento } = await comprimirHastaEntrar({ entrada: rutaVideo, salida: join(dir, 'preview.webp'), tope: TOPE_WEBP })
+      const { bytes, intento } = await comprimirHastaEntrar({ entrada: join(cuadros, 'f%04d.png'), salida: join(dir, 'preview.webp'), tope: TOPE_WEBP, fpsOrigen: FPS_CAPTURA })
 
       // anotar de qué código son estas capturas
       const rutaMeta = join(dir, 'meta.json')
