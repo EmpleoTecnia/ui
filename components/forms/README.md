@@ -50,6 +50,13 @@
 <sub><a href="https://uiarc.dev/components/multi-select">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
+<a href="color-picker/"><img src="color-picker/preview.png" width="100%" alt="Selector de color"></a><br><b><a href="color-picker/">Selector de color</a></b> · referencia<br>
+<sub>Está genial. Lo único que no tiene y le agregaría es poder elegir en RGB y RGBA.</sub><br>
+<sub><a href="https://uiarc.dev/components/color-picker">Ver original en Arc UI ↗</a></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
 <a href="phone-input/"><img src="phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="phone-input/">Teléfono con país</a></b> · referencia<br>
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
 <sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>

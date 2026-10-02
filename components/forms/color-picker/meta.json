@@ -1,0 +1,42 @@
+{
+  "slug": "color-picker",
+  "nombre": "Selector de color",
+  "categoria": "forms",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/color-picker",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "Está genial. Lo único que no tiene y le agregaría es poder elegir en RGB y RGBA.",
+  "sirve_para": [
+    "elegir colores de marca, de etiquetas o de categorías",
+    "personalización de una empresa"
+  ],
+  "no_sirve_para": [
+    "tal como viene, sin RGB/RGBA: habría que agregarlo al portear"
+  ],
+  "etiquetas": [
+    "color",
+    "selector",
+    "rgb",
+    "rgba",
+    "personalizacion",
+    "marca"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "lucide-react",
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "equilibrado"
+  }
+}
