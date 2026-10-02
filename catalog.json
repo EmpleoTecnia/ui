@@ -1,6 +1,54 @@
 {
-  "generado": "2026-10-02T14:40:06.859Z",
+  "generado": "2026-10-02T14:40:18.986Z",
   "entradas": [
+    {
+      "slug": "action-button",
+      "nombre": "Botón con estado",
+      "categoria": "buttons",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/action-button",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Muy simple, pero tiene movimiento y la acción ahí mismo, sin depender de un label o mensajes fuera del botón: guardar, guardando, guardado.",
+      "sirve_para": [
+        "guardar / guardando / guardado en formularios",
+        "acciones cortas con resultado en el mismo botón"
+      ],
+      "no_sirve_para": [
+        "mensajes largos: no entran en el botón"
+      ],
+      "etiquetas": [
+        "guardar",
+        "estado",
+        "cargando",
+        "listo",
+        "boton",
+        "feedback"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/buttons/action-button",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/buttons/action-button",
+      "preview_png": "components/buttons/action-button/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
     {
       "slug": "confirm-morph",
       "nombre": "Confirmar con deshacer",

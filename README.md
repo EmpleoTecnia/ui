@@ -43,14 +43,19 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-5 entradas, 2 adoptadas.
+6 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (5): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
+- **[Componentes](components/)** (6): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
 
 ### Últimas que entraron
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="components/buttons/action-button/"><img src="components/buttons/action-button/preview.png" width="100%" alt="Botón con estado"></a><br><b><a href="components/buttons/action-button/">Botón con estado</a></b> · referencia<br>
+<sub>Muy simple, pero tiene movimiento y la acción ahí mismo, sin depender de un label o mensajes fuera del botón: guardar, guardando, guardado.</sub><br>
+<sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a></sub>
+</td>
 <td width="33%" valign="top">
 <a href="components/buttons/confirm-morph/"><img src="components/buttons/confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="components/buttons/confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>
 <sub>Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.</sub><br>
@@ -61,13 +66,13 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub>Confirmar manteniendo apretado, sin pop-up: para eliminar algo importante pero no tan importante.</sub><br>
 <sub><a href="https://uiarc.dev/components/hold-to-confirm">Ver original en Arc UI ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="components/feedback/status-mark/"><img src="components/feedback/status-mark/preview.webp" width="100%" alt="Marca de estado"></a><br><b><a href="components/feedback/status-mark/">Marca de estado</a></b> · adoptado<br>
 <sub>Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.</sub><br>
 <sub><a href="https://reactbits.dev/micro/status-mark">Ver original en React Bits ↗</a> · <a href="https://empleotecnia.github.io/ui/c/feedback/status-mark/">Probarlo ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="components/forms/password-strength/"><img src="components/forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="components/forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>

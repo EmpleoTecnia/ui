@@ -1,13 +1,18 @@
 <!-- Generado por scripts/catalogar.mjs. No editar a mano. -->
 # Componentes
 
-- [buttons](buttons/) · 2
+- [buttons](buttons/) · 3
 - [feedback](feedback/) · 1
 - [forms](forms/) · 1
 - [navigation](navigation/) · 1
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="buttons/action-button/"><img src="buttons/action-button/preview.png" width="100%" alt="Botón con estado"></a><br><b><a href="buttons/action-button/">Botón con estado</a></b> · referencia<br>
+<sub>Muy simple, pero tiene movimiento y la acción ahí mismo, sin depender de un label o mensajes fuera del botón: guardar, guardando, guardado.</sub><br>
+<sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a></sub>
+</td>
 <td width="33%" valign="top">
 <a href="buttons/confirm-morph/"><img src="buttons/confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="buttons/confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>
 <sub>Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.</sub><br>
@@ -18,13 +23,13 @@
 <sub>Confirmar manteniendo apretado, sin pop-up: para eliminar algo importante pero no tan importante.</sub><br>
 <sub><a href="https://uiarc.dev/components/hold-to-confirm">Ver original en Arc UI ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="feedback/status-mark/"><img src="feedback/status-mark/preview.webp" width="100%" alt="Marca de estado"></a><br><b><a href="feedback/status-mark/">Marca de estado</a></b> · adoptado<br>
 <sub>Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.</sub><br>
 <sub><a href="https://reactbits.dev/micro/status-mark">Ver original en React Bits ↗</a> · <a href="https://empleotecnia.github.io/ui/c/feedback/status-mark/">Probarlo ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="forms/password-strength/"><img src="forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
