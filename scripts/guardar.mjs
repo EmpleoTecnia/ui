@@ -18,7 +18,7 @@ const opcion = nombre => { const i = args.indexOf(`--${nombre}`); return i >= 0 
 const bandera = nombre => args.includes(`--${nombre}`)
 const lista = (texto, sep) => (texto ?? '').split(sep).map(s => s.trim()).filter(Boolean)
 
-if (!slug) { console.error('uso: node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" [--etiquetas a,b] [--no-sirve "x; y"] [--caracter k=v,...] [--adoptar] [--sin-push]'); process.exit(1) }
+if (!slug) { console.error('uso: node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" [--etiquetas a,b] [--no-sirve "x; y"] [--caracter k=v,...] [--adoptar] [--actualiza "qué cambió"] [--sin-push]'); process.exit(1) }
 
 // ── ubicar la carpeta ──
 let dir = null
@@ -79,7 +79,9 @@ const rel = dir.slice(raiz.length + 1).split('\\').join('/')
 const tipo = rel.split('/')[0]
 const generados = ['catalog.json', 'README.md', `${tipo}/README.md`, `${tipo}/${meta.categoria}/README.md`, 'playground/registro.generado.tsx']
 execFileSync('git', ['add', rel, ...generados.filter(g => existsSync(join(raiz, g)))], { cwd: raiz })
-const mensaje = `agrega(${meta.categoria}): ${meta.nombre} (${meta.estado})`
+// --actualiza "qué cambió" cuando la entrada ya existía: el commit dice actualiza(...) en vez de agrega(...)
+const actualiza = opcion('actualiza')
+const mensaje = actualiza ? `actualiza(${slug}): ${actualiza}` : `agrega(${meta.categoria}): ${meta.nombre} (${meta.estado})`
 execFileSync('git', ['commit', '-q', '-m', mensaje], { cwd: raiz })
 console.log(`✓ commit: ${mensaje}`)
 if (!bandera('sin-push')) {

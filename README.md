@@ -43,14 +43,18 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-1 entradas, 1 adoptadas.
+2 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (1): [forms](components/forms/)
+- **[Componentes](components/)** (2): [feedback](components/feedback/) · [forms](components/forms/)
 
 ### Últimas que entraron
 
 <table>
 <tr>
+<td width="33%" valign="top">
+<a href="components/feedback/status-mark/"><img src="components/feedback/status-mark/preview.webp" width="100%" alt="Marca de estado"></a><br><b><a href="components/feedback/status-mark/">Marca de estado</a></b> · adoptado<br>
+<sub>Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.</sub>
+</td>
 <td width="33%" valign="top">
 <a href="components/forms/password-strength/"><img src="components/forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="components/forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub>

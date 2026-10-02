@@ -133,7 +133,7 @@ function EyeMorph({ slashed, reduced, d }: { slashed: boolean; reduced: boolean;
 /** El fondo crece debajo del tilde mientras el tilde se dibuja; destildar lo retrae más rápido. */
 function RuleMark({ met, delay, reduced, d }: { met: boolean; delay: number; reduced: boolean; d: number }) {
   return (
-    <span className="relative block size-4 shrink-0 rounded-full border-[1.25px] border-ui-line text-(--tone-ok) transition-colors duration-(--ui-dur) ease-ui group-data-[met]:border-transparent" aria-hidden="true">
+    <span className="relative block size-4 shrink-0 rounded-full border-[1.25px] border-ui-line text-(--tone-ok) transition-colors duration-(--ui-dur) ease-ui group-data-[miss]:border-(--tone-danger) group-data-[met]:border-transparent" aria-hidden="true">
       <motion.span className="absolute -inset-px rounded-[inherit] bg-[color-mix(in_oklch,var(--tone-ok)_16%,transparent)]" initial={false} animate={{ scale: met ? 1 : 0.5, opacity: met ? 1 : 0 }} transition={reduced ? { duration: 0 } : { scale: { ...spring.snappy, delay }, opacity: { duration: met ? d * 0.6 : d * 0.35, delay } }} />
       <svg className="absolute -inset-px size-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round">
         <motion.path d="M4.75 8.25 7 10.5l4.25-4.75" initial={false} animate={{ pathLength: met ? 1 : 0, opacity: met ? 1 : 0 }} transition={reduced ? { duration: 0 } : met ? { pathLength: { duration: d, ease: enter, delay: delay + 0.06 }, opacity: { duration: 0.05, delay: delay + 0.06 } } : { pathLength: { duration: d * 0.6, ease: standard }, opacity: { duration: d * 0.6, delay: 0.06 } }} />
@@ -164,14 +164,18 @@ function ErrorRow({ id, text, reduced, d }: { id: string; text: string; reduced:
   )
 }
 
-/** Tonos derivados del acento de la app: misma luz y saturación, el matiz dice débil/aceptable/buena. Fuerte es el acento tal cual. */
+/** Colores semánticos de verdad: rojo, naranja, amarillo, verde. Del acento de la app
+ *  sólo toman la luz y la saturación, para no desentonar; el matiz no se negocia. */
+const semantico = (hue: number) => `oklch(from var(--ui-accent) clamp(0.48, l, 0.66) clamp(0.13, c, 0.2) ${hue})`
 const TONOS: Record<number, string> = {
   0: 'var(--ui-line)',
-  1: 'oklch(from var(--ui-accent) clamp(0.45, l, 0.65) clamp(0.12, c, 0.2) 25)',
-  2: 'oklch(from var(--ui-accent) clamp(0.45, l, 0.65) clamp(0.12, c, 0.2) 70)',
-  3: 'oklch(from var(--ui-accent) clamp(0.45, l, 0.65) clamp(0.12, c, 0.2) 150)',
-  4: 'var(--ui-accent)',
+  1: semantico(25),
+  2: semantico(55),
+  3: semantico(88),
+  4: semantico(150),
 }
+const TONE_OK = semantico(150)
+const TONE_DANGER = semantico(25)
 
 export const PasswordStrength = forwardRef<HTMLInputElement, PasswordStrengthProps>(function PasswordStrength(
   { label, value: valueProp, defaultValue = '', onValueChange, onChange, rules = defaultPasswordRules, error, revealed: revealedProp, onRevealedChange, id, className, ...props },
@@ -235,7 +239,7 @@ export const PasswordStrength = forwardRef<HTMLInputElement, PasswordStrengthPro
 
   const summary = strength.level ? `Fuerza: ${strength.label}. ${strength.met.length} de ${rules.length} requisitos cumplidos.` : ''
   const describedBy = [props['aria-describedby'], error ? errorId : undefined, rulesId].filter(Boolean).join(' ')
-  const vars = { '--tone': TONOS[strength.level], '--tone-ok': TONOS[3], '--tone-danger': TONOS[1] } as CSSProperties
+  const vars = { '--tone': TONOS[strength.level], '--tone-ok': TONE_OK, '--tone-danger': TONE_DANGER } as CSSProperties
 
   return (
     <div className="grid min-w-0 font-ui-text" data-level={strength.level} style={vars}>
@@ -284,7 +288,7 @@ export const PasswordStrength = forwardRef<HTMLInputElement, PasswordStrengthPro
           const remaining = value && !ok ? rule.remaining?.(value) ?? 0 : 0
           const order = changed.indexOf(rule.id)
           return (
-            <li key={rule.id} className="group flex min-h-5 items-center gap-2.5 text-sm text-ui-ink-muted transition-colors duration-(--ui-dur) ease-ui data-[met]:text-ui-ink" data-met={ok || undefined}>
+            <li key={rule.id} className="group flex min-h-5 items-center gap-2.5 text-sm text-ui-ink-muted transition-colors duration-(--ui-dur) ease-ui data-[met]:text-ui-ink" data-met={ok || undefined} data-miss={value && !ok ? '' : undefined}>
               <RuleMark met={ok} delay={order > 0 ? order * 0.05 : 0} reduced={reduced} d={d} />
               <span className="min-w-0">{rule.label}<span className="sr-only">{ok ? ', cumplido' : ', pendiente'}</span></span>
               <span className="relative ml-auto block pl-2 text-xs whitespace-nowrap text-ui-ink-muted" aria-hidden="true">

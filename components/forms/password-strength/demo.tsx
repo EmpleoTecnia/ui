@@ -1,11 +1,20 @@
 import type { Demo } from '../../../lib/demo'
 import { PasswordStrength } from './PasswordStrength'
+import { NewPasswordForm } from './NewPasswordForm'
 
 const demos: Demo[] = [
   {
-    nombre: 'Elegir contraseña',
+    nombre: 'Formulario completo',
     render: () => (
-      <div className="w-[340px] rounded-ui-lg border border-ui-line bg-ui-surface p-6">
+      <div className="w-[360px]">
+        <NewPasswordForm subtitle="maria@empleotecnia.com" />
+      </div>
+    ),
+  },
+  {
+    nombre: 'Sólo el campo',
+    render: () => (
+      <div className="w-[340px]">
         <PasswordStrength label="Nueva contraseña" defaultValue="Emple0tecnia" />
       </div>
     ),

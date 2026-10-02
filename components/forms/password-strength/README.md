@@ -26,6 +26,21 @@ publica.
 
 ## Cómo se usa
 
+Dos piezas en la misma carpeta: el **formulario completo** (título, el campo, "Sugerir
+una" y "Guardar") y el **campo solo**, por si lo querés dentro de otro formulario.
+
+```tsx
+import { NewPasswordForm } from '@/components/ui/password-strength/NewPasswordForm'
+
+<NewPasswordForm subtitle={correo} error={error} pending={guardando} onSubmit={guardarContrasena} />
+```
+
+- "Sugerir una" genera `Palabra-Palabra-NN` con palabras cortas en español, la pone en
+  el campo y la muestra. Sale de `suggestPassword()`, exportada por si la querés en
+  otro lado.
+- "Guardar" se habilita cuando la fuerza llega a `minLevel` (por defecto 3, "Buena").
+- `title` por defecto "Elegí una contraseña nueva"; `subtitle` suele ser el correo.
+
 ```tsx
 import { PasswordStrength } from '@/components/ui/password-strength/PasswordStrength'
 
@@ -46,7 +61,8 @@ import { PasswordStrength } from '@/components/ui/password-strength/PasswordStre
 
 ## Qué toma de tu app
 
-Fondo, bordes, textos y foco salen de los tokens `--ui-*`. Los tonos de débil, aceptable
-y buena se derivan del acento de la app (misma luz y saturación, cambia el matiz) y
-"Fuerte" es el acento tal cual: en una app azul la barra llena es azul, en una lima es
-lima. Las duraciones salen de `--ui-dur`. Necesita `motion`.
+Fondo, bordes, textos y foco salen de los tokens `--ui-*`. Los colores de las barras y
+los tildes son semánticos y no cambian de app: rojo (Débil), naranja (Aceptable),
+amarillo (Buena), verde (Fuerte); tildes verdes y, mientras una regla falta, el círculo
+en rojo. Del acento de la app toman sólo la luz y la saturación, para no desentonar.
+Las duraciones salen de `--ui-dur`. Necesita `motion`.

@@ -29,15 +29,18 @@
   ],
   "tokens": [
     "--ui-dur",
+    "--ui-radius-lg",
     "--ui-line",
-    "--ui-accent",
+    "--ui-surface",
+    "--ui-font-text",
+    "--ui-font-display",
+    "--ui-ink",
+    "--ui-ink-muted",
     "--ui-radius",
     "--ui-ease",
-    "--ui-font-text",
-    "--ui-ink",
-    "--ui-surface",
-    "--ui-ink-muted",
-    "--ui-surface-2"
+    "--ui-surface-2",
+    "--ui-accent",
+    "--ui-accent-ink"
   ],
   "dependencias": [
     "motion"
@@ -50,5 +53,5 @@
     "tono": "sobrio",
     "densidad": "equilibrado"
   },
-  "captura_de": "175d659d2a8a"
+  "captura_de": "ea9b4c7bf6e1"
 }

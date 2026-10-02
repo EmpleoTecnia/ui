@@ -5,6 +5,7 @@
 //   npm run capturar -- --todos → todos
 //   npm run capturar -- --solo boton-iman
 import { spawn, spawnSync } from 'node:child_process'
+import { createServer } from 'node:net'
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { pathToFileURL, fileURLToPath } from 'node:url'
@@ -27,7 +28,13 @@ if (!existsSync(chromium.executablePath())) {
 const args = process.argv.slice(2)
 const todos = args.includes('--todos')
 const solo = args.includes('--solo') ? args[args.indexOf('--solo') + 1] : null
-const PUERTO = 3999
+// Un puerto libre cada vez: si una corrida anterior dejó un servidor colgado, no chocamos con él.
+const PUERTO = await new Promise((resolver, rechazar) => {
+  const s = createServer()
+  s.unref()
+  s.on('error', rechazar)
+  s.listen(0, () => { const { port } = s.address(); s.close(() => resolver(port)) })
+})
 const BASE = `http://localhost:${PUERTO}`
 const tmp = join(raiz, '.capturas-tmp')
 const FPS_CAPTURA = 12
@@ -60,10 +67,17 @@ async function esperarServidor() {
   }
   throw new Error('el playground no levantó en 90 s')
 }
+let apagado = false
 function apagarServidor() {
-  if (esWindows && servidor.pid) spawn('taskkill', ['/pid', String(servidor.pid), '/T', '/F'], { stdio: 'ignore' })
+  if (apagado) return
+  apagado = true
+  if (esWindows && servidor.pid) spawnSync('taskkill', ['/pid', String(servidor.pid), '/T', '/F'], { stdio: 'ignore' })
   else servidor.kill()
 }
+// Pase lo que pase (Ctrl+C, excepción, salida normal), el servidor no queda huérfano.
+process.on('exit', apagarServidor)
+process.on('SIGINT', () => { apagarServidor(); process.exit(130) })
+process.on('SIGTERM', () => { apagarServidor(); process.exit(143) })
 
 const fallas = []
 let navegador

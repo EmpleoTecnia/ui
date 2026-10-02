@@ -1,6 +1,62 @@
 {
-  "generado": "2026-10-02T08:48:17.409Z",
+  "generado": "2026-10-02T09:02:29.575Z",
   "entradas": [
+    {
+      "slug": "status-mark",
+      "nombre": "Marca de estado",
+      "categoria": "feedback",
+      "estado": "adoptado",
+      "origen": {
+        "nombre": "React Bits",
+        "url": "https://reactbits.dev/micro/status-mark",
+        "licencia": "MIT+Commons-Clause"
+      },
+      "publicable": false,
+      "por_que_entro": "Me gustó todo: el mismo círculo que se transforma de punteado a girando a tilde o cruz, y que tacha la etiqueta al terminar.",
+      "sirve_para": [
+        "Pasos de un proceso de creación o cambio de contraseña",
+        "estado de tareas en Proyectos",
+        "cola de envíos en el admin"
+      ],
+      "no_sirve_para": [
+        "Como ícono decorativo sin estado detrás"
+      ],
+      "etiquetas": [
+        "estado",
+        "progreso",
+        "tarea",
+        "tilde",
+        "spinner",
+        "micro",
+        "sutil",
+        "pasos"
+      ],
+      "tokens": [
+        "--ui-accent",
+        "--ui-dur",
+        "--ui-ease"
+      ],
+      "dependencias": [
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "captura_de": "a0b96aa1d08f",
+      "tipo": "components",
+      "ruta": "components/feedback/status-mark",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/feedback/status-mark",
+      "preview_png": "components/feedback/status-mark/preview.png",
+      "preview_webp": "components/feedback/status-mark/preview.webp",
+      "archivos_codigo": [
+        "StatusMark.tsx"
+      ]
+    },
     {
       "slug": "password-strength",
       "nombre": "Fuerza de contraseña",
@@ -32,15 +88,18 @@
       ],
       "tokens": [
         "--ui-dur",
+        "--ui-radius-lg",
         "--ui-line",
-        "--ui-accent",
+        "--ui-surface",
+        "--ui-font-text",
+        "--ui-font-display",
+        "--ui-ink",
+        "--ui-ink-muted",
         "--ui-radius",
         "--ui-ease",
-        "--ui-font-text",
-        "--ui-ink",
-        "--ui-surface",
-        "--ui-ink-muted",
-        "--ui-surface-2"
+        "--ui-surface-2",
+        "--ui-accent",
+        "--ui-accent-ink"
       ],
       "dependencias": [
         "motion"
@@ -53,13 +112,14 @@
         "tono": "sobrio",
         "densidad": "equilibrado"
       },
-      "captura_de": "175d659d2a8a",
+      "captura_de": "ea9b4c7bf6e1",
       "tipo": "components",
       "ruta": "components/forms/password-strength",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/password-strength",
       "preview_png": "components/forms/password-strength/preview.png",
       "preview_webp": "components/forms/password-strength/preview.webp",
       "archivos_codigo": [
+        "NewPasswordForm.tsx",
         "PasswordStrength.tsx"
       ]
     }
