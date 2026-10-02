@@ -6,6 +6,7 @@ import { fichas, fichaPorSlug, documentacion, codigoDe, capturaDe, type Seccion 
 import { TIPOS, nombreCategoria, tituloDe } from '../../../../../lib/categorias'
 import { Vitrina } from '../../../../../componentes/Vitrina'
 import { Copiar } from '../../../../../componentes/Copiar'
+import { Indice } from '../../../../../componentes/Indice'
 
 export const dynamicParams = false
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
@@ -111,14 +112,7 @@ export default async function Detalle({ params }: { params: Promise<{ slug: stri
       </article>
 
       <aside className="hidden xl:block">
-        <nav aria-label="On this page" className="sticky top-22 text-sm">
-          <p className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-ui-ink-muted">On this page</p>
-          <ul className="border-l border-ui-line">
-            {indice.map(s => (
-              <li key={s.id}><a href={`#${s.id}`} className="-ml-px block border-l border-transparent py-1 pl-3 text-ui-ink-soft transition-colors duration-(--ui-dur) ease-ui hover:border-ui-ink hover:text-ui-ink">{s.titulo}</a></li>
-            ))}
-          </ul>
-        </nav>
+        <Indice secciones={indice} />
       </aside>
     </div>
   )
