@@ -1,3 +1,5 @@
+import { URL_PLAYGROUND } from './contrato.mjs'
+
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
 const activos = entradas => entradas.filter(e => e.estado !== 'retirado')
@@ -10,7 +12,7 @@ const desdeTipo = e => `${e.categoria}/${e.slug}/`
 const desdeRaiz = e => `${e.tipo}/${e.categoria}/${e.slug}/`
 
 /** Grilla HTML de 3 columnas que GitHub renderiza, con las animaciones adentro. */
-function grilla(entradas, carpetaDe) {
+function grilla(entradas, carpetaDe, { urlPlayground = URL_PLAYGROUND } = {}) {
   if (entradas.length === 0) return '_Todavía no hay nada acá._\n'
   const celdas = entradas.map(e => {
     const carpeta = carpetaDe(e)
@@ -18,7 +20,13 @@ function grilla(entradas, carpetaDe) {
     const imagen = img ? `<a href="${carpeta}"><img src="${img}" width="100%" alt="${esc(e.nombre)}"></a><br>` : ''
     // El webp cuenta poco: el enlace al original es para verlo funcionando de verdad.
     const urlOrigen = e.origen?.url
-    const original = urlOrigen ? `<br>\n<sub><a href="${esc(urlOrigen)}">Ver original en ${esc(e.origen?.nombre || 'su sitio')} ↗</a></sub>` : ''
+    // Sólo los adoptados tienen demo en el playground publicado.
+    const probar = urlPlayground && e.estado === 'adoptado' ? `<a href="${esc(urlPlayground.replace(/\/$/, ''))}/c/${e.categoria}/${e.slug}/">Probarlo ↗</a>` : null
+    const enlaces = [
+      urlOrigen ? `<a href="${esc(urlOrigen)}">Ver original en ${esc(e.origen?.nombre || 'su sitio')} ↗</a>` : null,
+      probar,
+    ].filter(Boolean).join(' · ')
+    const original = enlaces ? `<br>\n<sub>${enlaces}</sub>` : ''
     return `<td width="33%" valign="top">\n${imagen}<b><a href="${carpeta}">${esc(e.nombre)}</a></b> · ${e.estado}<br>\n<sub>${esc(e.por_que_entro)}</sub>${original}\n</td>`
   })
   const filas = []
@@ -34,17 +42,17 @@ function retirados(entradas, carpetaDe) {
 
 const cabecera = '<!-- Generado por scripts/catalogar.mjs. No editar a mano. -->\n'
 
-export function renderCategoria(tipo, categoria, entradas) {
-  return `${cabecera}# ${TITULO[tipo]} · ${categoria}\n\n[← ${TITULO[tipo]}](../)\n\n${grilla(activos(entradas), desdeCategoria)}${retirados(entradas, desdeCategoria)}`
+export function renderCategoria(tipo, categoria, entradas, opciones) {
+  return `${cabecera}# ${TITULO[tipo]} · ${categoria}\n\n[← ${TITULO[tipo]}](../)\n\n${grilla(activos(entradas), desdeCategoria, opciones)}${retirados(entradas, desdeCategoria)}`
 }
 
-export function renderTipo(tipo, entradas) {
+export function renderTipo(tipo, entradas, opciones) {
   const categorias = [...new Set(entradas.map(e => e.categoria))].sort()
   const indice = categorias.map(c => `- [${c}](${c}/) · ${activos(entradas.filter(e => e.categoria === c)).length}`).join('\n')
-  return `${cabecera}# ${TITULO[tipo]}\n\n${indice || '_Todavía no hay categorías._'}\n\n${grilla(activos(entradas), desdeTipo)}${retirados(entradas, desdeTipo)}`
+  return `${cabecera}# ${TITULO[tipo]}\n\n${indice || '_Todavía no hay categorías._'}\n\n${grilla(activos(entradas), desdeTipo, opciones)}${retirados(entradas, desdeTipo)}`
 }
 
-export function renderBloqueRaiz(entradas) {
+export function renderBloqueRaiz(entradas, opciones) {
   const vivos = activos(entradas)
   if (vivos.length === 0) return 'Todavía no hay entradas. Corré `npm run catalogar` después de agregar la primera.'
   const adoptados = vivos.filter(e => e.estado === 'adoptado').length
@@ -55,7 +63,7 @@ export function renderBloqueRaiz(entradas) {
     return `- **[${TITULO[t]}](${t}/)** (${del.length}): ${cats}`
   }).filter(Boolean).join('\n')
   const ultimos = [...vivos].sort((a, b) => b.fecha.localeCompare(a.fecha)).slice(0, 6)
-  return `${vivos.length} entradas, ${adoptados} adoptadas.\n\n${porTipo}\n\n### Últimas que entraron\n\n${grilla(ultimos, desdeRaiz)}`
+  return `${vivos.length} entradas, ${adoptados} adoptadas.\n\n${porTipo}\n\n### Últimas que entraron\n\n${grilla(ultimos, desdeRaiz, opciones)}`
 }
 
 /** El playground importa cada demo.tsx de los adoptados desde acá. */

@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T09:04:26.894Z",
+  "generado": "2026-10-02T12:16:29.499Z",
   "entradas": [
     {
       "slug": "status-mark",
@@ -112,7 +112,7 @@
         "tono": "sobrio",
         "densidad": "equilibrado"
       },
-      "captura_de": "ea9b4c7bf6e1",
+      "captura_de": "c293a396f471",
       "tipo": "components",
       "ruta": "components/forms/password-strength",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/password-strength",

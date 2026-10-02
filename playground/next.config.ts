@@ -8,10 +8,12 @@ const config: NextConfig = {
   outputFileTracingRoot: resolve(__dirname, '..'),
   // Sin el botón "N" de Next: se colaba en las capturas.
   devIndicators: false,
-  // Sitio estático: `npm run build` deja playground/out/ listo para Vercel (o cualquier
+  // Sitio estático: `npm run build` deja playground/out/ listo para GitHub Pages (o cualquier
   // hosting de archivos). Las rutas dinámicas se enumeran con generateStaticParams y lo
   // que depende de la URL (?slugs=, ?modo=) se lee en el navegador.
   output: 'export',
   trailingSlash: true,
+  // En GitHub Pages el sitio cuelga de /ui. En dev (y en las capturas) sigue en la raíz.
+  basePath: process.env.NODE_ENV === 'production' ? '/ui' : '',
 }
 export default config

@@ -16,7 +16,9 @@ antes de agregar o cambiar algo.
 - `tokens.css`: el contrato de 15 tokens `--ui-*`. Un adoptado usa sólo eso.
 - `temas/`: espejos de los tokens de cada app, mapeados a `--ui-*`. Si una app cambió,
   se copian; no se inventan.
-- `playground/`: Next.js mínimo que renderiza los adoptados. `npm run dev`.
+- `playground/`: Next.js mínimo que renderiza los adoptados. `npm run dev` local; publicado en
+  <https://empleotecnia.github.io/ui/> (GitHub Pages, se redeploya solo en cada push a main).
+  Las grillas de los README enlazan ahí con "Probarlo" y al sitio de origen con "Ver original".
 
 ## Reglas
 
@@ -44,6 +46,12 @@ antes de agregar o cambiar algo.
    `usa(slug): app`, `actualiza(slug): qué`, `retira(slug): por qué`.
 9. **Retirar es `estado: "retirado"` + `por_que_salio`**, no borrar la carpeta: alguien
    lo puede estar usando.
+10. **El repo es público** (desde el 2/10, para publicar el playground en GitHub Pages).
+    Nunca entran claves, tokens, `.env`, URLs de proyectos Supabase, datos de personas
+    reales ni capturas con datos reales. Los datos de ejemplo usan `@example.com` y
+    nombres inventados. Nada de lo interno de las apps (lógica de negocio, tablas,
+    permisos): acá sólo viven piezas de interfaz. `node scripts/comprobar-publico.mjs`
+    lo revisa y corre en CI.
 
 ## Cómo se agrega algo (barato en tokens)
 

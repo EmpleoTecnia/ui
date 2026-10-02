@@ -29,3 +29,18 @@ describe('registro del playground', () => {
     expect(ts).toMatch(/origen_url: string/)
   })
 })
+
+describe('enlace Probarlo', () => {
+  it('con URL del playground, cada celda enlaza a su página de detalle', () => {
+    const html = renderCategoria('components', 'feedback', [entrada()], { urlPlayground: 'https://ui-empleotecnia.vercel.app' })
+    expect(html).toContain('<a href="https://ui-empleotecnia.vercel.app/c/feedback/status-mark/">Probarlo ↗</a>')
+  })
+  it('sin URL del playground no aparece', () => {
+    expect(renderCategoria('components', 'feedback', [entrada()], { urlPlayground: '' })).not.toContain('Probarlo')
+  })
+  it('una referencia (sin demo) no lleva Probarlo aunque haya playground', () => {
+    const html = renderCategoria('components', 'feedback', [entrada({ estado: 'referencia' })], { urlPlayground: 'https://x.test' })
+    expect(html).not.toContain('Probarlo')
+    expect(html).toContain('Ver original')
+  })
+})

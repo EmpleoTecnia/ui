@@ -7,7 +7,7 @@ const demos: Demo[] = [
     nombre: 'Formulario completo',
     render: () => (
       <div className="w-[360px]">
-        <NewPasswordForm subtitle="maria@empleotecnia.com" />
+        <NewPasswordForm subtitle="maria@example.com" />
       </div>
     ),
   },

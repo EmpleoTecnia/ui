@@ -49,3 +49,5 @@ export const TOPE_WEBP = 400 * 1024
 export const FRASES_VACIAS = ['me gusta', 'esta bueno', 'está bueno', 'lindo', 'copado', 'bueno', 'me gusto', 'me gustó']
 
 export const REPO_GITHUB = 'https://github.com/EmpleoTecnia/ui'
+// El playground publicado en GitHub Pages (.github/workflows/pages.yml lo redeploya en cada push a main).
+export const URL_PLAYGROUND = 'https://empleotecnia.github.io/ui'
