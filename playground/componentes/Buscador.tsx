@@ -65,7 +65,7 @@ export function Buscador({ indice }: { indice: Indexado[] }) {
             <li key={e.slug} role="option" aria-selected={i === activo}>
               <button type="button" onMouseDown={() => ir(e)} onMouseEnter={() => setActivo(i)} className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm ${i === activo ? 'bg-ui-surface-2 text-ui-ink' : 'text-ui-ink-soft'}`}>
                 <span>{e.nombre}</span>
-                <span className="text-xs text-ui-ink-muted">{nombreCategoria(e.categoria)}{e.estado === 'referencia' ? ' · idea' : ''}{esActual(e) ? ' · you’re here' : ''}</span>
+                <span className="text-xs text-ui-ink-muted">{nombreCategoria(e.categoria)}{esActual(e) ? ' · you’re here' : ''}</span>
               </button>
             </li>
           ))}

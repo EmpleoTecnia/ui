@@ -36,7 +36,6 @@ export function Lateral({ grupos }: { grupos: Grupo[] }) {
                         className={`-ml-px flex items-center justify-between gap-2 border-l py-1 pl-3 pr-2 transition-colors duration-(--ui-dur) ease-ui ${actual ? 'border-ui-accent text-ui-accent' : 'border-transparent text-ui-ink-soft hover:border-ui-line hover:text-ui-ink'}`}
                       >
                         <span className="truncate">{e.nombre}</span>
-                        {e.estado === 'referencia' && <span className="shrink-0 text-[10px] uppercase tracking-wide text-ui-ink-muted">idea</span>}
                       </Link>
                     </li>
                   )

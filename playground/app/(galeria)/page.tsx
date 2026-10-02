@@ -22,16 +22,12 @@ function Tarjeta({ e }: { e: Ficha }) {
           <p className="truncate text-sm font-medium text-ui-ink group-hover:text-ui-accent">{tituloDe(e.slug)}</p>
           <p className="mt-0.5 line-clamp-2 text-xs leading-relaxed text-ui-ink-muted">{e.por_que_entro}</p>
         </div>
-        <span className={`mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide ${e.estado === 'adoptado' ? 'bg-ui-accent/12 text-ui-accent' : 'bg-ui-surface-2 text-ui-ink-muted'}`}>
-          {e.estado === 'adoptado' ? 'Ready' : 'Idea'}
-        </span>
       </div>
     </Link>
   )
 }
 
 export default function Indice() {
-  const adoptados = fichas.filter(e => e.estado === 'adoptado').length
   const tipos = (Object.keys(TIPOS) as Tipo[]).filter(t => fichas.some(e => e.tipo === t))
   return (
     <div className="space-y-14">
@@ -42,11 +38,7 @@ export default function Indice() {
           The interface pieces we liked, ported to our stack and written against a token contract:
           every app paints them with its own colors without losing their character. Switch the app at the top right to see how they look.
         </p>
-        <p className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm text-ui-ink-muted">
-          <span><b className="font-semibold text-ui-ink">{fichas.length}</b> {fichas.length === 1 ? 'piece' : 'pieces'}</span>
-          <span><b className="font-semibold text-ui-ink">{adoptados}</b> with code ready</span>
-          <span><b className="font-semibold text-ui-ink">{fichas.length - adoptados}</b> {fichas.length - adoptados === 1 ? 'saved idea' : 'saved ideas'}</span>
-        </p>
+        <p className="mt-4 text-sm text-ui-ink-muted"><b className="font-semibold text-ui-ink">{fichas.length}</b> {fichas.length === 1 ? 'piece' : 'pieces'}</p>
       </header>
 
       {fichas.length === 0 && <p className="text-ui-ink-muted">Nothing yet. Run <code>node scripts/agregar.mjs</code> with the first URL.</p>}

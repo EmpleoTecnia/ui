@@ -45,7 +45,7 @@ export default async function Detalle({ params }: { params: Promise<{ slug: stri
   const fecha = new Date(e.fecha + 'T00:00:00').toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })
 
   const indice: Seccion[] = [
-    { id: 'preview', titulo: vivo ? 'Preview' : 'Screenshot' },
+    { id: 'preview', titulo: 'Preview' },
     ...secciones,
     { id: 'details', titulo: 'Details' },
   ]
@@ -60,14 +60,11 @@ export default async function Detalle({ params }: { params: Promise<{ slug: stri
         </nav>
 
         <header className="mt-3">
-          <div className="flex flex-wrap items-center gap-3">
-            <h1 className="font-ui-display text-3xl font-semibold tracking-tight text-ui-ink sm:text-4xl">{tituloDe(e.slug)}</h1>
-            <span className={`rounded-full px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide ${vivo ? 'bg-ui-accent/12 text-ui-accent' : 'bg-ui-surface-2 text-ui-ink-muted'}`}>{vivo ? 'Code ready' : 'Saved idea'}</span>
-          </div>
+          <h1 className="font-ui-display text-3xl font-semibold tracking-tight text-ui-ink sm:text-4xl">{tituloDe(e.slug)}</h1>
           <p className="mt-1 text-sm text-ui-ink-muted">{e.nombre} · <code className="font-mono text-xs">{e.ruta}</code></p>
           <p className="mt-3 max-w-2xl text-base leading-relaxed text-ui-ink-soft">{descripcion}</p>
           <div className="mt-5 flex flex-wrap items-center gap-2">
-            {vivo && <Copiar texto={`/ui-usar ${e.slug}`} etiqueta={`Copy  /ui-usar ${e.slug}`} />}
+            <Copiar texto={`/ui-usar ${e.slug}`} etiqueta={`Copy  /ui-usar ${e.slug}`} />
             <a href={e.url_github} className="inline-flex h-8 items-center gap-1 rounded-ui border border-ui-line bg-ui-surface px-2.5 text-xs font-medium text-ui-ink-soft transition-colors duration-(--ui-dur) ease-ui hover:bg-ui-surface-2 hover:text-ui-ink">GitHub <ArrowUpRight size={13} aria-hidden /></a>
             {e.origen.url && <a href={e.origen.url} className="inline-flex h-8 items-center gap-1 rounded-ui border border-ui-line bg-ui-surface px-2.5 text-xs font-medium text-ui-ink-soft transition-colors duration-(--ui-dur) ease-ui hover:bg-ui-surface-2 hover:text-ui-ink">Original at {e.origen.nombre} <ArrowUpRight size={13} aria-hidden /></a>}
           </div>
@@ -82,9 +79,6 @@ export default async function Detalle({ params }: { params: Promise<{ slug: stri
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={captura} alt={`Screenshot of ${tituloDe(e.slug)}`} className="mx-auto block max-w-full" />
               ) : <p className="p-8 text-sm text-ui-ink-muted">No screenshot.</p>}
-              <p className="border-t border-ui-line bg-ui-surface px-4 py-2 text-xs text-ui-ink-muted">
-                A saved idea, not ported yet. To see it working, <a href={e.origen.url} className="text-ui-accent underline-offset-4 hover:underline">open the original</a>.
-              </p>
             </section>
           )}
         </div>
