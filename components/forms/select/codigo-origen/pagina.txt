@@ -1,0 +1,269 @@
+Arc
+Components
+Blocks
+Docs
+Pricing
+Try the demo
+Search
+⌘ K
+Appearance
+Sign in
+Ctrl K
+All
+Free
+Pro
+More
+Docs
+Introduction
+Installation
+Theming
+Motion
+AI and MCP
+Changelog
+Components
+107
+Buttons
+9
+Button
+Action button
+Split button
+Button group
+New
+Floating button group
+New
+Expanding button group
+New
+Copy button
+Confirm morph
+New
+Theme switcher
+Gestures
+2
+Hold to confirm
+Swipe actions
+Menus
+3
+Dropdown menu
+Context menu
+User menu
+Text fields
+7
+Input
+Textarea
+Password field
+Password strength
+Search field
+Expanding search
+Inline edit
+Special inputs
+5
+Number field
+Phone input
+New
+Tag input
+Mention input
+New
+Shortcut recorder
+New
+Selects
+4
+Select
+Combobox
+Multi-select
+Chip group
+Toggles
+6
+Radio cards
+New
+Billing toggle
+New
+Checkbox
+Radio group
+Switch
+Segmented control
+Sliders
+1
+Slider
+Pickers
+5
+Calendar
+Date picker
+Date range picker
+New
+Time picker
+Color picker
+New
+Editors
+3
+Rich text editor
+New
+Signature pad
+New
+File dropzone
+Navigation
+3
+Tabs
+Breadcrumb
+Pagination
+Expand
+4
+Scroll area
+New
+Accordion
+Expandable card
+Resizable panels
+Overlays
+6
+Dialog
+Drawer
+Bottom sheet
+Popover
+Hover card
+Tooltip
+Messages
+4
+Alert
+Toast
+Toast stack
+Announcement bar
+New
+Progress
+4
+Progress
+Skeleton
+Stepper
+Usage meter
+Avatars
+3
+Avatar
+Avatar group
+Badge
+Cards
+3
+Card
+Metric card
+Empty state
+Charts
+13
+Line chart
+New
+Bar chart
+Donut chart
+New
+Streamgraph
+New
+Brush chart
+New
+Waffle chart
+New
+Slope chart
+New
+Sparkline
+Gauge
+Activity heatmap
+Animated counter
+Ridgeline
+New
+Treemap
+New
+Advanced charts
+7
+Pro
+Sunburst
+New
+Sankey flow
+New
+Funnel chart
+New
+Radar chart
+New
+Realtime stream
+New
+Race bar chart
+New
+Data grid
+New
+Tables
+5
+Sortable data table
+Tree view
+Filter toolbar
+Code block
+JSON viewer
+New
+Activity
+3
+Timeline
+Comment thread
+New
+Chat thread
+New
+Media
+3
+Image compare
+Carousel
+Card stack
+Text effects
+4
+Text reveal
+In-view title
+Text morph
+Text shimmer
+Blocks
+77
+Special components
+34
+What’s new
+84 new
+Components
+Select
+Select
+
+A compact choice field with a keyboard friendly menu.
+
+$
+pnpm dlx shadcn@latest add @uiarc/select
+Copy page
+Copied
+Copy failed
+Preview
+Code
+Live · keyboard ready
+Team
+Design
+Design
+Choose the team that owns this work.
+When to use
+A short fixed list where typing is not needed, such as region or sort order.
+Form fields that should submit natively through Radix's hidden select via name.
+When not to use
+Use combobox for long or searchable lists.
+Use multi-select when several values can be chosen.
+Use segmented-control for two to four choices that should stay visible.
+Installation
+
+Add Select with the shadcn CLI, or copy the source by hand.
+
+CLI
+Manual
+pnpm
+npm
+yarn
+bun
+Copy
+Copied
+Failed
+$
+pnpm dlx shadcn@latest add @uiarc/select
+pnpm dlx shadcn@latest add @uiarc/select
+
+Adds the component and its local dependencies, and installs @radix-ui/react-select, motion, lucide-react. First time? Add the @uiarc registry to components.json, or use the full URL:
+
+pnpm dlx shadcn@latest add https://uiarc.dev/r/select.json
+Usage
+example.tsx
+Copy
+Copied
+Failed
+1
+import {
