@@ -43,9 +43,9 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-6 entradas, 2 adoptadas.
+7 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (6): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
+- **[Componentes](components/)** (7): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
 
 ### Últimas que entraron
 
@@ -74,14 +74,14 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub><a href="https://reactbits.dev/micro/status-mark">Ver original en React Bits ↗</a> · <a href="https://empleotecnia.github.io/ui/c/feedback/status-mark/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
+<a href="components/forms/number-field/"><img src="components/forms/number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="components/forms/number-field/">Campo numérico</a></b> · referencia<br>
+<sub>La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.</sub><br>
+<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="components/forms/password-strength/"><img src="components/forms/password-strength/preview.webp" width="100%" alt="Fuerza de contraseña"></a><br><b><a href="components/forms/password-strength/">Fuerza de contraseña</a></b> · adoptado<br>
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
-</td>
-<td width="33%" valign="top">
-<a href="components/navigation/user-menu/"><img src="components/navigation/user-menu/preview.png" width="100%" alt="Menú de usuario"></a><br><b><a href="components/navigation/user-menu/">Menú de usuario</a></b> · referencia<br>
-<sub>El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.</sub><br>
-<sub><a href="https://uiarc.dev/components/user-menu">Ver original en Arc UI ↗</a></sub>
 </td>
 </tr>
 </table>

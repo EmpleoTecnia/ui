@@ -1,0 +1,40 @@
+{
+  "slug": "number-field",
+  "nombre": "Campo numérico",
+  "categoria": "forms",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/number-field",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.",
+  "sirve_para": [
+    "agregar personas o licencias a un equipo",
+    "cantidades con precio total"
+  ],
+  "no_sirve_para": [],
+  "etiquetas": [
+    "numero",
+    "cantidad",
+    "precio",
+    "maximo",
+    "stepper",
+    "licencias"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "lucide-react",
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "compacto"
+  }
+}

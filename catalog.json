@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:40:18.986Z",
+  "generado": "2026-10-02T14:40:26.437Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -198,6 +198,52 @@
       "archivos_codigo": [
         "StatusMark.tsx"
       ]
+    },
+    {
+      "slug": "number-field",
+      "nombre": "Campo numérico",
+      "categoria": "forms",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/number-field",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.",
+      "sirve_para": [
+        "agregar personas o licencias a un equipo",
+        "cantidades con precio total"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "numero",
+        "cantidad",
+        "precio",
+        "maximo",
+        "stepper",
+        "licencias"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/forms/number-field",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/number-field",
+      "preview_png": "components/forms/number-field/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
     },
     {
       "slug": "password-strength",
