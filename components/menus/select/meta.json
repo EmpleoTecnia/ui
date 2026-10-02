@@ -2,7 +2,7 @@
   "slug": "select",
   "nombre": "Desplegable",
   "categoria": "menus",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/select",
@@ -21,7 +21,18 @@
     "opciones",
     "filtros"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-dur",
+    "--ui-radius",
+    "--ui-ink",
+    "--ui-accent",
+    "--ui-ease",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-ink-muted",
+    "--ui-surface-2",
+    "--ui-font-text"
+  ],
   "dependencias": [
     "@radix-ui/react-select",
     "lucide-react",
@@ -30,10 +41,10 @@
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "sutil",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "bdbe14d54215"
 }

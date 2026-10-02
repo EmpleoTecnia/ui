@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T17:28:20.874Z",
+  "generado": "2026-10-02T17:28:31.881Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -507,7 +507,7 @@
       "slug": "select",
       "nombre": "Desplegable",
       "categoria": "menus",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/select",
@@ -527,16 +527,16 @@
         "filtros"
       ],
       "tokens": [
-        "--ui-surface",
-        "--ui-surface-2",
-        "--ui-ink",
-        "--ui-ink-muted",
-        "--ui-line",
-        "--ui-accent",
-        "--ui-radius",
-        "--ui-font-text",
         "--ui-dur",
-        "--ui-ease"
+        "--ui-radius",
+        "--ui-ink",
+        "--ui-accent",
+        "--ui-ease",
+        "--ui-line",
+        "--ui-surface",
+        "--ui-ink-muted",
+        "--ui-surface-2",
+        "--ui-font-text"
       ],
       "dependencias": [
         "@radix-ui/react-select",
@@ -546,18 +546,20 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "sutil",
         "tono": "sobrio",
         "densidad": "compacto"
       },
+      "captura_de": "bdbe14d54215",
       "tipo": "components",
       "ruta": "components/menus/select",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/select",
       "preview_png": "components/menus/select/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/menus/select/preview.webp",
+      "archivos_codigo": [
+        "Select.tsx"
+      ]
     },
     {
       "slug": "user-menu",

@@ -62,9 +62,9 @@
 </tr>
 <tr>
 <td width="33%" valign="top">
-<a href="menus/select/"><img src="menus/select/preview.png" width="100%" alt="Desplegable"></a><br><b><a href="menus/select/">Desplegable</a></b> · referencia<br>
+<a href="menus/select/"><img src="menus/select/preview.webp" width="100%" alt="Desplegable"></a><br><b><a href="menus/select/">Desplegable</a></b> · adoptado<br>
 <sub>Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.</sub><br>
-<sub><a href="https://uiarc.dev/components/select">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/select">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/menus/select/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="menus/user-menu/"><img src="menus/user-menu/preview.webp" width="100%" alt="Menú de usuario"></a><br><b><a href="menus/user-menu/">Menú de usuario</a></b> · adoptado<br>
