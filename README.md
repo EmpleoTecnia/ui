@@ -27,5 +27,19 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-Todavía no hay entradas. Corré `npm run catalogar` después de agregar la primera.
+1 entradas, 1 adoptadas.
+
+- **[Componentes](components/)** (1): [botones](components/botones/)
+
+### Últimas que entraron
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<b><a href="components/botones/boton-iman/">Botón imán</a></b> · adoptado<br>
+<sub>Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.</sub>
+</td>
+</tr>
+</table>
+
 <!-- catalogo:fin -->

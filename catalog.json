@@ -1,4 +1,60 @@
 {
-  "generado": "2026-10-02T07:30:06.032Z",
-  "entradas": []
+  "generado": "2026-10-02T07:34:05.887Z",
+  "entradas": [
+    {
+      "slug": "boton-iman",
+      "nombre": "Botón imán",
+      "categoria": "botones",
+      "estado": "adoptado",
+      "origen": {
+        "nombre": "EmpleoTecnia",
+        "url": "",
+        "licencia": "propia"
+      },
+      "publicable": true,
+      "por_que_entro": "Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.",
+      "sirve_para": [
+        "CTA principal de una landing",
+        "el único botón importante de una pantalla"
+      ],
+      "no_sirve_para": [
+        "listas con muchos botones",
+        "formularios densos"
+      ],
+      "etiquetas": [
+        "hover",
+        "cursor",
+        "cta",
+        "resorte",
+        "sutil"
+      ],
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "premium",
+        "densidad": "aire"
+      },
+      "tokens": [
+        "--ui-accent",
+        "--ui-accent-ink",
+        "--ui-radius",
+        "--ui-font-display",
+        "--ui-dur",
+        "--ui-ease"
+      ],
+      "dependencias": [
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "claude",
+      "fecha": "2026-10-02",
+      "tipo": "components",
+      "ruta": "components/botones/boton-iman",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/botones/boton-iman",
+      "preview_png": null,
+      "preview_webp": null,
+      "archivos_codigo": [
+        "BotonIman.tsx"
+      ]
+    }
+  ]
 }
