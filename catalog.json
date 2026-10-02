@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T17:28:42.366Z",
+  "generado": "2026-10-02T17:32:25.792Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -265,7 +265,7 @@
       "slug": "number-field",
       "nombre": "Campo numérico",
       "categoria": "fields",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/number-field",
@@ -287,19 +287,19 @@
         "licencias"
       ],
       "tokens": [
-        "--ui-font-text",
+        "--ui-dur",
         "--ui-font-display",
         "--ui-ink",
-        "--ui-ink-soft",
+        "--ui-font-text",
         "--ui-ink-muted",
+        "--ui-radius-lg",
         "--ui-line",
         "--ui-surface",
-        "--ui-surface-2",
-        "--ui-radius",
-        "--ui-radius-lg",
         "--ui-accent",
-        "--ui-dur",
-        "--ui-ease"
+        "--ui-radius",
+        "--ui-ink-soft",
+        "--ui-ease",
+        "--ui-surface-2"
       ],
       "dependencias": [
         "lucide-react",
@@ -308,18 +308,22 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "marcado",
         "tono": "sobrio",
         "densidad": "compacto"
       },
+      "captura_de": "6d896eaf9ec2",
       "tipo": "components",
       "ruta": "components/fields/number-field",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/number-field",
       "preview_png": "components/fields/number-field/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/fields/number-field/preview.webp",
+      "archivos_codigo": [
+        "AnimatedCounter.tsx",
+        "DemoLicencias.tsx",
+        "NumberField.tsx"
+      ]
     },
     {
       "slug": "rich-text-editor",
@@ -451,7 +455,7 @@
       "slug": "phone-input",
       "nombre": "Teléfono con país",
       "categoria": "fields",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/phone-input",
@@ -476,16 +480,16 @@
       ],
       "tokens": [
         "--ui-font-text",
+        "--ui-accent",
+        "--ui-dur",
+        "--ui-radius",
         "--ui-ink",
-        "--ui-ink-soft",
         "--ui-ink-muted",
         "--ui-line",
         "--ui-surface",
+        "--ui-ease",
         "--ui-surface-2",
-        "--ui-radius",
-        "--ui-accent",
-        "--ui-dur",
-        "--ui-ease"
+        "--ui-ink-soft"
       ],
       "dependencias": [
         "lucide-react",
@@ -494,18 +498,20 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "marcado",
         "tono": "sobrio",
         "densidad": "compacto"
       },
+      "captura_de": "13e221f1d933",
       "tipo": "components",
       "ruta": "components/fields/phone-input",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/phone-input",
       "preview_png": "components/fields/phone-input/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/fields/phone-input/preview.webp",
+      "archivos_codigo": [
+        "PhoneInput.tsx"
+      ]
     },
     {
       "slug": "select",
@@ -720,7 +726,7 @@
       "slug": "signature-pad",
       "nombre": "Firma",
       "categoria": "pickers",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/signature-pad",
@@ -741,16 +747,16 @@
       ],
       "tokens": [
         "--ui-ink",
-        "--ui-ink-soft",
+        "--ui-accent",
+        "--ui-dur",
         "--ui-ink-muted",
         "--ui-line",
-        "--ui-surface",
-        "--ui-surface-2",
-        "--ui-accent",
-        "--ui-radius",
         "--ui-font-text",
-        "--ui-dur",
-        "--ui-ease"
+        "--ui-radius",
+        "--ui-surface",
+        "--ui-ease",
+        "--ui-surface-2",
+        "--ui-ink-soft"
       ],
       "dependencias": [
         "lucide-react",
@@ -759,18 +765,20 @@
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "sutil",
         "tono": "sobrio",
         "densidad": "equilibrado"
       },
+      "captura_de": "5b8af29f92c3",
       "tipo": "components",
       "ruta": "components/pickers/signature-pad",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/signature-pad",
       "preview_png": "components/pickers/signature-pad/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/pickers/signature-pad/preview.webp",
+      "archivos_codigo": [
+        "SignaturePad.tsx"
+      ]
     },
     {
       "slug": "date-range-picker",

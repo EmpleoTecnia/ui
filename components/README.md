@@ -38,9 +38,9 @@
 <sub><a href="https://uiarc.dev/components/mention-input">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="fields/number-field/"><img src="fields/number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="fields/number-field/">Campo numérico</a></b> · referencia<br>
+<a href="fields/number-field/"><img src="fields/number-field/preview.webp" width="100%" alt="Campo numérico"></a><br><b><a href="fields/number-field/">Campo numérico</a></b> · adoptado<br>
 <sub>La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.</sub><br>
-<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/number-field/">Probarlo ↗</a></sub>
 </td>
 </tr>
 <tr>
@@ -55,9 +55,9 @@
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/password-strength/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="fields/phone-input/"><img src="fields/phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="fields/phone-input/">Teléfono con país</a></b> · referencia<br>
+<a href="fields/phone-input/"><img src="fields/phone-input/preview.webp" width="100%" alt="Teléfono con país"></a><br><b><a href="fields/phone-input/">Teléfono con país</a></b> · adoptado<br>
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
-<sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/phone-input/">Probarlo ↗</a></sub>
 </td>
 </tr>
 <tr>
@@ -84,9 +84,9 @@
 <sub><a href="https://uiarc.dev/components/slider">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="pickers/signature-pad/"><img src="pickers/signature-pad/preview.png" width="100%" alt="Firma"></a><br><b><a href="pickers/signature-pad/">Firma</a></b> · referencia<br>
+<a href="pickers/signature-pad/"><img src="pickers/signature-pad/preview.webp" width="100%" alt="Firma"></a><br><b><a href="pickers/signature-pad/">Firma</a></b> · adoptado<br>
 <sub>Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.</sub><br>
-<sub><a href="https://uiarc.dev/components/signature-pad">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/signature-pad">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/pickers/signature-pad/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="pickers/date-range-picker/"><img src="pickers/date-range-picker/preview.png" width="100%" alt="Rango de fechas"></a><br><b><a href="pickers/date-range-picker/">Rango de fechas</a></b> · referencia<br>

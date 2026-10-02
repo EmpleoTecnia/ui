@@ -11,9 +11,9 @@
 <sub><a href="https://uiarc.dev/components/mention-input">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="number-field/"><img src="number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="number-field/">Campo numérico</a></b> · referencia<br>
+<a href="number-field/"><img src="number-field/preview.webp" width="100%" alt="Campo numérico"></a><br><b><a href="number-field/">Campo numérico</a></b> · adoptado<br>
 <sub>La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.</sub><br>
-<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/number-field/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="rich-text-editor/"><img src="rich-text-editor/preview.png" width="100%" alt="Editor de texto"></a><br><b><a href="rich-text-editor/">Editor de texto</a></b> · referencia<br>
@@ -28,9 +28,9 @@
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/password-strength/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="phone-input/"><img src="phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="phone-input/">Teléfono con país</a></b> · referencia<br>
+<a href="phone-input/"><img src="phone-input/preview.webp" width="100%" alt="Teléfono con país"></a><br><b><a href="phone-input/">Teléfono con país</a></b> · adoptado<br>
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
-<sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/phone-input/">Probarlo ↗</a></sub>
 </td>
 </tr>
 </table>

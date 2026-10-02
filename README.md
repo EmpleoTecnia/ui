@@ -43,7 +43,7 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-18 entradas, 5 adoptadas.
+18 entradas, 8 adoptadas.
 
 - **[Componentes](components/)** (18): [buttons](components/buttons/) · [feedback](components/feedback/) · [fields](components/fields/) · [menus](components/menus/) · [pickers](components/pickers/) · [toggles](components/toggles/)
 
@@ -79,9 +79,9 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub><a href="https://uiarc.dev/components/mention-input">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="components/fields/number-field/"><img src="components/fields/number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="components/fields/number-field/">Campo numérico</a></b> · referencia<br>
+<a href="components/fields/number-field/"><img src="components/fields/number-field/preview.webp" width="100%" alt="Campo numérico"></a><br><b><a href="components/fields/number-field/">Campo numérico</a></b> · adoptado<br>
 <sub>La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.</sub><br>
-<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/fields/number-field/">Probarlo ↗</a></sub>
 </td>
 </tr>
 </table>

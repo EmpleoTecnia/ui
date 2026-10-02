@@ -2,7 +2,7 @@
   "slug": "number-field",
   "nombre": "Campo numérico",
   "categoria": "fields",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/number-field",
@@ -23,7 +23,21 @@
     "stepper",
     "licencias"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-dur",
+    "--ui-font-display",
+    "--ui-ink",
+    "--ui-font-text",
+    "--ui-ink-muted",
+    "--ui-radius-lg",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-accent",
+    "--ui-radius",
+    "--ui-ink-soft",
+    "--ui-ease",
+    "--ui-surface-2"
+  ],
   "dependencias": [
     "lucide-react",
     "motion"
@@ -31,10 +45,10 @@
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
-    "movimiento": "sutil",
+    "movimiento": "marcado",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "6d896eaf9ec2"
 }
