@@ -2,7 +2,7 @@
   "slug": "signature-pad",
   "nombre": "Firma",
   "categoria": "pickers",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/signature-pad",
@@ -21,7 +21,19 @@
     "documentos",
     "certificados"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-ink",
+    "--ui-accent",
+    "--ui-dur",
+    "--ui-ink-muted",
+    "--ui-line",
+    "--ui-font-text",
+    "--ui-radius",
+    "--ui-surface",
+    "--ui-ease",
+    "--ui-surface-2",
+    "--ui-ink-soft"
+  ],
   "dependencias": [
     "lucide-react",
     "motion"
@@ -29,10 +41,10 @@
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "sutil",
     "tono": "sobrio",
     "densidad": "equilibrado"
-  }
+  },
+  "captura_de": "5b8af29f92c3"
 }

@@ -11,9 +11,9 @@
 <sub><a href="https://uiarc.dev/components/slider">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="signature-pad/"><img src="signature-pad/preview.png" width="100%" alt="Firma"></a><br><b><a href="signature-pad/">Firma</a></b> · referencia<br>
+<a href="signature-pad/"><img src="signature-pad/preview.webp" width="100%" alt="Firma"></a><br><b><a href="signature-pad/">Firma</a></b> · adoptado<br>
 <sub>Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.</sub><br>
-<sub><a href="https://uiarc.dev/components/signature-pad">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/signature-pad">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/pickers/signature-pad/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="date-range-picker/"><img src="date-range-picker/preview.png" width="100%" alt="Rango de fechas"></a><br><b><a href="date-range-picker/">Rango de fechas</a></b> · referencia<br>
