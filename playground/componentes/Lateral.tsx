@@ -15,7 +15,7 @@ export function Lateral({ grupos }: { grupos: Grupo[] }) {
   const ruta = usePathname()
   const tipos = [...new Set(grupos.map(g => g.tipo))]
   return (
-    <nav aria-label="Catálogo" className="text-sm">
+    <nav aria-label="Catalog" className="text-sm">
       {tipos.map(tipo => (
         <div key={tipo} className="mb-6">
           <p className="mb-2 px-2 text-[11px] font-semibold uppercase tracking-wider text-ui-ink-muted">{grupos.find(g => g.tipo === tipo)!.tipoNombre}</p>

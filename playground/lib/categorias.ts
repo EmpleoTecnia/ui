@@ -1,22 +1,22 @@
-// Nombres en español para las categorías (las carpetas van en inglés).
-export const TIPOS = { components: 'Componentes', patterns: 'Patrones' } as const
+// Labels for the site. Same words as the folders, capitalized.
+export const TIPOS = { components: 'Components', patterns: 'Patterns' } as const
 export type Tipo = keyof typeof TIPOS
 
 export const CATEGORIAS: Record<string, string> = {
-  buttons: 'Botones',
-  cards: 'Tarjetas',
-  navigation: 'Navegación',
-  forms: 'Formularios',
-  backgrounds: 'Fondos',
-  animations: 'Animaciones',
-  sections: 'Secciones',
-  feedback: 'Avisos y estado',
+  buttons: 'Buttons',
+  cards: 'Cards',
+  navigation: 'Navigation',
+  forms: 'Forms',
+  backgrounds: 'Backgrounds',
+  animations: 'Animations',
+  sections: 'Sections',
+  feedback: 'Feedback',
   landing: 'Landing',
-  profile: 'Perfil',
+  profile: 'Profile',
   onboarding: 'Onboarding',
-  dashboard: 'Tablero',
-  auth: 'Acceso',
-  pricing: 'Precios',
+  dashboard: 'Dashboard',
+  auth: 'Auth',
+  pricing: 'Pricing',
 }
 
 export const nombreCategoria = (c: string) => CATEGORIAS[c] ?? c

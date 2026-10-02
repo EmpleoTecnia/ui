@@ -8,7 +8,7 @@ import { Marco } from '../../../componentes/Marco'
 function Resultados() {
   const slugs = useSearchParams().get('slugs') ?? ''
   const entradas = slugs.split(',').map(s => porSlug(s.trim())).filter(e => e !== undefined)
-  if (entradas.length === 0) return <p className="text-ui-ink-muted">Pasá <code>?slugs=a,b,c</code> con los candidatos.</p>
+  if (entradas.length === 0) return <p className="text-ui-ink-muted">Pass <code>?slugs=a,b,c</code> with the candidates.</p>
   return (
     <div className="space-y-10">
       {entradas.map(e => (

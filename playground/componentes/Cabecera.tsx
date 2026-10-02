@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 import { Buscador, type Indexado } from './Buscador'
 import { Selector } from './Selector'
+import { Marca } from './Marca'
 
 const REPO = 'https://github.com/EmpleoTecnia/ui'
 
@@ -10,14 +11,11 @@ export function Cabecera({ indice }: { indice: Indexado[] }) {
   return (
     <header className="sticky top-0 z-30 border-b border-ui-line bg-ui-surface/85 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-[1400px] items-center gap-6 px-4 sm:px-6">
-        <Link href="/" className="flex shrink-0 items-center gap-2 font-ui-display text-[15px] font-semibold text-ui-ink">
-          <span className="grid size-6 place-items-center rounded-[7px] bg-ui-accent text-[11px] font-bold text-ui-accent-ink">UI</span>
-          Librería UI
-        </Link>
-        <nav className="hidden items-center gap-5 md:flex" aria-label="Secciones">
-          <Link href="/#componentes" className={enlace}>Componentes</Link>
-          <Link href="/#patrones" className={enlace}>Patrones</Link>
-          <a href={`${REPO}#readme`} className={enlace}>Cómo agregar</a>
+        <Marca />
+        <nav className="hidden items-center gap-5 md:flex" aria-label="Sections">
+          <Link href="/#components" className={enlace}>Components</Link>
+          <Link href="/#patterns" className={enlace}>Patterns</Link>
+          <a href={`${REPO}#readme`} className={enlace}>How to add</a>
         </nav>
         <div className="ml-auto flex items-center gap-3">
           <div className="hidden sm:block"><Buscador indice={indice} /></div>

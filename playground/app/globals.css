@@ -11,6 +11,11 @@
 
 html { background: var(--ui-bg); color: var(--ui-ink); font-family: var(--ui-font-text); }
 
+/* El logo: la versión azul sobre claro, la blanca sobre oscuro. */
+.logo-oscuro { display: none; }
+[data-modo="oscuro"] .logo-claro { display: none; }
+[data-modo="oscuro"] .logo-oscuro { display: block; }
+
 /* Fondo punteado suave de las vitrinas: se nota, no compite con el componente. */
 .punteado {
   background-image: radial-gradient(color-mix(in oklch, var(--ui-line) 55%, transparent) 1px, transparent 1.2px);

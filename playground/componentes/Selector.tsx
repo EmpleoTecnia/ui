@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { ChevronDown, Moon, Sun } from 'lucide-react'
 import { TEMAS, type Tema, type Modo } from '../lib/registro'
 
-const NOMBRES: Record<Tema, string> = { muestra: 'Muestra', mi: 'MI', etconecta: 'ET Conecta', campus: 'Campus', proyectos: 'Proyectos' }
+const NOMBRES: Record<Tema, string> = { muestra: 'Sample', mi: 'MI', etconecta: 'ET Conecta', campus: 'Campus', proyectos: 'Proyectos' }
 
 function aplicar(tema: Tema, modo: Modo) {
   document.documentElement.dataset.tema = tema
@@ -31,7 +31,7 @@ export function Selector() {
   return (
     <div className="flex items-center gap-2">
       <label className="relative">
-        <span className="sr-only">Ver con los colores de</span>
+        <span className="sr-only">View with the colors of</span>
         <select value={tema} onChange={e => setTema(e.target.value as Tema)} className={`${control} appearance-none pl-3 pr-8`}>
           {TEMAS.map(t => <option key={t} value={t}>{NOMBRES[t]}</option>)}
         </select>
@@ -40,8 +40,8 @@ export function Selector() {
       <button
         type="button"
         onClick={() => setModo(modo === 'claro' ? 'oscuro' : 'claro')}
-        aria-label={modo === 'claro' ? 'Pasar a modo oscuro' : 'Pasar a modo claro'}
-        title={modo === 'claro' ? 'Modo oscuro' : 'Modo claro'}
+        aria-label={modo === 'claro' ? 'Switch to dark mode' : 'Switch to light mode'}
+        title={modo === 'claro' ? 'Dark mode' : 'Light mode'}
         className={`${control} grid w-9 place-items-center`}
       >
         {modo === 'claro' ? <Moon size={16} aria-hidden /> : <Sun size={16} aria-hidden />}

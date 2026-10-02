@@ -17,11 +17,11 @@ export function Vitrina({ nombres, paneles, archivos }: { nombres: string[]; pan
     `h-7 rounded-full px-3 text-xs font-medium transition-colors duration-(--ui-dur) ease-ui ${activa ? 'bg-ui-ink text-ui-bg' : 'bg-ui-surface-2 text-ui-ink-soft hover:text-ui-ink'}`
 
   return (
-    <section id="vista-previa" className="scroll-mt-24">
+    <section id="preview" className="scroll-mt-24">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ui-line">
         <div className="flex gap-5">
-          <button type="button" className={pest(pestana === 'vista')} onClick={() => setPestana('vista')}><Eye size={15} aria-hidden /> Vista previa</button>
-          {archivos.length > 0 && <button type="button" className={pest(pestana === 'codigo')} onClick={() => setPestana('codigo')}><Code2 size={15} aria-hidden /> Código</button>}
+          <button type="button" className={pest(pestana === 'vista')} onClick={() => setPestana('vista')}><Eye size={15} aria-hidden /> Preview</button>
+          {archivos.length > 0 && <button type="button" className={pest(pestana === 'codigo')} onClick={() => setPestana('codigo')}><Code2 size={15} aria-hidden /> Code</button>}
         </div>
         {pestana === 'vista' && nombres.length > 1 && (
           <div className="flex flex-wrap gap-1 pb-2">

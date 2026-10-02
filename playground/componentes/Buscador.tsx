@@ -8,7 +8,7 @@ export type Indexado = { slug: string; nombre: string; categoria: string; estado
 
 const normalizar = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 
-/** Busca por nombre, etiquetas y para qué sirve. Ctrl+K lo enfoca. */
+/** Searches name, tags and uses. Ctrl+K focuses it. */
 export function Buscador({ indice }: { indice: Indexado[] }) {
   const [q, setQ] = useState('')
   const [abierto, setAbierto] = useState(false)
@@ -39,8 +39,8 @@ export function Buscador({ indice }: { indice: Indexado[] }) {
         ref={campo}
         type="search"
         value={q}
-        placeholder="Buscar un componente…"
-        aria-label="Buscar"
+        placeholder="Search components…"
+        aria-label="Search"
         autoComplete="off"
         onChange={e => { setQ(e.target.value); setAbierto(true); setActivo(0) }}
         onFocus={() => setAbierto(true)}
@@ -56,7 +56,7 @@ export function Buscador({ indice }: { indice: Indexado[] }) {
       <kbd className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 rounded-[4px] border border-ui-line px-1.5 py-0.5 font-sans text-[10px] text-ui-ink-muted">Ctrl K</kbd>
       {abierto && q && (
         <ul role="listbox" className="absolute left-0 right-0 top-11 z-20 overflow-hidden rounded-ui-lg border border-ui-line bg-ui-surface py-1 shadow-xl shadow-black/10">
-          {resultados.length === 0 && <li className="px-3 py-2 text-sm text-ui-ink-muted">Nada con “{q}”.</li>}
+          {resultados.length === 0 && <li className="px-3 py-2 text-sm text-ui-ink-muted">Nothing for “{q}”.</li>}
           {resultados.map((e, i) => (
             <li key={e.slug} role="option" aria-selected={i === activo}>
               <button type="button" onMouseDown={() => ir(e)} onMouseEnter={() => setActivo(i)} className={`flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-sm ${i === activo ? 'bg-ui-surface-2 text-ui-ink' : 'text-ui-ink-soft'}`}>

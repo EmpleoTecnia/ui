@@ -3,6 +3,8 @@ import { resolve } from 'node:path'
 
 // El playground vive adentro del repo y los componentes afuera (../components).
 // `turbopack.root` le dice a Next que el proyecto es todo el repo.
+const basePath = process.env.NODE_ENV === 'production' ? '/ui' : ''
+
 const config: NextConfig = {
   turbopack: { root: resolve(__dirname, '..') },
   outputFileTracingRoot: resolve(__dirname, '..'),
@@ -14,6 +16,8 @@ const config: NextConfig = {
   output: 'export',
   trailingSlash: true,
   // En GitHub Pages el sitio cuelga de /ui. En dev (y en las capturas) sigue en la raíz.
-  basePath: process.env.NODE_ENV === 'production' ? '/ui' : '',
+  basePath,
+  // Para las <img> de public/ (Link y next/image lo agregan solos; <img> no).
+  env: { NEXT_PUBLIC_BASE_PATH: basePath },
 }
 export default config

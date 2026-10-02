@@ -23,7 +23,7 @@ function Tarjeta({ e }: { e: Ficha }) {
           <p className="mt-0.5 line-clamp-2 text-xs leading-relaxed text-ui-ink-muted">{e.por_que_entro}</p>
         </div>
         <span className={`mt-0.5 shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide ${e.estado === 'adoptado' ? 'bg-ui-accent/12 text-ui-accent' : 'bg-ui-surface-2 text-ui-ink-muted'}`}>
-          {e.estado === 'adoptado' ? 'Listo' : 'Idea'}
+          {e.estado === 'adoptado' ? 'Ready' : 'Idea'}
         </span>
       </div>
     </Link>
@@ -37,24 +37,24 @@ export default function Indice() {
     <div className="space-y-14">
       <header className="max-w-2xl">
         <p className="text-xs font-semibold uppercase tracking-wider text-ui-accent">EmpleoTecnia</p>
-        <h1 className="mt-2 font-ui-display text-3xl font-semibold tracking-tight text-ui-ink sm:text-4xl">Librería UI</h1>
+        <h1 className="mt-2 font-ui-display text-3xl font-semibold tracking-tight text-ui-ink sm:text-4xl">UI Library</h1>
         <p className="mt-3 text-base leading-relaxed text-ui-ink-soft">
-          Las piezas de interfaz que nos gustaron, porteadas a nuestro stack y escritas contra un contrato de tokens:
-          cada app las pinta con sus colores sin que pierdan su carácter. Cambiá la app arriba a la derecha y mirá cómo quedan.
+          The interface pieces we liked, ported to our stack and written against a token contract:
+          every app paints them with its own colors without losing their character. Switch the app at the top right to see how they look.
         </p>
         <p className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm text-ui-ink-muted">
-          <span><b className="font-semibold text-ui-ink">{fichas.length}</b> {fichas.length === 1 ? 'pieza' : 'piezas'}</span>
-          <span><b className="font-semibold text-ui-ink">{adoptados}</b> con código listo</span>
-          <span><b className="font-semibold text-ui-ink">{fichas.length - adoptados}</b> {fichas.length - adoptados === 1 ? 'idea guardada' : 'ideas guardadas'}</span>
+          <span><b className="font-semibold text-ui-ink">{fichas.length}</b> {fichas.length === 1 ? 'piece' : 'pieces'}</span>
+          <span><b className="font-semibold text-ui-ink">{adoptados}</b> with code ready</span>
+          <span><b className="font-semibold text-ui-ink">{fichas.length - adoptados}</b> {fichas.length - adoptados === 1 ? 'saved idea' : 'saved ideas'}</span>
         </p>
       </header>
 
-      {fichas.length === 0 && <p className="text-ui-ink-muted">Todavía no hay nada. Corré <code>node scripts/agregar.mjs</code> con la primera URL.</p>}
+      {fichas.length === 0 && <p className="text-ui-ink-muted">Nothing yet. Run <code>node scripts/agregar.mjs</code> with the first URL.</p>}
 
       {tipos.map(tipo => {
         const categorias = [...new Set(fichas.filter(e => e.tipo === tipo).map(e => e.categoria))]
         return (
-          <section key={tipo} id={tipo === 'components' ? 'componentes' : 'patrones'} className="scroll-mt-20 space-y-10">
+          <section key={tipo} id={tipo} className="scroll-mt-20 space-y-10">
             <h2 className="font-ui-display text-xl font-semibold text-ui-ink">{TIPOS[tipo]}</h2>
             {categorias.map(c => {
               const del = fichas.filter(e => e.tipo === tipo && e.categoria === c)
@@ -62,7 +62,7 @@ export default function Indice() {
                 <div key={c}>
                   <div className="mb-3 flex items-baseline justify-between">
                     <h3 className="text-sm font-semibold text-ui-ink">{nombreCategoria(c)} <span className="ml-1 font-normal text-ui-ink-muted">{del.length}</span></h3>
-                    <a href={`https://github.com/EmpleoTecnia/ui/tree/main/${tipo}/${c}`} className="inline-flex items-center gap-1 text-xs text-ui-ink-muted hover:text-ui-ink">Carpeta en GitHub <ArrowUpRight size={12} aria-hidden /></a>
+                    <a href={`https://github.com/EmpleoTecnia/ui/tree/main/${tipo}/${c}`} className="inline-flex items-center gap-1 text-xs text-ui-ink-muted hover:text-ui-ink">Folder on GitHub <ArrowUpRight size={12} aria-hidden /></a>
                   </div>
                   <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
                     {del.map(e => <Tarjeta key={e.slug} e={e} />)}
