@@ -1,0 +1,30 @@
+/* Espejo de campus/app/globals.css. El campus está en hex y sin oscuro:
+   el claro es traducción exacta a OKLCH; el oscuro, derivado. */
+[data-tema="campus"] {
+  --ui-bg: oklch(0.985 0 0);
+  --ui-surface: oklch(1 0 0);
+  --ui-surface-2: oklch(0.970 0.002 80);
+  --ui-ink: oklch(0.145 0.004 285);
+  --ui-ink-soft: oklch(0.440 0.012 60);
+  --ui-ink-muted: oklch(0.710 0.014 60);
+  --ui-line: oklch(0.950 0.003 60);
+  --ui-accent: oklch(0.490 0.220 262);
+  --ui-accent-ink: oklch(1 0 0);
+  --ui-radius: 1rem;
+  --ui-radius-lg: 1.5rem;
+  --ui-font-display: ui-sans-serif, system-ui, sans-serif;
+  --ui-font-text: ui-sans-serif, system-ui, sans-serif;
+  --ui-dur: 200ms;
+  --ui-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+[data-tema="campus"][data-modo="oscuro"] {
+  --ui-bg: oklch(0.15 0.004 285);
+  --ui-surface: oklch(0.20 0.005 285);
+  --ui-surface-2: oklch(0.25 0.006 285);
+  --ui-ink: oklch(0.98 0 0);
+  --ui-ink-soft: oklch(0.80 0.01 60);
+  --ui-ink-muted: oklch(0.65 0.012 60);
+  --ui-line: oklch(0.30 0.005 285);
+  --ui-accent: oklch(0.70 0.17 262);
+  --ui-accent-ink: oklch(0.15 0.04 262);
+}

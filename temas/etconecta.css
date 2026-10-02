@@ -1,0 +1,29 @@
+/* Espejo de etconecta/src/styles/globals.css (tokens --l-* claro, --d-* oscuro, tono 285). */
+[data-tema="etconecta"] {
+  --ui-bg: oklch(0.977 0.008 285);
+  --ui-surface: oklch(0.947 0.017 285);
+  --ui-surface-2: oklch(0.905 0.032 285);
+  --ui-ink: oklch(0.215 0.075 285);
+  --ui-ink-soft: oklch(0.395 0.062 285);
+  --ui-ink-muted: oklch(0.505 0.055 285);
+  --ui-line: oklch(0.60 0.05 285);
+  --ui-accent: oklch(0.815 0.20 118);
+  --ui-accent-ink: oklch(0.24 0.10 118);
+  --ui-radius: 0.5rem;
+  --ui-radius-lg: 1rem;
+  --ui-font-display: ui-sans-serif, system-ui, sans-serif;
+  --ui-font-text: ui-sans-serif, system-ui, sans-serif;
+  --ui-dur: 160ms;
+  --ui-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+[data-tema="etconecta"][data-modo="oscuro"] {
+  --ui-bg: oklch(0.235 0.115 285);
+  --ui-surface: oklch(0.185 0.095 285);
+  --ui-surface-2: oklch(0.325 0.14 285);
+  --ui-ink: oklch(0.985 0.012 285);
+  --ui-ink-soft: oklch(0.855 0.045 285);
+  --ui-ink-muted: oklch(0.755 0.055 285);
+  --ui-line: oklch(0.58 0.085 285);
+  --ui-accent: oklch(0.90 0.19 118);
+  --ui-accent-ink: oklch(0.22 0.09 118);
+}

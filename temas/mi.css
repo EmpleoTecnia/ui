@@ -1,0 +1,29 @@
+/* Espejo de mi/src/styles/globals.css (tokens --c-*). Si mi cambia, copiar de nuevo. */
+[data-tema="mi"] {
+  --ui-bg: oklch(0.965 0.006 150);
+  --ui-surface: oklch(0.995 0.003 150);
+  --ui-surface-2: oklch(0.935 0.008 150);
+  --ui-ink: oklch(0.215 0.022 258);
+  --ui-ink-soft: oklch(0.415 0.018 258);
+  --ui-ink-muted: oklch(0.545 0.016 258);
+  --ui-line: oklch(0.855 0.012 150);
+  --ui-accent: oklch(0.445 0.095 255);
+  --ui-accent-ink: oklch(0.985 0.004 258);
+  --ui-radius: 0.875rem;
+  --ui-radius-lg: 1.25rem;
+  --ui-font-display: ui-sans-serif, system-ui, sans-serif;
+  --ui-font-text: ui-sans-serif, system-ui, sans-serif;
+  --ui-dur: 180ms;
+  --ui-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+[data-tema="mi"][data-modo="oscuro"] {
+  --ui-bg: oklch(0.165 0.022 258);
+  --ui-surface: oklch(0.215 0.028 258);
+  --ui-surface-2: oklch(0.265 0.030 258);
+  --ui-ink: oklch(0.975 0.006 258);
+  --ui-ink-soft: oklch(0.795 0.020 258);
+  --ui-ink-muted: oklch(0.675 0.022 258);
+  --ui-line: oklch(0.335 0.032 258);
+  --ui-accent: oklch(0.70 0.105 255);
+  --ui-accent-ink: oklch(0.165 0.022 258);
+}

@@ -1,0 +1,29 @@
+/* Espejo de proyectos/app/globals.css (tokens en español, tono 262). */
+[data-tema="proyectos"] {
+  --ui-bg: oklch(0.975 0.007 262);
+  --ui-surface: oklch(1 0 0);
+  --ui-surface-2: oklch(0.953 0.011 262);
+  --ui-ink: oklch(0.235 0.045 262);
+  --ui-ink-soft: oklch(0.425 0.035 262);
+  --ui-ink-muted: oklch(0.520 0.030 262);
+  --ui-line: oklch(0.925 0.010 262);
+  --ui-accent: oklch(0.502 0.216 262);
+  --ui-accent-ink: oklch(1 0 0);
+  --ui-radius: 14px;
+  --ui-radius-lg: 22px;
+  --ui-font-display: ui-sans-serif, system-ui, sans-serif;
+  --ui-font-text: ui-sans-serif, system-ui, sans-serif;
+  --ui-dur: 180ms;
+  --ui-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+[data-tema="proyectos"][data-modo="oscuro"] {
+  --ui-bg: oklch(0.172 0.022 262);
+  --ui-surface: oklch(0.218 0.026 262);
+  --ui-surface-2: oklch(0.142 0.020 262);
+  --ui-ink: oklch(0.962 0.008 262);
+  --ui-ink-soft: oklch(0.800 0.020 262);
+  --ui-ink-muted: oklch(0.690 0.025 262);
+  --ui-line: oklch(0.300 0.028 262);
+  --ui-accent: oklch(0.720 0.155 262);
+  --ui-accent-ink: oklch(0.175 0.040 262);
+}
