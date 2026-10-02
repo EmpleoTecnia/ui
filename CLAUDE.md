@@ -55,10 +55,14 @@ antes de agregar o cambiar algo.
 
 ## Cómo se agrega algo (barato en tokens)
 
-**Todo lo que entra se portea** (Franco, 2/10): "tiene que estar ready cuando te voy
-pasando, para que el uso luego sea fácil". No existe guardar una idea para después. Los
-scripts hacen lo mecánico; vos decidís categoría y slug, hacés dos preguntas, porteás y
-corrés dos comandos. No leas páginas enteras: `codigo-origen/` sí, porque vas a portear.
+**Entrar es barato; portear se hace al usar** (Franco, 2/10, después de probar lo
+contrario: dieciséis porteos juntos agotaron una sesión entera). Al entrar queda la
+captura, el código original en `codigo-origen/`, la razón de la persona y para qué
+sirve: un minuto. El porteo a nuestros tokens lo hace `/ui-usar` el día que una app lo
+pide, de a uno, sin agentes en paralelo. Nunca lotes: si llegan varias URLs, entran
+todas como referencia y se portea la que se va a usar. Los scripts hacen lo mecánico;
+vos decidís categoría y slug y hacés dos preguntas. No leas páginas enteras ni
+`codigo-origen/` al agregar.
 
 1. `node scripts/agregar.mjs <url> --categoria <cat> --slug <slug> --nombre "<Nombre>"`
    baja el código del registry (o rescata la página con Chromium), detecta licencia y
@@ -72,16 +76,18 @@ corrés dos comandos. No leas páginas enteras: `codigo-origen/` sí, porque vas
    pricing. Slug en inglés, `--nombre` en español.
 2. Dos preguntas, de a una: ¿qué te gustó? (frase concreta, ≥20 caracteres) · ¿para
    qué lo usarías? Nada más. Si en la misma frase ya dijo las dos cosas, no preguntes.
-3. **Porteá** a la carpeta: React 19 + TypeScript + Tailwind v4 + `motion` + Lucide,
-   sólo tokens `--ui-*`, textos en español, `demo.tsx` y `guion.mjs`. El modelo es
-   `components/fields/password-strength/`. Si son varios, un agente por dos o tres
-   componentes, en paralelo, con `docs/porteo.md` como brief. Mientras porteás,
-   `node scripts/revisar.mjs <slug>` dice si el código está limpio.
-4. `node scripts/guardar.mjs <slug> --adoptar --razon "..." --usos "a; b"
-   --etiquetas "a,b,c" --caracter movimiento=…,tono=…,densidad=…` captura, cataloga,
-   commitea y pushea. Sin `--adoptar` sólo si de verdad no se pudo portear (una
-   dependencia imposible, un color que no se deriva): entonces queda como `referencia`
-   y se lo decís a la persona con el motivo.
+3. `node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" --etiquetas "a,b,c"
+   --caracter movimiento=…,tono=…,densidad=…` cataloga, commitea y pushea. Listo: en
+   el sitio aparece con la captura del original.
+
+**Cuando una app lo usa** (`/ui-usar <slug>`) y todavía es `referencia`, ahí se portea,
+en la misma sesión y de a uno: React 19 + TypeScript + Tailwind v4 + `motion` + Lucide,
+sólo tokens `--ui-*`, textos en español, `demo.tsx` y `guion.mjs`. Brief completo en
+`docs/porteo.md`; modelo: `components/fields/password-strength/`.
+`node scripts/revisar.mjs <slug>` dice si el código está limpio; después
+`node scripts/guardar.mjs <slug> --adoptar --actualiza "porteado"` captura, cataloga,
+commitea y pushea. Si la persona pide explícitamente "armalo ahora" al agregar, se hace
+lo mismo en ese momento, pero es la excepción, no la regla.
 
 Si alguien dice "agregá este" con una URL, es esto, sin slash.
 
