@@ -32,8 +32,9 @@ antes de agregar o cambiar algo.
    respeta `prefers-reduced-motion`.
 6. **El carácter lo inferís vos**, nunca se lo preguntás a la persona. Es opcional y
    sólo ordena la búsqueda.
-7. **Español** en nombres, slugs (sin acentos, con guiones), categorías y textos. Código
-   en TypeScript.
+7. **Carpetas, slugs, archivos, componentes y props en inglés** (`forms/password-strength`,
+   `PasswordStrength.tsx`). **Textos de interfaz, `nombre` de la ficha, README y
+   `por_que_entro` en español**: las apps son en español. Código en TypeScript.
 8. **Un commit por componente.** `agrega(categoria): nombre (estado)`,
    `usa(slug): app`, `actualiza(slug): qué`, `retira(slug): por qué`.
 9. **Retirar es `estado: "retirado"` + `por_que_salio`**, no borrar la carpeta: alguien
@@ -48,7 +49,10 @@ portear.
 1. `node scripts/agregar.mjs <url> --categoria <cat> --slug <slug> --nombre "<Nombre>"`
    baja el código del registry (o rescata la página con Chromium), detecta licencia y
    dependencias, saca la captura, avisa duplicados y deja la carpeta a medio llenar.
-   Leé sólo el resumen que imprime.
+   Leé sólo el resumen que imprime. Categorías de components: buttons, cards,
+   navigation, forms, backgrounds, animations, sections, feedback; de patterns
+   (`--tipo patterns`): landing, profile, onboarding, dashboard, auth, pricing. Slug en
+   inglés, `--nombre` en español.
 2. Tres preguntas, de a una: ¿qué te gustó? (frase concreta, ≥20 caracteres) · ¿para
    qué lo usarías? · ¿lo guardo como idea o lo armo ahora? Nada más.
 3. `node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" --etiquetas "a,b,c"

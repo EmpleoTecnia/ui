@@ -61,10 +61,14 @@ ui-library/
 └── docs/superpowers/specs/
 ```
 
-Categorías iniciales, en español como todo el ecosistema: `botones`, `tarjetas`,
-`navegacion`, `formularios`, `fondos`, `animaciones`, `secciones`, `feedback`. Una
-categoría nueva se crea cuando hay algo que meter en ella, no antes. Los `patterns` usan
-las suyas: `landing`, `perfil`, `onboarding`, `dashboard`, `auth`, `pricing`.
+Categorías iniciales: `buttons`, `cards`, `navigation`, `forms`, `backgrounds`,
+`animations`, `sections`, `feedback`. Una categoría nueva se crea cuando hay algo que
+meter en ella, no antes. Los `patterns` usan las suyas: `landing`, `profile`,
+`onboarding`, `dashboard`, `auth`, `pricing`.
+
+**Idioma (decisión de Franco del 2/10):** carpetas, slugs, archivos, componentes y props
+en inglés; textos de interfaz, `nombre` de la ficha, `por_que_entro`, README y toda la
+documentación en español, porque las apps son en español.
 
 ## La ficha: `meta.json`
 
