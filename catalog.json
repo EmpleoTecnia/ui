@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T17:35:04.534Z",
+  "generado": "2026-10-02T17:35:29.347Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -643,7 +643,7 @@
         "tono": "sobrio",
         "densidad": "compacto"
       },
-      "captura_de": "58d99dac0cb1",
+      "captura_de": "8c5b397a6d24",
       "tipo": "components",
       "ruta": "components/menus/user-menu",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/user-menu",

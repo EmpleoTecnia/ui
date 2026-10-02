@@ -2,7 +2,7 @@
 import { CreditCard, Settings, User } from 'lucide-react'
 import { UserMenu, type UserMenuProps } from './UserMenu'
 
-const usuaria = { name: 'Emma Collins', email: 'emma@empleotecnia.com', plan: 'Pro' }
+const usuaria = { name: 'Emma Collins', email: 'emma@example.com', plan: 'Pro' }
 
 const items = [
   { label: 'Perfil', icon: <User size={16} strokeWidth={1.75} />, keys: ['⌘', 'P'] },

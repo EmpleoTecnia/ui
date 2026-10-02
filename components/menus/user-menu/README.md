@@ -35,7 +35,7 @@ import { UserMenu } from '@/components/ui/user-menu/UserMenu'
 import { CreditCard, Settings, User } from 'lucide-react'
 
 <UserMenu
-  user={{ name: 'Emma Collins', email: 'emma@empleotecnia.com', plan: 'Pro', avatarSrc: '/avatares/emma.jpg' }}
+  user={{ name: 'Emma Collins', email: 'emma@example.com', plan: 'Pro', avatarSrc: '/avatares/emma.jpg' }}
   items={[
     { label: 'Perfil', icon: <User size={16} />, keys: ['⌘', 'P'], onSelect: () => router.push('/perfil') },
     { label: 'Configuración', icon: <Settings size={16} />, keys: ['⌘', ','], onSelect: () => router.push('/configuracion') },

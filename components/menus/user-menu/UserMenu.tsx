@@ -512,7 +512,7 @@ export function UserMenu({ user, status: statusProp, defaultStatus = 'available'
 
   // El panel escala desde el avatar al que pertenece; el componente fija el origen una vez ubicado.
   const panelClass = 'box-border border border-ui-line bg-ui-surface p-(--inset) text-left leading-normal font-ui-text text-ui-ink shadow-[0_12px_32px_-12px_color-mix(in_oklch,var(--ui-ink)_28%,transparent),0_2px_6px_color-mix(in_oklch,var(--ui-ink)_8%,transparent)] outline-none [--presence-surface:var(--ui-surface)]'
-  const panelVars = { '--row': '40px', '--inset': '6px', '--tone-danger': TONE_DANGER, '--tone-danger-soft': `color-mix(in oklch, ${TONE_DANGER} 58%, var(--ui-ink-soft))` } as CSSProperties
+  const panelVars = { '--row': '40px', '--inset': '6px', '--tone-danger': TONE_DANGER, '--tone-danger-soft': `color-mix(in oklch, ${TONE_DANGER} 88%, var(--ui-ink-soft))` } as CSSProperties
   const inlinePosition = align === 'end' ? 'right-0' : align === 'start' ? 'left-0' : 'left-1/2 -ml-[8.5rem]'
 
   const panel = (
