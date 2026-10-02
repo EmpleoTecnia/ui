@@ -39,7 +39,26 @@ antes de agregar o cambiar algo.
 9. **Retirar es `estado: "retirado"` + `por_que_salio`**, no borrar la carpeta: alguien
    lo puede estar usando.
 
+## Cómo se agrega algo (barato en tokens)
+
+Los scripts hacen lo mecánico; vos sólo decidís categoría y slug, hacés tres preguntas
+y corrés dos comandos. No leas páginas enteras ni `codigo-origen/` salvo que vayas a
+portear.
+
+1. `node scripts/agregar.mjs <url> --categoria <cat> --slug <slug> --nombre "<Nombre>"`
+   baja el código del registry (o rescata la página con Chromium), detecta licencia y
+   dependencias, saca la captura, avisa duplicados y deja la carpeta a medio llenar.
+   Leé sólo el resumen que imprime.
+2. Tres preguntas, de a una: ¿qué te gustó? (frase concreta, ≥20 caracteres) · ¿para
+   qué lo usarías? · ¿lo guardo como idea o lo armo ahora? Nada más.
+3. `node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" --etiquetas "a,b,c"
+   --caracter movimiento=…,tono=…,densidad=…` cataloga, commitea y pushea. Con
+   `--adoptar` si ya porteaste el código a la carpeta (captura y pasa a adoptado).
+
+Si alguien dice "agregá este" con una URL, es esto, sin slash.
+
 ## Comandos del equipo
 
 `/ui-agregar`, `/ui-buscar`, `/ui-usar` viven en `base/claude/commands/` y se reparten
 con `node base/scripts/armar-plataformas.mjs`. Si los cambiás, commiteá en `base`.
+`/ui-agregar` es el circuito de arriba, escrito para quien está parado en otra carpeta.
