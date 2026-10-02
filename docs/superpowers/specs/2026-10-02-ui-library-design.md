@@ -101,10 +101,14 @@ Reglas de la ficha:
 - **`por_que_entro`** es obligatoria y es de quien lo agregó, con sus palabras. Es lo que
   te hace acordar a los 500. `/ui-agregar` rechaza "me gusta", "está bueno" y cualquier
   frase sin un detalle concreto.
-- **`caracter`** tiene tres ejes con valores cerrados, para que la búsqueda filtre:
+- **`caracter`** tiene tres ejes con valores cerrados:
   `movimiento` ∈ {ninguno, sutil, marcado, protagonista};
   `tono` ∈ {sobrio, premium, jugueton, tecnico, editorial};
   `densidad` ∈ {compacto, equilibrado, aire}.
+  **Lo infiere Claude** al analizar el origen y lo escribe solo; a la persona no se le
+  pregunta nunca, porque el equipo no es técnico y tres ejes son abrumadores. Es
+  opcional (puede faltar o venir incompleto) y en la búsqueda **suma relevancia, no
+  filtra**: un componente sin `caracter` sigue apareciendo.
 - **`licencia`**: `MIT`, `Apache-2.0`, `ISC`, `CC0`, `propia` (lo hicimos nosotros) o
   `desconocida`. `publicable` sólo puede ser `true` con las cinco primeras.
 - **`tokens`** lista los `--ui-*` que el componente consume. `catalogar.mjs` comprueba
@@ -240,12 +244,15 @@ en `Plataformas\ui-library`; si no está clonada, lo dicen y dan el `git clone`.
    el existente.
 3. **Propone** categoría, nombre, slug, etiquetas, carácter, licencia detectada (busca
    LICENSE o la nota de licencia en la página; si no la encuentra, `desconocida`).
-4. **Pregunta, de a una**, y espera cada respuesta:
-   - ¿Qué te gustó? (visual / interacción / animación / estructura / todo, y en tus
-     palabras: esto va a `por_que_entro`, y no acepta frases vacías).
+4. **Pregunta tres cosas, de a una, en castellano llano**, y espera cada respuesta.
+   Son las únicas preguntas que se le hacen a la persona; todo lo demás (categoría,
+   etiquetas, carácter, licencia) lo decide Claude y lo muestra como propuesta.
+   - ¿Qué te gustó? (en tus palabras: esto va a `por_que_entro`, y no acepta frases
+     vacías; si la respuesta es "me gusta", repregunta "¿qué cosa en particular?").
    - ¿Para qué lo usarías? (va a `sirve_para`; si nombra una app, va también a
      `etiquetas`).
-   - ¿Entra como referencia o lo porto ahora?
+   - ¿Lo guardo como idea o lo armo ahora para usarlo? (referencia o adoptado, sin
+     usar esas palabras).
 5. **Si referencia:** crea la carpeta, `meta.json`, `README.md`, baja o saca las
    capturas, anota `capturas: "manual"` si corresponde.
 6. **Si adoptado:** portea el componente a nuestro stack contra el contrato de tokens;
@@ -260,8 +267,9 @@ en `Plataformas\ui-library`; si no está clonada, lo dicen y dan el `git clone`.
 1. Lee `catalog.json`. Si está desactualizado respecto de las carpetas (hash), corre
    `catalogar.mjs` primero.
 2. Interpreta el pedido: categoría, carácter, uso, app. "Botón sutil para el perfil de
-   ET Conecta" → `categoria: botones`, `movimiento: sutil|ninguno`, `sirve_para ~ perfil`,
-   y prioriza `usado_en: etconecta`.
+   ET Conecta" → `categoria: botones`, `sirve_para ~ perfil`, y suma puntos a
+   `movimiento: sutil|ninguno` y a `usado_en: etconecta`. **Sólo la categoría excluye**;
+   carácter, uso y app ordenan. Si la categoría no se puede inferir, no excluye nada.
 3. Devuelve **hasta cinco** candidatos ordenados por relevancia. Por cada uno: nombre,
    estado, `por_que_entro`, `preview.png` mostrada en el chat, link a la carpeta en
    GitHub. Si hay más de cinco, lo dice y ofrece afinar.
