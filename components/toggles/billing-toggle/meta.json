@@ -2,7 +2,7 @@
   "slug": "billing-toggle",
   "nombre": "Mensual o anual",
   "categoria": "toggles",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/billing-toggle",
@@ -24,17 +24,30 @@
     "mensual",
     "anual"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-dur",
+    "--ui-accent",
+    "--ui-line",
+    "--ui-ink",
+    "--ui-surface",
+    "--ui-surface-2",
+    "--ui-font-text",
+    "--ui-ease",
+    "--ui-ink-muted",
+    "--ui-ink-soft",
+    "--ui-font-display",
+    "--ui-radius-lg"
+  ],
   "dependencias": [
     "motion"
   ],
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "sutil",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "21d80d86b490"
 }

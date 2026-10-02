@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T17:32:25.792Z",
+  "generado": "2026-10-02T17:33:05.633Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -925,7 +925,7 @@
       "slug": "billing-toggle",
       "nombre": "Mensual o anual",
       "categoria": "toggles",
-      "estado": "referencia",
+      "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
         "url": "https://uiarc.dev/components/billing-toggle",
@@ -947,25 +947,42 @@
         "mensual",
         "anual"
       ],
-      "tokens": [],
+      "tokens": [
+        "--ui-dur",
+        "--ui-accent",
+        "--ui-line",
+        "--ui-ink",
+        "--ui-surface",
+        "--ui-surface-2",
+        "--ui-font-text",
+        "--ui-ease",
+        "--ui-ink-muted",
+        "--ui-ink-soft",
+        "--ui-font-display",
+        "--ui-radius-lg"
+      ],
       "dependencias": [
         "motion"
       ],
       "usado_en": [],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
-      "capturas": "manual",
       "caracter": {
         "movimiento": "sutil",
         "tono": "sobrio",
         "densidad": "compacto"
       },
+      "captura_de": "21d80d86b490",
       "tipo": "components",
       "ruta": "components/toggles/billing-toggle",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/toggles/billing-toggle",
       "preview_png": "components/toggles/billing-toggle/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
+      "preview_webp": "components/toggles/billing-toggle/preview.webp",
+      "archivos_codigo": [
+        "AnimatedCounter.tsx",
+        "BillingToggle.tsx",
+        "DemoPlans.tsx"
+      ]
     }
   ]
 }

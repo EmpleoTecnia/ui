@@ -8,6 +8,7 @@ import d4 from '../components/fields/phone-input/demo'
 import d5 from '../components/menus/select/demo'
 import d6 from '../components/menus/user-menu/demo'
 import d7 from '../components/pickers/signature-pad/demo'
+import d8 from '../components/toggles/billing-toggle/demo'
 
 export type Entrada = {
   slug: string
@@ -30,4 +31,5 @@ export const registro: Entrada[] = [
   { slug: "select", nombre: "Desplegable", tipo: "components", categoria: "menus", por_que_entro: "Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/select", origen_url: "https://uiarc.dev/components/select", origen_nombre: "Arc UI", demos: d5 },
   { slug: "user-menu", nombre: "Menú de usuario", tipo: "components", categoria: "menus", por_que_entro: "El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/user-menu", origen_url: "https://uiarc.dev/components/user-menu", origen_nombre: "Arc UI", demos: d6 },
   { slug: "signature-pad", nombre: "Firma", tipo: "components", categoria: "pickers", por_que_entro: "Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/signature-pad", origen_url: "https://uiarc.dev/components/signature-pad", origen_nombre: "Arc UI", demos: d7 },
+  { slug: "billing-toggle", nombre: "Mensual o anual", tipo: "components", categoria: "toggles", por_que_entro: "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.", url_github: "https://github.com/EmpleoTecnia/ui/tree/main/components/toggles/billing-toggle", origen_url: "https://uiarc.dev/components/billing-toggle", origen_nombre: "Arc UI", demos: d8 },
 ]

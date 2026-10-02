@@ -106,9 +106,9 @@
 <sub><a href="https://uiarc.dev/components/file-dropzone">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="toggles/billing-toggle/"><img src="toggles/billing-toggle/preview.png" width="100%" alt="Mensual o anual"></a><br><b><a href="toggles/billing-toggle/">Mensual o anual</a></b> · referencia<br>
+<a href="toggles/billing-toggle/"><img src="toggles/billing-toggle/preview.webp" width="100%" alt="Mensual o anual"></a><br><b><a href="toggles/billing-toggle/">Mensual o anual</a></b> · adoptado<br>
 <sub>Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.</sub><br>
-<sub><a href="https://uiarc.dev/components/billing-toggle">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/billing-toggle">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/toggles/billing-toggle/">Probarlo ↗</a></sub>
 </td>
 </tr>
 </table>

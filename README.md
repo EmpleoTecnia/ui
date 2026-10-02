@@ -43,7 +43,7 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-18 entradas, 8 adoptadas.
+18 entradas, 9 adoptadas.
 
 - **[Componentes](components/)** (18): [buttons](components/buttons/) · [feedback](components/feedback/) · [fields](components/fields/) · [menus](components/menus/) · [pickers](components/pickers/) · [toggles](components/toggles/)
 
