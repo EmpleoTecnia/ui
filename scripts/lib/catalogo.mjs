@@ -120,7 +120,13 @@ export async function construirCatalogo(raiz, { sinCapturas = false } = {}) {
 
 /** Escribe catalog.json, los README generados, el bloque del README raíz y el registro del playground. */
 export function escribirSalidas(raiz, entradas) {
-  writeFileSync(join(raiz, 'catalog.json'), JSON.stringify({ generado: new Date().toISOString(), entradas }, null, 2) + '\n')
+  // `generado` lleva la hora: sólo se reescribe si las entradas cambiaron, para que
+  // `git diff --exit-code` en CI no se ensucie con cada corrida.
+  const rutaCatalogo = join(raiz, 'catalog.json')
+  const previo = existsSync(rutaCatalogo) ? JSON.parse(readFileSync(rutaCatalogo, 'utf8')) : null
+  if (!previo || JSON.stringify(previo.entradas) !== JSON.stringify(entradas)) {
+    writeFileSync(rutaCatalogo, JSON.stringify({ generado: new Date().toISOString(), entradas }, null, 2) + '\n')
+  }
 
   for (const tipo of TIPOS) {
     const delTipo = entradas.filter(e => e.tipo === tipo)

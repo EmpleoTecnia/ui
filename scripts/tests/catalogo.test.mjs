@@ -160,4 +160,14 @@ describe('escribirSalidas', () => {
     expect(registro).toMatch(/slug: "boton-iman"/)
     expect(registro).not.toMatch(/tarjeta-vidrio/)
   })
+
+  it('no reescribe catalog.json si las entradas no cambiaron', async () => {
+    entrada('components', 'botones', 'boton-iman', ficha(), { 'preview.png': png })
+    const { entradas } = await construirCatalogo(raiz)
+    escribirSalidas(raiz, entradas)
+    const generado1 = JSON.parse(readFileSync(join(raiz, 'catalog.json'), 'utf8')).generado
+    await new Promise(r => setTimeout(r, 5))
+    escribirSalidas(raiz, entradas)
+    expect(JSON.parse(readFileSync(join(raiz, 'catalog.json'), 'utf8')).generado).toBe(generado1)
+  })
 })

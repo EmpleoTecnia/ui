@@ -10,7 +10,7 @@
     "catalogar": "node scripts/catalogar.mjs",
     "capturar": "node scripts/capturar.mjs",
     "test": "vitest run",
-    "verificar": "npm test && node scripts/catalogar.mjs && git diff --exit-code -- catalog.json README.md components patterns playground/registro.generado.tsx"
+    "verificar": "vitest run && node scripts/catalogar.mjs && git diff --exit-code -- catalog.json README.md components patterns playground/registro.generado.tsx"
   },
   "dependencies": {
     "lucide-react": "^1.11.0",
