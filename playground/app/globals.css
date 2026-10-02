@@ -10,3 +10,28 @@
 @import "../../temas/proyectos.css";
 
 html { background: var(--ui-bg); color: var(--ui-ink); font-family: var(--ui-font-text); }
+
+/* Fondo punteado suave de las vitrinas: se nota, no compite con el componente. */
+.punteado {
+  background-image: radial-gradient(color-mix(in oklch, var(--ui-line) 55%, transparent) 1px, transparent 1.2px);
+  background-size: 22px 22px;
+}
+
+/* El README de cada pieza, renderizado en su página. */
+.prosa { color: var(--ui-ink-soft); line-height: 1.7; max-width: 72ch; }
+.prosa h2 { font-family: var(--ui-font-display); color: var(--ui-ink); font-weight: 600; font-size: 1.125rem; margin: 2.25rem 0 0.6rem; scroll-margin-top: 6rem; }
+.prosa h3 { color: var(--ui-ink); font-weight: 600; font-size: 0.95rem; margin: 1.5rem 0 0.4rem; }
+.prosa p, .prosa ul, .prosa ol { margin: 0.6rem 0; }
+.prosa ul { padding-left: 1.25rem; list-style: disc; }
+.prosa ol { padding-left: 1.25rem; list-style: decimal; }
+.prosa li { margin: 0.3rem 0; }
+.prosa li::marker { color: var(--ui-ink-muted); }
+.prosa a { color: var(--ui-accent); text-underline-offset: 4px; }
+.prosa a:hover { text-decoration: underline; }
+.prosa strong { color: var(--ui-ink); font-weight: 600; }
+.prosa code { font-size: 0.85em; color: var(--ui-ink); background: var(--ui-surface-2); border: 1px solid var(--ui-line); border-radius: calc(var(--ui-radius) / 2); padding: 0.1em 0.4em; }
+.prosa pre { background: var(--ui-surface); border: 1px solid var(--ui-line); border-radius: var(--ui-radius-lg); padding: 1rem 1.25rem; overflow-x: auto; font-size: 0.8125rem; line-height: 1.65; margin: 1rem 0; }
+.prosa pre code { background: none; border: 0; padding: 0; font-size: inherit; color: var(--ui-ink-soft); }
+.prosa table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin: 1rem 0; }
+.prosa th, .prosa td { text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--ui-line); vertical-align: top; }
+.prosa th { color: var(--ui-ink); font-weight: 600; }

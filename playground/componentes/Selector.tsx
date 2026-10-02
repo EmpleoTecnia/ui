@@ -1,6 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { ChevronDown, Moon, Sun } from 'lucide-react'
 import { TEMAS, type Tema, type Modo } from '../lib/registro'
+
+const NOMBRES: Record<Tema, string> = { muestra: 'Muestra', mi: 'MI', etconecta: 'ET Conecta', campus: 'Campus', proyectos: 'Proyectos' }
 
 function aplicar(tema: Tema, modo: Modo) {
   document.documentElement.dataset.tema = tema
@@ -8,6 +11,7 @@ function aplicar(tema: Tema, modo: Modo) {
   try { localStorage.setItem('ui-tema', tema); localStorage.setItem('ui-modo', modo) } catch {}
 }
 
+/** Con qué app y en qué modo se ven los componentes. Se recuerda en el navegador. */
 export function Selector() {
   const [tema, setTema] = useState<Tema>('muestra')
   const [modo, setModo] = useState<Modo>('claro')
@@ -22,15 +26,26 @@ export function Selector() {
   }, [])
   useEffect(() => { aplicar(tema, modo) }, [tema, modo])
 
-  const boton = (activo: boolean) =>
-    `rounded-ui px-3 py-1 text-xs font-medium transition-colors duration-(--ui-dur) ease-ui ${activo ? 'bg-ui-accent text-ui-accent-ink' : 'text-ui-ink-soft hover:bg-ui-surface-2'}`
+  const control = 'h-9 rounded-ui border border-ui-line bg-ui-surface text-sm text-ui-ink transition-colors duration-(--ui-dur) ease-ui hover:bg-ui-surface-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ui-accent'
 
   return (
-    <div className="flex flex-wrap items-center gap-1">
-      {TEMAS.map(t => <button key={t} className={boton(tema === t)} onClick={() => setTema(t)}>{t}</button>)}
-      <span className="mx-2 h-4 w-px bg-ui-line" />
-      <button className={boton(modo === 'claro')} onClick={() => setModo('claro')}>claro</button>
-      <button className={boton(modo === 'oscuro')} onClick={() => setModo('oscuro')}>oscuro</button>
+    <div className="flex items-center gap-2">
+      <label className="relative">
+        <span className="sr-only">Ver con los colores de</span>
+        <select value={tema} onChange={e => setTema(e.target.value as Tema)} className={`${control} appearance-none pl-3 pr-8`}>
+          {TEMAS.map(t => <option key={t} value={t}>{NOMBRES[t]}</option>)}
+        </select>
+        <ChevronDown size={14} aria-hidden className="pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-ui-ink-muted" />
+      </label>
+      <button
+        type="button"
+        onClick={() => setModo(modo === 'claro' ? 'oscuro' : 'claro')}
+        aria-label={modo === 'claro' ? 'Pasar a modo oscuro' : 'Pasar a modo claro'}
+        title={modo === 'claro' ? 'Modo oscuro' : 'Modo claro'}
+        className={`${control} grid w-9 place-items-center`}
+      >
+        {modo === 'claro' ? <Moon size={16} aria-hidden /> : <Sun size={16} aria-hidden />}
+      </button>
     </div>
   )
 }
