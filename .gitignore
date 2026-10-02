@@ -1,0 +1,7 @@
+node_modules/
+playground/.next/
+playground/next-env.d.ts
+.capturas-tmp/
+.superpowers/
+*.log
+.DS_Store

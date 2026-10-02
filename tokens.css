@@ -1,0 +1,86 @@
+/* ══════════════════════════════════════════════════════════════
+   Contrato de tokens --ui-* de la librería UI de EmpleoTecnia
+   ══════════════════════════════════════════════════════════════
+
+   Un componente adoptado usa SÓLO estas 15 variables. Cada app las
+   mapea una vez, en su globals.css, a sus tokens reales. Para eso:
+
+   1. Copiá la sección PUENTE tal cual (convierte los tokens en
+      clases de Tailwind: bg-ui-accent, rounded-ui, font-ui-display...).
+   2. Copiá la sección MAPEO DE MUESTRA y reemplazá cada valor por el
+      token de tu app (`/ui-usar` lo propone solo).
+
+   La sección TEMA DE MUESTRA es sólo del playground: pinta los
+   componentes cuando no hay app. No se copia. */
+
+/* ── PUENTE (va tal cual en cada app) ─────────────────────────── */
+@theme inline {
+  --color-ui-bg: var(--ui-bg);
+  --color-ui-surface: var(--ui-surface);
+  --color-ui-surface-2: var(--ui-surface-2);
+  --color-ui-ink: var(--ui-ink);
+  --color-ui-ink-soft: var(--ui-ink-soft);
+  --color-ui-ink-muted: var(--ui-ink-muted);
+  --color-ui-line: var(--ui-line);
+  --color-ui-accent: var(--ui-accent);
+  --color-ui-accent-ink: var(--ui-accent-ink);
+  --radius-ui: var(--ui-radius);
+  --radius-ui-lg: var(--ui-radius-lg);
+  --font-ui-display: var(--ui-font-display);
+  --font-ui-text: var(--ui-font-text);
+  --ease-ui: var(--ui-ease);
+}
+/* ── FIN PUENTE ───────────────────────────────────────────────── */
+
+/* ── MAPEO DE MUESTRA (en tu app, cada var() apunta a tu token) ── */
+/*
+:root {
+  --ui-bg: var(--tu-fondo);
+  --ui-surface: var(--tu-tarjeta);
+  --ui-surface-2: var(--tu-campo);
+  --ui-ink: var(--tu-texto);
+  --ui-ink-soft: var(--tu-texto-secundario);
+  --ui-ink-muted: var(--tu-metadato);
+  --ui-line: var(--tu-borde);
+  --ui-accent: var(--tu-acento);
+  --ui-accent-ink: var(--tu-texto-sobre-acento);
+  --ui-radius: 0.75rem;
+  --ui-radius-lg: 1.25rem;
+  --ui-font-display: var(--tu-fuente-titulos);
+  --ui-font-text: var(--tu-fuente-texto);
+  --ui-dur: 180ms;
+  --ui-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+*/
+/* ── FIN MAPEO DE MUESTRA ─────────────────────────────────────── */
+
+/* ── TEMA DE MUESTRA (sólo playground). Hue 300: el hilo del ecosistema ── */
+[data-tema="muestra"] {
+  --ui-bg: oklch(0.975 0.006 300);
+  --ui-surface: oklch(1 0 0);
+  --ui-surface-2: oklch(0.945 0.010 300);
+  --ui-ink: oklch(0.21 0.03 300);
+  --ui-ink-soft: oklch(0.42 0.025 300);
+  --ui-ink-muted: oklch(0.55 0.02 300);
+  --ui-line: oklch(0.90 0.012 300);
+  --ui-accent: oklch(0.55 0.20 300);
+  --ui-accent-ink: oklch(0.99 0.01 300);
+  --ui-radius: 0.75rem;
+  --ui-radius-lg: 1.25rem;
+  --ui-font-display: ui-sans-serif, system-ui, sans-serif;
+  --ui-font-text: ui-sans-serif, system-ui, sans-serif;
+  --ui-dur: 180ms;
+  --ui-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+[data-tema="muestra"][data-modo="oscuro"] {
+  --ui-bg: oklch(0.16 0.02 300);
+  --ui-surface: oklch(0.21 0.025 300);
+  --ui-surface-2: oklch(0.26 0.03 300);
+  --ui-ink: oklch(0.98 0.005 300);
+  --ui-ink-soft: oklch(0.80 0.02 300);
+  --ui-ink-muted: oklch(0.68 0.022 300);
+  --ui-line: oklch(0.33 0.03 300);
+  --ui-accent: oklch(0.75 0.17 300);
+  --ui-accent-ink: oklch(0.18 0.04 300);
+}
+/* ── FIN TEMA DE MUESTRA ──────────────────────────────────────── */
