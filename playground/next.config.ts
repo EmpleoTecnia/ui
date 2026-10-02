@@ -8,5 +8,10 @@ const config: NextConfig = {
   outputFileTracingRoot: resolve(__dirname, '..'),
   // Sin el botón "N" de Next: se colaba en las capturas.
   devIndicators: false,
+  // Sitio estático: `npm run build` deja playground/out/ listo para Vercel (o cualquier
+  // hosting de archivos). Las rutas dinámicas se enumeran con generateStaticParams y lo
+  // que depende de la URL (?slugs=, ?modo=) se lee en el navegador.
+  output: 'export',
+  trailingSlash: true,
 }
 export default config

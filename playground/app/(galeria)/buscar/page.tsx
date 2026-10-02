@@ -1,8 +1,12 @@
+'use client'
+import { Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { porSlug } from '../../../lib/registro'
 import { Marco } from '../../../componentes/Marco'
 
-export default async function Buscar({ searchParams }: { searchParams: Promise<{ slugs?: string }> }) {
-  const { slugs = '' } = await searchParams
+/** /buscar?slugs=a,b,c: los candidatos de una búsqueda, uno debajo del otro. */
+function Resultados() {
+  const slugs = useSearchParams().get('slugs') ?? ''
   const entradas = slugs.split(',').map(s => porSlug(s.trim())).filter(e => e !== undefined)
   if (entradas.length === 0) return <p className="text-ui-ink-muted">Pasá <code>?slugs=a,b,c</code> con los candidatos.</p>
   return (
@@ -16,4 +20,8 @@ export default async function Buscar({ searchParams }: { searchParams: Promise<{
       ))}
     </div>
   )
+}
+
+export default function Buscar() {
+  return <Suspense fallback={null}><Resultados /></Suspense>
 }

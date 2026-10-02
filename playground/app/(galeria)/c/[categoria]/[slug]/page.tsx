@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { porSlug, registro } from '../../../../../lib/registro'
 import { Marco } from '../../../../../componentes/Marco'
 
+export const dynamicParams = false
 export function generateStaticParams() {
   return registro.map(e => ({ categoria: e.categoria, slug: e.slug }))
 }

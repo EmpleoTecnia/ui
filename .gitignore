@@ -6,3 +6,4 @@ playground/next-env.d.ts
 *.log
 .DS_Store
 playground/tsconfig.tsbuildinfo
+playground/out/
