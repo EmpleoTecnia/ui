@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:41:12.268Z",
+  "generado": "2026-10-02T14:41:19.783Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -288,6 +288,49 @@
       "ruta": "components/forms/number-field",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/number-field",
       "preview_png": "components/forms/number-field/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "slider",
+      "nombre": "Deslizador",
+      "categoria": "forms",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/slider",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Buen movimiento y suma valor que te vaya mostrando el número al mover la barra.",
+      "sirve_para": [
+        "filtros con rangos numéricos: precio, años de experiencia, cantidad"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "slider",
+        "rango",
+        "filtro",
+        "numero",
+        "deslizar"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/forms/slider",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/slider",
+      "preview_png": "components/forms/slider/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },

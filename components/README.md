@@ -3,7 +3,7 @@
 
 - [buttons](buttons/) · 3
 - [feedback](feedback/) · 1
-- [forms](forms/) · 7
+- [forms](forms/) · 8
 - [navigation](navigation/) · 1
 
 <table>
@@ -43,6 +43,11 @@
 </tr>
 <tr>
 <td width="33%" valign="top">
+<a href="forms/slider/"><img src="forms/slider/preview.png" width="100%" alt="Deslizador"></a><br><b><a href="forms/slider/">Deslizador</a></b> · referencia<br>
+<sub>Buen movimiento y suma valor que te vaya mostrando el número al mover la barra.</sub><br>
+<sub><a href="https://uiarc.dev/components/slider">Ver original en Arc UI ↗</a></sub>
+</td>
+<td width="33%" valign="top">
 <a href="forms/select/"><img src="forms/select/preview.png" width="100%" alt="Desplegable"></a><br><b><a href="forms/select/">Desplegable</a></b> · referencia<br>
 <sub>Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.</sub><br>
 <sub><a href="https://uiarc.dev/components/select">Ver original en Arc UI ↗</a></sub>
@@ -52,13 +57,13 @@
 <sub>Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.</sub><br>
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="forms/billing-toggle/"><img src="forms/billing-toggle/preview.png" width="100%" alt="Mensual o anual"></a><br><b><a href="forms/billing-toggle/">Mensual o anual</a></b> · referencia<br>
 <sub>Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.</sub><br>
 <sub><a href="https://uiarc.dev/components/billing-toggle">Ver original en Arc UI ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="forms/multi-select/"><img src="forms/multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="forms/multi-select/">Selección múltiple</a></b> · referencia<br>
 <sub>Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.</sub><br>
@@ -69,6 +74,8 @@
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>
 <sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
 </td>
+</tr>
+<tr>
 <td width="33%" valign="top">
 <a href="navigation/user-menu/"><img src="navigation/user-menu/preview.png" width="100%" alt="Menú de usuario"></a><br><b><a href="navigation/user-menu/">Menú de usuario</a></b> · referencia<br>
 <sub>El desplegable con el formato y las opciones claras, el cambio de tonalidad del tema adentro y el cerrar sesión en otro color.</sub><br>

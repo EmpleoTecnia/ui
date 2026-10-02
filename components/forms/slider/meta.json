@@ -1,0 +1,37 @@
+{
+  "slug": "slider",
+  "nombre": "Deslizador",
+  "categoria": "forms",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/slider",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "Buen movimiento y suma valor que te vaya mostrando el número al mover la barra.",
+  "sirve_para": [
+    "filtros con rangos numéricos: precio, años de experiencia, cantidad"
+  ],
+  "no_sirve_para": [],
+  "etiquetas": [
+    "slider",
+    "rango",
+    "filtro",
+    "numero",
+    "deslizar"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "compacto"
+  }
+}
