@@ -10,7 +10,8 @@ import { hallazgosSensibles } from './lib/publico.mjs'
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const BINARIOS = /\.(png|webp|jpg|jpeg|gif|ico|woff2?|ttf|pdf|zip)$/i
 // codigo-origen/ es copia de páginas ya públicas de terceros: lo que diga ya está afuera.
-const OMITIR = /^package-lock\.json$|\/codigo-origen\//
+// El detector y su test llevan los patrones adrede.
+const OMITIR = /^package-lock\.json$|\/codigo-origen\/|^scripts\/(lib\/publico|tests\/publico\.test)\.mjs$/
 
 const archivos = execFileSync('git', ['ls-files', '-z'], { cwd: raiz, encoding: 'utf8' })
   .split('\0').filter(f => f && !BINARIOS.test(f) && !OMITIR.test(f))
