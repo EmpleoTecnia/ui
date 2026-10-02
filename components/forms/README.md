@@ -72,4 +72,11 @@
 <sub><a href="https://uiarc.dev/components/phone-input">Ver original en Arc UI ↗</a></sub>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top">
+<a href="file-dropzone/"><img src="file-dropzone/preview.png" width="100%" alt="Zona de carga"></a><br><b><a href="file-dropzone/">Zona de carga</a></b> · referencia<br>
+<sub>Buenísimo para cuando hay que cargar archivos e imágenes arrastrando.</sub><br>
+<sub><a href="https://uiarc.dev/components/file-dropzone">Ver original en Arc UI ↗</a></sub>
+</td>
+</tr>
 </table>

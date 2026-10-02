@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:41:53.759Z",
+  "generado": "2026-10-02T14:42:05.175Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -767,6 +767,51 @@
       "ruta": "components/forms/phone-input",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/phone-input",
       "preview_png": "components/forms/phone-input/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "file-dropzone",
+      "nombre": "Zona de carga",
+      "categoria": "forms",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/file-dropzone",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Buenísimo para cuando hay que cargar archivos e imágenes arrastrando.",
+      "sirve_para": [
+        "subir CV, fotos de perfil, logos de empresa, adjuntos"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "archivos",
+        "subir",
+        "arrastrar",
+        "imagenes",
+        "carga",
+        "dropzone"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "aire"
+      },
+      "tipo": "components",
+      "ruta": "components/forms/file-dropzone",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/file-dropzone",
+      "preview_png": "components/forms/file-dropzone/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },
