@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T07:34:05.887Z",
+  "generado": "2026-10-02T07:39:46.318Z",
   "entradas": [
     {
       "slug": "boton-iman",
@@ -47,11 +47,12 @@
       "usado_en": [],
       "agregado_por": "claude",
       "fecha": "2026-10-02",
+      "captura_de": "7d24a18924f7",
       "tipo": "components",
       "ruta": "components/botones/boton-iman",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/botones/boton-iman",
-      "preview_png": null,
-      "preview_webp": null,
+      "preview_png": "components/botones/boton-iman/preview.png",
+      "preview_webp": "components/botones/boton-iman/preview.webp",
       "archivos_codigo": [
         "BotonIman.tsx"
       ]

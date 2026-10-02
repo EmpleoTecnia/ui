@@ -6,5 +6,7 @@ import { resolve } from 'node:path'
 const config: NextConfig = {
   turbopack: { root: resolve(__dirname, '..') },
   outputFileTracingRoot: resolve(__dirname, '..'),
+  // Sin el botón "N" de Next: se colaba en las capturas.
+  devIndicators: false,
 }
 export default config

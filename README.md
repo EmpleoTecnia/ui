@@ -36,7 +36,7 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <table>
 <tr>
 <td width="33%" valign="top">
-<b><a href="components/botones/boton-iman/">Botón imán</a></b> · adoptado<br>
+<a href="components/botones/boton-iman/"><img src="components/botones/boton-iman/preview.webp" width="100%" alt="Botón imán"></a><br><b><a href="components/botones/boton-iman/">Botón imán</a></b> · adoptado<br>
 <sub>Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.</sub>
 </td>
 </tr>

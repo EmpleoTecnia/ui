@@ -3,16 +3,46 @@
   "nombre": "Botón imán",
   "categoria": "botones",
   "estado": "adoptado",
-  "origen": { "nombre": "EmpleoTecnia", "url": "", "licencia": "propia" },
+  "origen": {
+    "nombre": "EmpleoTecnia",
+    "url": "",
+    "licencia": "propia"
+  },
   "publicable": true,
   "por_que_entro": "Se corre hacia el cursor y vuelve con un resorte: se siente vivo sin gritar, y en el celular es un botón común.",
-  "sirve_para": ["CTA principal de una landing", "el único botón importante de una pantalla"],
-  "no_sirve_para": ["listas con muchos botones", "formularios densos"],
-  "etiquetas": ["hover", "cursor", "cta", "resorte", "sutil"],
-  "caracter": { "movimiento": "sutil", "tono": "premium", "densidad": "aire" },
-  "tokens": ["--ui-accent", "--ui-accent-ink", "--ui-radius", "--ui-font-display", "--ui-dur", "--ui-ease"],
-  "dependencias": ["motion"],
+  "sirve_para": [
+    "CTA principal de una landing",
+    "el único botón importante de una pantalla"
+  ],
+  "no_sirve_para": [
+    "listas con muchos botones",
+    "formularios densos"
+  ],
+  "etiquetas": [
+    "hover",
+    "cursor",
+    "cta",
+    "resorte",
+    "sutil"
+  ],
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "premium",
+    "densidad": "aire"
+  },
+  "tokens": [
+    "--ui-accent",
+    "--ui-accent-ink",
+    "--ui-radius",
+    "--ui-font-display",
+    "--ui-dur",
+    "--ui-ease"
+  ],
+  "dependencias": [
+    "motion"
+  ],
   "usado_en": [],
   "agregado_por": "claude",
-  "fecha": "2026-10-02"
+  "fecha": "2026-10-02",
+  "captura_de": "7d24a18924f7"
 }
