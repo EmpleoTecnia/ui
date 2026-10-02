@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@source "../../components";
+@source "../../patterns";
+@import "../../tokens.css";
+@import "../../temas/mi.css";
+@import "../../temas/etconecta.css";
+@import "../../temas/campus.css";
+@import "../../temas/proyectos.css";
+
+html { background: var(--ui-bg); color: var(--ui-ink); font-family: var(--ui-font-text); }
