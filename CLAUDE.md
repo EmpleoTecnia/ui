@@ -30,6 +30,11 @@ antes de agregar o cambiar algo.
    `oklch(from var(--ui-accent) ...)`. Si no se puede derivar, queda como referencia.
 5. **Movimiento desde `--ui-dur` y `--ui-ease`.** Se multiplican, no se fijan ms. Todo
    respeta `prefers-reduced-motion`.
+   **Los colores semánticos no se negocian** (Franco, 2/10): error es rojo, aviso
+   naranja/amarillo, éxito verde, en todas las apps. Se escriben derivados del acento
+   para tomar su luz y saturación, con el matiz fijo:
+   `oklch(from var(--ui-accent) clamp(0.48, l, 0.66) clamp(0.13, c, 0.2) 25)` para rojo,
+   `55` naranja, `88` amarillo, `150` verde. Nunca el acento para decir "bien" o "mal".
 6. **El carácter lo inferís vos**, nunca se lo preguntás a la persona. Es opcional y
    sólo ordena la búsqueda.
 7. **Carpetas, slugs, archivos, componentes y props en inglés** (`forms/password-strength`,
