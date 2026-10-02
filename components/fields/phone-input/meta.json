@@ -2,7 +2,7 @@
   "slug": "phone-input",
   "nombre": "Teléfono con país",
   "categoria": "fields",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/phone-input",
@@ -25,7 +25,19 @@
     "whatsapp",
     "formulario"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-font-text",
+    "--ui-accent",
+    "--ui-dur",
+    "--ui-radius",
+    "--ui-ink",
+    "--ui-ink-muted",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-ease",
+    "--ui-surface-2",
+    "--ui-ink-soft"
+  ],
   "dependencias": [
     "lucide-react",
     "motion"
@@ -33,10 +45,10 @@
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
-    "movimiento": "sutil",
+    "movimiento": "marcado",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "13e221f1d933"
 }
