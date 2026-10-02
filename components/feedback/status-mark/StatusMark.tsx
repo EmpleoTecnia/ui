@@ -140,13 +140,14 @@ export function StatusMark({
   const hasLabel = label !== undefined && label !== null
   const draw = `${Math.round(d * 1300)}ms`
   const vars = {
+    gap: size * 0.5,
     '--sm-size': `${size}px`, '--sm-stroke': strokeWidth, '--sm-color': color, '--sm-done': doneColor, '--sm-error': errorColor,
     '--sm-fill': fillOpacity, '--sm-font': `${fontSize}px`, '--sm-draw': draw, ...style,
   } as CSSProperties
 
   return (
     <span
-      className={`group relative inline-flex items-center align-middle leading-none [gap:calc(var(--sm-size)*0.5)]${className ? ` ${className}` : ''}`}
+      className={`group relative inline-flex items-center align-middle leading-none${className ? ` ${className}` : ''}`}
       data-status={status}
       data-indeterminate={indeterminate ? '' : undefined}
       data-strike={strike ? '' : undefined}

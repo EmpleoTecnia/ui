@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T09:02:29.575Z",
+  "generado": "2026-10-02T09:04:26.894Z",
   "entradas": [
     {
       "slug": "status-mark",
@@ -47,7 +47,7 @@
         "tono": "sobrio",
         "densidad": "compacto"
       },
-      "captura_de": "a0b96aa1d08f",
+      "captura_de": "33d6ae33aa3b",
       "tipo": "components",
       "ruta": "components/feedback/status-mark",
       "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/feedback/status-mark",
