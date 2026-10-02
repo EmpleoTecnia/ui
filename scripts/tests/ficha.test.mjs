@@ -53,6 +53,13 @@ describe('validarFicha', () => {
     expect(validarFicha(f, ctx).join()).toMatch(/publicable/)
   })
 
+  it('acepta MIT+Commons-Clause (React Bits) pero no la deja publicable', () => {
+    const f = buena(); f.origen.licencia = 'MIT+Commons-Clause'; f.publicable = false
+    expect(validarFicha(f, ctx)).toEqual([])
+    f.publicable = true
+    expect(validarFicha(f, ctx).join()).toMatch(/publicable/)
+  })
+
   it('rechaza una razón vacía o corta', () => {
     expect(validarFicha({ ...buena(), por_que_entro: 'me gusta' }, ctx).join()).toMatch(/por_que_entro/)
     expect(validarFicha({ ...buena(), por_que_entro: 'Está bueno.' }, ctx).join()).toMatch(/por_que_entro/)

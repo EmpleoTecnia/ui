@@ -32,7 +32,9 @@ export const CATEGORIAS = {
 
 export const ESTADOS = ['referencia', 'adoptado', 'retirado']
 
-export const LICENCIAS = ['MIT', 'Apache-2.0', 'ISC', 'CC0', 'propia', 'desconocida']
+// MIT+Commons-Clause es la de React Bits: libre para usar en nuestras apps, no para
+// revender el componente en sí. Entra, pero no sale a una galería pública.
+export const LICENCIAS = ['MIT', 'Apache-2.0', 'ISC', 'CC0', 'MIT+Commons-Clause', 'propia', 'desconocida']
 export const PUBLICABLES = ['MIT', 'Apache-2.0', 'ISC', 'CC0', 'propia']
 
 export const CARACTER = {
