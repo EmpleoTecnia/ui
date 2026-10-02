@@ -194,9 +194,10 @@ y con Playwright saca:
 - **`preview.png`**: 1200×600, el primer ejemplo del `demo.tsx`, tema de muestra, claro
   a la izquierda y oscuro a la derecha. Es la que Claude muestra en el chat.
 - **`preview.webp`** animada: 600 px de ancho, 12 fps, 3 segundos en loop, tema de
-  muestra claro. Playwright graba video del `demo.tsx` ejecutando su guion de interacción
-  (cada demo puede exportar `guion: async (page) => {...}` con hover, clic, scroll; si no
-  lo exporta, se graba la entrada y un hover al centro). El video pasa a WebP con
+  muestra claro. Playwright graba video del primer ejemplo del `demo.tsx` ejecutando el
+  guion de interacción del componente (`guion.mjs` al lado, `export default async (page)
+  => {...}` con hover, clic, scroll; va en un archivo aparte porque el capturador corre en
+  Node y no importa TSX; si no existe, se graba la entrada y un hover al centro). El video pasa a WebP con
   `ffmpeg`. Tope: **400 KB**; si se pasa, `capturar.mjs` baja fps y largo hasta entrar, y
   si no entra falla y lo dice.
 
