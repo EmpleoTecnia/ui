@@ -26,7 +26,11 @@ export const CLASES = {
 }
 
 export const CATEGORIAS = {
-  components: ['buttons', 'cards', 'navigation', 'forms', 'backgrounds', 'animations', 'sections', 'feedback'],
+  // buttons: botones · menus: desplegables y menús (select, menú de usuario) · fields: campos donde se
+  // escribe (texto, teléfono, número, contraseña) · pickers: elegir un valor (fecha, color, rango,
+  // archivo, firma) · toggles: interruptores · navigation: barras, migas, pestañas · cards · feedback:
+  // estados, avisos, progreso · backgrounds · animations · sections: bloques enteros de una página.
+  components: ['buttons', 'menus', 'fields', 'pickers', 'toggles', 'navigation', 'cards', 'feedback', 'backgrounds', 'animations', 'sections'],
   patterns: ['landing', 'profile', 'onboarding', 'dashboard', 'auth', 'pricing'],
 }
 

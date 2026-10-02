@@ -4,9 +4,12 @@ export type Tipo = keyof typeof TIPOS
 
 export const CATEGORIAS: Record<string, string> = {
   buttons: 'Buttons',
-  cards: 'Cards',
+  menus: 'Menus',
+  fields: 'Fields',
+  pickers: 'Pickers',
+  toggles: 'Toggles',
   navigation: 'Navigation',
-  forms: 'Forms',
+  cards: 'Cards',
   backgrounds: 'Backgrounds',
   animations: 'Animations',
   sections: 'Sections',

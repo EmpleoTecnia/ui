@@ -62,10 +62,13 @@ portear.
 1. `node scripts/agregar.mjs <url> --categoria <cat> --slug <slug> --nombre "<Nombre>"`
    baja el código del registry (o rescata la página con Chromium), detecta licencia y
    dependencias, saca la captura, avisa duplicados y deja la carpeta a medio llenar.
-   Leé sólo el resumen que imprime. Categorías de components: buttons, cards,
-   navigation, forms, backgrounds, animations, sections, feedback; de patterns
-   (`--tipo patterns`): landing, profile, onboarding, dashboard, auth, pricing. Slug en
-   inglés, `--nombre` en español.
+   Leé sólo el resumen que imprime. Categorías de components: buttons · menus
+   (desplegables, select, menú de usuario) · fields (campos donde se escribe: texto,
+   teléfono, número, contraseña) · pickers (elegir un valor: fecha, color, rango, archivo,
+   firma) · toggles · navigation (barras, migas, pestañas) · cards · feedback (estados,
+   avisos, progreso) · backgrounds · animations · sections (bloques enteros de página).
+   De patterns (`--tipo patterns`): landing, profile, onboarding, dashboard, auth,
+   pricing. Slug en inglés, `--nombre` en español.
 2. Tres preguntas, de a una: ¿qué te gustó? (frase concreta, ≥20 caracteres) · ¿para
    qué lo usarías? · ¿lo guardo como idea o lo armo ahora? Nada más.
 3. `node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" --etiquetas "a,b,c"

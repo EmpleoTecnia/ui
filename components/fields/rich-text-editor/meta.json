@@ -1,0 +1,40 @@
+{
+  "slug": "rich-text-editor",
+  "nombre": "Editor de texto",
+  "categoria": "fields",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/rich-text-editor",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "No tiene las opciones fijas arriba: se van mostrando a medida que seleccionás una parte del texto.",
+  "sirve_para": [
+    "descripciones de cursos, eventos y ofertas",
+    "mensajes con formato"
+  ],
+  "no_sirve_para": [],
+  "etiquetas": [
+    "editor",
+    "texto",
+    "formato",
+    "negrita",
+    "seleccion",
+    "flotante"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "lucide-react",
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "aire"
+  }
+}

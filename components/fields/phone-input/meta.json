@@ -1,0 +1,42 @@
+{
+  "slug": "phone-input",
+  "nombre": "Teléfono con país",
+  "categoria": "fields",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/phone-input",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.",
+  "sirve_para": [
+    "formularios donde hay que elegir el código de país",
+    "enviar SMS o WhatsApp eligiendo país y número"
+  ],
+  "no_sirve_para": [
+    "con el botón de probar tal como viene: se quita al portear"
+  ],
+  "etiquetas": [
+    "telefono",
+    "pais",
+    "codigo",
+    "sms",
+    "whatsapp",
+    "formulario"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "lucide-react",
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "compacto"
+  }
+}

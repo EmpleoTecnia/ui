@@ -45,7 +45,7 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <!-- catalogo:inicio -->
 18 entradas, 2 adoptadas.
 
-- **[Componentes](components/)** (18): [buttons](components/buttons/) · [feedback](components/feedback/) · [forms](components/forms/) · [navigation](components/navigation/)
+- **[Componentes](components/)** (18): [buttons](components/buttons/) · [feedback](components/feedback/) · [fields](components/fields/) · [menus](components/menus/) · [pickers](components/pickers/) · [toggles](components/toggles/)
 
 ### Últimas que entraron
 
@@ -74,12 +74,12 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <sub><a href="https://reactbits.dev/micro/status-mark">Ver original en React Bits ↗</a> · <a href="https://empleotecnia.github.io/ui/c/feedback/status-mark/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="components/forms/mention-input/"><img src="components/forms/mention-input/preview.png" width="100%" alt="Campo con menciones"></a><br><b><a href="components/forms/mention-input/">Campo con menciones</a></b> · referencia<br>
+<a href="components/fields/mention-input/"><img src="components/fields/mention-input/preview.png" width="100%" alt="Campo con menciones"></a><br><b><a href="components/fields/mention-input/">Campo con menciones</a></b> · referencia<br>
 <sub>Para etiquetar personas en un chat: la mención resalta muy bien en la conversación.</sub><br>
 <sub><a href="https://uiarc.dev/components/mention-input">Ver original en Arc UI ↗</a></sub>
 </td>
 <td width="33%" valign="top">
-<a href="components/forms/number-field/"><img src="components/forms/number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="components/forms/number-field/">Campo numérico</a></b> · referencia<br>
+<a href="components/fields/number-field/"><img src="components/fields/number-field/preview.png" width="100%" alt="Campo numérico"></a><br><b><a href="components/fields/number-field/">Campo numérico</a></b> · referencia<br>
 <sub>La dinámica: la alerta cuando llegás al máximo y cómo te va sumando el precio a medida que agregás.</sub><br>
 <sub><a href="https://uiarc.dev/components/number-field">Ver original en Arc UI ↗</a></sub>
 </td>

@@ -1,0 +1,57 @@
+{
+  "slug": "password-strength",
+  "nombre": "Fuerza de contraseña",
+  "categoria": "fields",
+  "estado": "adoptado",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/password-strength",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "Me gustó todo como está armado: las cuatro barras que se llenan, los requisitos que se van tildando con cuántos caracteres faltan, y el ojo que se tacha para mostrar la contraseña.",
+  "sirve_para": [
+    "Elegir o cambiar la contraseña en la pantalla /clave",
+    "alta de cuenta en ET Conecta, miET y el campus"
+  ],
+  "no_sirve_para": [
+    "Iniciar sesión: ahí va un campo común"
+  ],
+  "etiquetas": [
+    "contraseña",
+    "formulario",
+    "validacion",
+    "progreso",
+    "tilde",
+    "micro",
+    "sutil",
+    "español"
+  ],
+  "tokens": [
+    "--ui-dur",
+    "--ui-radius-lg",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-font-text",
+    "--ui-font-display",
+    "--ui-ink",
+    "--ui-ink-muted",
+    "--ui-radius",
+    "--ui-ease",
+    "--ui-surface-2",
+    "--ui-accent",
+    "--ui-accent-ink"
+  ],
+  "dependencias": [
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "equilibrado"
+  },
+  "captura_de": "c293a396f471"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "billing-toggle",
+  "nombre": "Mensual o anual",
+  "categoria": "toggles",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/billing-toggle",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.",
+  "sirve_para": [
+    "páginas de precios o planes con poco detalle"
+  ],
+  "no_sirve_para": [
+    "cuando hay que explicar las diferencias entre planes"
+  ],
+  "etiquetas": [
+    "toggle",
+    "facturacion",
+    "planes",
+    "precios",
+    "mensual",
+    "anual"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "sutil",
+    "tono": "sobrio",
+    "densidad": "compacto"
+  }
+}

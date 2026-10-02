@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:42:05.175Z",
+  "generado": "2026-10-02T14:58:42.951Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -202,7 +202,7 @@
     {
       "slug": "mention-input",
       "nombre": "Campo con menciones",
-      "categoria": "forms",
+      "categoria": "fields",
       "estado": "referencia",
       "origen": {
         "nombre": "Arc UI",
@@ -239,16 +239,16 @@
         "densidad": "equilibrado"
       },
       "tipo": "components",
-      "ruta": "components/forms/mention-input",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/mention-input",
-      "preview_png": "components/forms/mention-input/preview.png",
+      "ruta": "components/fields/mention-input",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/mention-input",
+      "preview_png": "components/fields/mention-input/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },
     {
       "slug": "number-field",
       "nombre": "Campo numérico",
-      "categoria": "forms",
+      "categoria": "fields",
       "estado": "referencia",
       "origen": {
         "nombre": "Arc UI",
@@ -285,104 +285,16 @@
         "densidad": "compacto"
       },
       "tipo": "components",
-      "ruta": "components/forms/number-field",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/number-field",
-      "preview_png": "components/forms/number-field/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
-      "slug": "slider",
-      "nombre": "Deslizador",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/slider",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Buen movimiento y suma valor que te vaya mostrando el número al mover la barra.",
-      "sirve_para": [
-        "filtros con rangos numéricos: precio, años de experiencia, cantidad"
-      ],
-      "no_sirve_para": [],
-      "etiquetas": [
-        "slider",
-        "rango",
-        "filtro",
-        "numero",
-        "deslizar"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "compacto"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/slider",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/slider",
-      "preview_png": "components/forms/slider/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
-      "slug": "select",
-      "nombre": "Desplegable",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/select",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.",
-      "sirve_para": [
-        "cualquier desplegable de una sola opción en formularios y filtros"
-      ],
-      "no_sirve_para": [],
-      "etiquetas": [
-        "select",
-        "desplegable",
-        "formulario",
-        "opciones",
-        "filtros"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "@radix-ui/react-select",
-        "lucide-react",
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "compacto"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/select",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/select",
-      "preview_png": "components/forms/select/preview.png",
+      "ruta": "components/fields/number-field",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/number-field",
+      "preview_png": "components/fields/number-field/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },
     {
       "slug": "rich-text-editor",
       "nombre": "Editor de texto",
-      "categoria": "forms",
+      "categoria": "fields",
       "estado": "referencia",
       "origen": {
         "nombre": "Arc UI",
@@ -419,60 +331,16 @@
         "densidad": "aire"
       },
       "tipo": "components",
-      "ruta": "components/forms/rich-text-editor",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/rich-text-editor",
-      "preview_png": "components/forms/rich-text-editor/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
-      "slug": "signature-pad",
-      "nombre": "Firma",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/signature-pad",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.",
-      "sirve_para": [
-        "firmar certificados, acuerdos o asistencia"
-      ],
-      "no_sirve_para": [],
-      "etiquetas": [
-        "firma",
-        "dibujo",
-        "canvas",
-        "documentos",
-        "certificados"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "lucide-react",
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "equilibrado"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/signature-pad",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/signature-pad",
-      "preview_png": "components/forms/signature-pad/preview.png",
+      "ruta": "components/fields/rich-text-editor",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/rich-text-editor",
+      "preview_png": "components/fields/rich-text-editor/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },
     {
       "slug": "password-strength",
       "nombre": "Fuerza de contraseña",
-      "categoria": "forms",
+      "categoria": "fields",
       "estado": "adoptado",
       "origen": {
         "nombre": "Arc UI",
@@ -526,206 +394,19 @@
       },
       "captura_de": "c293a396f471",
       "tipo": "components",
-      "ruta": "components/forms/password-strength",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/password-strength",
-      "preview_png": "components/forms/password-strength/preview.png",
-      "preview_webp": "components/forms/password-strength/preview.webp",
+      "ruta": "components/fields/password-strength",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/password-strength",
+      "preview_png": "components/fields/password-strength/preview.png",
+      "preview_webp": "components/fields/password-strength/preview.webp",
       "archivos_codigo": [
         "NewPasswordForm.tsx",
         "PasswordStrength.tsx"
       ]
     },
     {
-      "slug": "billing-toggle",
-      "nombre": "Mensual o anual",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/billing-toggle",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.",
-      "sirve_para": [
-        "páginas de precios o planes con poco detalle"
-      ],
-      "no_sirve_para": [
-        "cuando hay que explicar las diferencias entre planes"
-      ],
-      "etiquetas": [
-        "toggle",
-        "facturacion",
-        "planes",
-        "precios",
-        "mensual",
-        "anual"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "compacto"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/billing-toggle",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/billing-toggle",
-      "preview_png": "components/forms/billing-toggle/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
-      "slug": "date-range-picker",
-      "nombre": "Rango de fechas",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/date-range-picker",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Me encanta para elegir el período de un gráfico específico, por ejemplo los inscriptos a los cursos.",
-      "sirve_para": [
-        "filtrar gráficos y reportes por período",
-        "inscriptos a cursos por fecha",
-        "tablero del admin"
-      ],
-      "no_sirve_para": [],
-      "etiquetas": [
-        "fechas",
-        "rango",
-        "calendario",
-        "grafico",
-        "reportes",
-        "filtro",
-        "periodo"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "lucide-react",
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "equilibrado"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/date-range-picker",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/date-range-picker",
-      "preview_png": "components/forms/date-range-picker/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
-      "slug": "multi-select",
-      "nombre": "Selección múltiple",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/multi-select",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.",
-      "sirve_para": [
-        "elegir varias etiquetas, personas o categorías en formularios y filtros"
-      ],
-      "no_sirve_para": [],
-      "etiquetas": [
-        "multi",
-        "seleccion",
-        "etiquetas",
-        "chips",
-        "formulario",
-        "filtros"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "lucide-react",
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "compacto"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/multi-select",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/multi-select",
-      "preview_png": "components/forms/multi-select/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
-      "slug": "color-picker",
-      "nombre": "Selector de color",
-      "categoria": "forms",
-      "estado": "referencia",
-      "origen": {
-        "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/color-picker",
-        "licencia": "desconocida"
-      },
-      "publicable": false,
-      "por_que_entro": "Está genial. Lo único que no tiene y le agregaría es poder elegir en RGB y RGBA.",
-      "sirve_para": [
-        "elegir colores de marca, de etiquetas o de categorías",
-        "personalización de una empresa"
-      ],
-      "no_sirve_para": [
-        "tal como viene, sin RGB/RGBA: habría que agregarlo al portear"
-      ],
-      "etiquetas": [
-        "color",
-        "selector",
-        "rgb",
-        "rgba",
-        "personalizacion",
-        "marca"
-      ],
-      "tokens": [],
-      "dependencias": [
-        "lucide-react",
-        "motion"
-      ],
-      "usado_en": [],
-      "agregado_por": "francovassallo",
-      "fecha": "2026-10-02",
-      "capturas": "manual",
-      "caracter": {
-        "movimiento": "sutil",
-        "tono": "sobrio",
-        "densidad": "equilibrado"
-      },
-      "tipo": "components",
-      "ruta": "components/forms/color-picker",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/color-picker",
-      "preview_png": "components/forms/color-picker/preview.png",
-      "preview_webp": null,
-      "archivos_codigo": []
-    },
-    {
       "slug": "phone-input",
       "nombre": "Teléfono con país",
-      "categoria": "forms",
+      "categoria": "fields",
       "estado": "referencia",
       "origen": {
         "nombre": "Arc UI",
@@ -764,38 +445,38 @@
         "densidad": "compacto"
       },
       "tipo": "components",
-      "ruta": "components/forms/phone-input",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/phone-input",
-      "preview_png": "components/forms/phone-input/preview.png",
+      "ruta": "components/fields/phone-input",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/fields/phone-input",
+      "preview_png": "components/fields/phone-input/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },
     {
-      "slug": "file-dropzone",
-      "nombre": "Zona de carga",
-      "categoria": "forms",
+      "slug": "select",
+      "nombre": "Desplegable",
+      "categoria": "menus",
       "estado": "referencia",
       "origen": {
         "nombre": "Arc UI",
-        "url": "https://uiarc.dev/components/file-dropzone",
+        "url": "https://uiarc.dev/components/select",
         "licencia": "desconocida"
       },
       "publicable": false,
-      "por_que_entro": "Buenísimo para cuando hay que cargar archivos e imágenes arrastrando.",
+      "por_que_entro": "Un desplegable simple pero con buena dinámica: buen reflejo al abrir y buen cambio de posición del ícono.",
       "sirve_para": [
-        "subir CV, fotos de perfil, logos de empresa, adjuntos"
+        "cualquier desplegable de una sola opción en formularios y filtros"
       ],
       "no_sirve_para": [],
       "etiquetas": [
-        "archivos",
-        "subir",
-        "arrastrar",
-        "imagenes",
-        "carga",
-        "dropzone"
+        "select",
+        "desplegable",
+        "formulario",
+        "opciones",
+        "filtros"
       ],
       "tokens": [],
       "dependencias": [
+        "@radix-ui/react-select",
         "lucide-react",
         "motion"
       ],
@@ -806,19 +487,19 @@
       "caracter": {
         "movimiento": "sutil",
         "tono": "sobrio",
-        "densidad": "aire"
+        "densidad": "compacto"
       },
       "tipo": "components",
-      "ruta": "components/forms/file-dropzone",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/file-dropzone",
-      "preview_png": "components/forms/file-dropzone/preview.png",
+      "ruta": "components/menus/select",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/select",
+      "preview_png": "components/menus/select/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     },
     {
       "slug": "user-menu",
       "nombre": "Menú de usuario",
-      "categoria": "navigation",
+      "categoria": "menus",
       "estado": "referencia",
       "origen": {
         "nombre": "Arc UI",
@@ -857,9 +538,328 @@
         "densidad": "compacto"
       },
       "tipo": "components",
-      "ruta": "components/navigation/user-menu",
-      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/navigation/user-menu",
-      "preview_png": "components/navigation/user-menu/preview.png",
+      "ruta": "components/menus/user-menu",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/user-menu",
+      "preview_png": "components/menus/user-menu/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "multi-select",
+      "nombre": "Selección múltiple",
+      "categoria": "menus",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/multi-select",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.",
+      "sirve_para": [
+        "elegir varias etiquetas, personas o categorías en formularios y filtros"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "multi",
+        "seleccion",
+        "etiquetas",
+        "chips",
+        "formulario",
+        "filtros"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/menus/multi-select",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/menus/multi-select",
+      "preview_png": "components/menus/multi-select/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "slider",
+      "nombre": "Deslizador",
+      "categoria": "pickers",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/slider",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Buen movimiento y suma valor que te vaya mostrando el número al mover la barra.",
+      "sirve_para": [
+        "filtros con rangos numéricos: precio, años de experiencia, cantidad"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "slider",
+        "rango",
+        "filtro",
+        "numero",
+        "deslizar"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/pickers/slider",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/slider",
+      "preview_png": "components/pickers/slider/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "signature-pad",
+      "nombre": "Firma",
+      "categoria": "pickers",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/signature-pad",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Si en algún momento hay que firmar algo, esto está genial: se dibuja la firma ahí mismo.",
+      "sirve_para": [
+        "firmar certificados, acuerdos o asistencia"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "firma",
+        "dibujo",
+        "canvas",
+        "documentos",
+        "certificados"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "equilibrado"
+      },
+      "tipo": "components",
+      "ruta": "components/pickers/signature-pad",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/signature-pad",
+      "preview_png": "components/pickers/signature-pad/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "date-range-picker",
+      "nombre": "Rango de fechas",
+      "categoria": "pickers",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/date-range-picker",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Me encanta para elegir el período de un gráfico específico, por ejemplo los inscriptos a los cursos.",
+      "sirve_para": [
+        "filtrar gráficos y reportes por período",
+        "inscriptos a cursos por fecha",
+        "tablero del admin"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "fechas",
+        "rango",
+        "calendario",
+        "grafico",
+        "reportes",
+        "filtro",
+        "periodo"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "equilibrado"
+      },
+      "tipo": "components",
+      "ruta": "components/pickers/date-range-picker",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/date-range-picker",
+      "preview_png": "components/pickers/date-range-picker/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "color-picker",
+      "nombre": "Selector de color",
+      "categoria": "pickers",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/color-picker",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Está genial. Lo único que no tiene y le agregaría es poder elegir en RGB y RGBA.",
+      "sirve_para": [
+        "elegir colores de marca, de etiquetas o de categorías",
+        "personalización de una empresa"
+      ],
+      "no_sirve_para": [
+        "tal como viene, sin RGB/RGBA: habría que agregarlo al portear"
+      ],
+      "etiquetas": [
+        "color",
+        "selector",
+        "rgb",
+        "rgba",
+        "personalizacion",
+        "marca"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "equilibrado"
+      },
+      "tipo": "components",
+      "ruta": "components/pickers/color-picker",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/color-picker",
+      "preview_png": "components/pickers/color-picker/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "file-dropzone",
+      "nombre": "Zona de carga",
+      "categoria": "pickers",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/file-dropzone",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Buenísimo para cuando hay que cargar archivos e imágenes arrastrando.",
+      "sirve_para": [
+        "subir CV, fotos de perfil, logos de empresa, adjuntos"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "archivos",
+        "subir",
+        "arrastrar",
+        "imagenes",
+        "carga",
+        "dropzone"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "aire"
+      },
+      "tipo": "components",
+      "ruta": "components/pickers/file-dropzone",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/pickers/file-dropzone",
+      "preview_png": "components/pickers/file-dropzone/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
+    {
+      "slug": "billing-toggle",
+      "nombre": "Mensual o anual",
+      "categoria": "toggles",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/billing-toggle",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.",
+      "sirve_para": [
+        "páginas de precios o planes con poco detalle"
+      ],
+      "no_sirve_para": [
+        "cuando hay que explicar las diferencias entre planes"
+      ],
+      "etiquetas": [
+        "toggle",
+        "facturacion",
+        "planes",
+        "precios",
+        "mensual",
+        "anual"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/toggles/billing-toggle",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/toggles/billing-toggle",
+      "preview_png": "components/toggles/billing-toggle/preview.png",
       "preview_webp": null,
       "archivos_codigo": []
     }

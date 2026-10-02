@@ -60,9 +60,12 @@ export function documentacion(e: Ficha): { descripcion: string; html: string; se
   const archivo = join(raiz, e.ruta, 'README.md')
   if (!existsSync(archivo)) return { descripcion: e.por_que_entro, html: '', secciones: [] }
   const md = readFileSync(archivo, 'utf8').replace(/^# .*\n/, '').trim()
-  const corte = md.search(/\n\s*\n/)
-  const descripcion = sinMarcas(corte === -1 ? md : md.slice(0, corte)).replace(/\s+/g, ' ')
-  const resto = corte === -1 ? '' : md.slice(corte).trim()
+  // Si el README arranca con una sección (las ideas guardadas no tienen párrafo de descripción),
+  // la descripción es "por qué entró" y el README va entero.
+  const empiezaConSeccion = md.startsWith('#')
+  const corte = empiezaConSeccion ? 0 : md.search(/\n\s*\n/)
+  const descripcion = empiezaConSeccion ? e.por_que_entro : sinMarcas(corte === -1 ? md : md.slice(0, corte)).replace(/\s+/g, ' ')
+  const resto = empiezaConSeccion ? md : corte === -1 ? '' : md.slice(corte).trim()
   const secciones: Seccion[] = []
   const html = (marked.parse(resto, { async: false }) as string).replace(/<h2>(.*?)<\/h2>/g, (_, t: string) => {
     const titulo = t.replace(/<[^>]+>/g, '')

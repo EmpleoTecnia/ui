@@ -61,9 +61,12 @@ ui-library/
 └── docs/superpowers/specs/
 ```
 
-Categorías iniciales: `buttons`, `cards`, `navigation`, `forms`, `backgrounds`,
-`animations`, `sections`, `feedback`. Una categoría nueva se crea cuando hay algo que
-meter en ella, no antes. Los `patterns` usan las suyas: `landing`, `profile`,
+Categorías: `buttons`, `menus` (desplegables y menús), `fields` (campos donde se
+escribe), `pickers` (elegir un valor: fecha, color, rango, archivo, firma), `toggles`,
+`navigation`, `cards`, `feedback`, `backgrounds`, `animations`, `sections`. (El 2/10
+`forms` se partió en `fields`, `pickers`, `menus` y `toggles`: trece piezas en una sola
+carpeta no se distinguían.) Una categoría nueva se crea cuando hay algo que meter en
+ella, no antes. Los `patterns` usan las suyas: `landing`, `profile`,
 `onboarding`, `dashboard`, `auth`, `pricing`.
 
 **Idioma (decisión de Franco del 2/10):** carpetas, slugs, archivos, componentes y props
