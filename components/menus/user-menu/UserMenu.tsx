@@ -496,11 +496,11 @@ export function UserMenu({ user, status: statusProp, defaultStatus = 'available'
         {/* Cerrar sesión va en rojo semántico: nunca el acento para decir "peligro". */}
         <motion.button
           type="button" role="menuitem" tabIndex={-1}
-          className={`${item} text-(--tone-danger-soft) focus:text-(--tone-danger)`}
+          className={`${item.replace('text-ui-ink', '')} text-(--tone-danger-soft) focus:text-(--tone-danger)`}
           data-stop="item" data-tone="danger" data-label={signOutLabel} variants={row}
           aria-busy={signingOut || undefined} onPointerMove={onItemPointerMove} onClick={signOut}
         >
-          <span className={`${icon} text-(--tone-danger-soft) group-focus/item:text-(--tone-danger)`} aria-hidden="true">
+          <span className={`${icon.replace('text-ui-ink-soft', '')} text-(--tone-danger-soft) group-focus/item:text-(--tone-danger)`} aria-hidden="true">
             {signingOut ? <LoaderCircle className="animate-spin [animation-duration:calc(var(--ui-dur)*4.5)] motion-reduce:[animation-duration:calc(var(--ui-dur)*13)]" size={16} strokeWidth={1.75} /> : <LogOut size={16} strokeWidth={1.75} />}
           </span>
           <span className="relative inline-flex min-w-0 flex-1"><Rise text={signingOut ? 'Cerrando sesión…' : signOutLabel} reduced={reduced} d={d} /></span>
