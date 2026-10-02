@@ -1,0 +1,40 @@
+{
+  "slug": "confirm-morph",
+  "nombre": "Confirmar con deshacer",
+  "categoria": "buttons",
+  "estado": "referencia",
+  "origen": {
+    "nombre": "Arc UI",
+    "url": "https://uiarc.dev/components/confirm-morph",
+    "licencia": "desconocida"
+  },
+  "publicable": false,
+  "por_que_entro": "Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.",
+  "sirve_para": [
+    "eliminar ítems de una lista con deshacer",
+    "quitar personas, archivos o filas"
+  ],
+  "no_sirve_para": [],
+  "etiquetas": [
+    "eliminar",
+    "deshacer",
+    "restablecer",
+    "lista",
+    "boton",
+    "morph"
+  ],
+  "tokens": [],
+  "dependencias": [
+    "lucide-react",
+    "motion"
+  ],
+  "usado_en": [],
+  "agregado_por": "francovassallo",
+  "fecha": "2026-10-02",
+  "capturas": "manual",
+  "caracter": {
+    "movimiento": "marcado",
+    "tono": "sobrio",
+    "densidad": "compacto"
+  }
+}

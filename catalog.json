@@ -1,6 +1,52 @@
 {
-  "generado": "2026-10-02T14:39:58.356Z",
+  "generado": "2026-10-02T14:40:06.859Z",
   "entradas": [
+    {
+      "slug": "confirm-morph",
+      "nombre": "Confirmar con deshacer",
+      "categoria": "buttons",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/confirm-morph",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Para eliminar cosas de una lista está genial: el botón se transforma y te da la oportunidad de restablecer.",
+      "sirve_para": [
+        "eliminar ítems de una lista con deshacer",
+        "quitar personas, archivos o filas"
+      ],
+      "no_sirve_para": [],
+      "etiquetas": [
+        "eliminar",
+        "deshacer",
+        "restablecer",
+        "lista",
+        "boton",
+        "morph"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "lucide-react",
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "marcado",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/buttons/confirm-morph",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/buttons/confirm-morph",
+      "preview_png": "components/buttons/confirm-morph/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
+    },
     {
       "slug": "hold-to-confirm",
       "nombre": "Mantener para confirmar",
