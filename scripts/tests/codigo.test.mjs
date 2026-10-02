@@ -31,6 +31,22 @@ describe('coloresCrudos', () => {
   it('respeta la marca color-ok en la línea', () => {
     expect(coloresCrudos('const transparente = "#0000" // color-ok: es transparente')).toEqual([])
   })
+
+  it('atrapa bordes por lado, sombras con color y las variables de paleta de Tailwind v4', () => {
+    const src = 'className="border-t-slate-200 border-x-gray-100 drop-shadow-blue-500 text-shadow-black bg-(--color-blue-500)" style={{ color: "var(--color-red-500)" }}'
+    expect(coloresCrudos(src).map(x => x.texto)).toEqual([
+      'border-t-slate-200', 'border-x-gray-100', 'drop-shadow-blue-500', 'text-shadow-black', '--color-blue-500', '--color-red-500',
+    ])
+  })
+
+  it('atrapa las otras funciones de color', () => {
+    const src = 'a: hwb(1 2 3); b: lab(1 2 3); c: oklab(1 2 3); d: color(display-p3 1 0 0)'
+    expect(coloresCrudos(src).map(x => x.texto)).toEqual(['hwb(', 'lab(', 'oklab(', 'color('])
+  })
+
+  it('no toma --color-ui-* (el puente) como crudo', () => {
+    expect(coloresCrudos('--color-ui-accent: var(--ui-accent); className="border-b border-ui-line"')).toEqual([])
+  })
 })
 
 describe('tokensUsados', () => {
@@ -52,5 +68,18 @@ describe('tokensUsados', () => {
   it('reporta clases ui-* que no existen', () => {
     const { desconocidas } = tokensUsados('className="bg-ui-rojo text-ui-ink"')
     expect(desconocidas).toEqual(['bg-ui-rojo'])
+  })
+
+  it('ignora lo que no es una clase de Tailwind aunque contenga ui-', () => {
+    const src = "import { Slot } from '@radix-ui/react-slot' // portado de chakra-ui\n<div data-ui-state=\"open\" className=\"bg-ui-accent\" />"
+    const { tokens, desconocidas } = tokensUsados(src)
+    expect([...tokens]).toEqual(['--ui-accent'])
+    expect(desconocidas).toEqual([])
+  })
+
+  it('reporta var(--ui-*) que no está en el contrato', () => {
+    const { tokens, desconocidas } = tokensUsados("style={{ color: 'var(--ui-accent-soft)', background: 'var(--ui-bg)' }}")
+    expect([...tokens]).toEqual(['--ui-bg'])
+    expect(desconocidas).toEqual(['--ui-accent-soft'])
   })
 })

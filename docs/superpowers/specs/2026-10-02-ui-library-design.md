@@ -183,7 +183,8 @@ y semilla de la futura galería pública.
   copiados de cada app. Se actualizan a mano cuando una app cambia sus tokens; el
   playground es un espejo, no la fuente. Y botón claro/oscuro.
 - Las rutas y el índice se generan a partir de `catalog.json`, nunca a mano.
-- `npm run dev` lo levanta en `localhost:3000`.
+- `npm run dev` lo levanta en `localhost:3100`: puerto propio, para no chocar con la app
+  que la persona tenga corriendo en el 3000.
 
 ## Las capturas
 

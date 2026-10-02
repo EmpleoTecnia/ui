@@ -86,6 +86,7 @@ export async function construirCatalogo(raiz, { sinCapturas = false } = {}) {
 
         const propios = validarFicha(ficha, { carpeta, tipo })
         for (const e of propios) errores.push(`${rutaRel}: ${e}`)
+        if (!ficha || typeof ficha !== 'object') continue
         if (ficha.categoria && ficha.categoria !== categoria) errores.push(`${rutaRel}: la ficha dice categoría "${ficha.categoria}" pero está en "${categoria}"`)
         if (vistos.has(ficha.slug)) errores.push(`slug "${ficha.slug}" repetido: ${vistos.get(ficha.slug)} y ${rutaRel}`)
         else if (ficha.slug) vistos.set(ficha.slug, rutaRel)
@@ -114,7 +115,8 @@ export async function construirCatalogo(raiz, { sinCapturas = false } = {}) {
     }
   }
 
-  entradas.sort((a, b) => a.tipo.localeCompare(b.tipo) || a.categoria.localeCompare(b.categoria) || a.nombre.localeCompare(b.nombre, 'es'))
+  const texto = v => String(v ?? '')
+  entradas.sort((a, b) => texto(a.tipo).localeCompare(texto(b.tipo)) || texto(a.categoria).localeCompare(texto(b.categoria)) || texto(a.nombre).localeCompare(texto(b.nombre), 'es'))
   return { entradas, errores }
 }
 

@@ -50,6 +50,15 @@ describe('construirCatalogo', () => {
     expect(errores[0]).toMatch(/línea 1/)
   })
 
+  it('una ficha null o sin nombre da un error con ruta, no un stack trace', async () => {
+    entrada('components', 'botones', 'a-uno', 'null')
+    const sinNombre = ficha({ slug: 'b-dos' }); delete sinNombre.nombre
+    entrada('components', 'botones', 'b-dos', sinNombre, { 'preview.png': png })
+    const { errores } = await construirCatalogo(raiz)
+    expect(errores.join('\n')).toMatch(/a-uno: la ficha no es un objeto/)
+    expect(errores.join('\n')).toMatch(/b-dos: falta nombre/)
+  })
+
   it('rechaza slugs repetidos entre tipos', async () => {
     entrada('components', 'botones', 'boton-iman', ficha(), { 'preview.png': png })
     entrada('patterns', 'landing', 'boton-iman', ficha({ categoria: 'landing' }), { 'preview.png': png })

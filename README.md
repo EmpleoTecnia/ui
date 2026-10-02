@@ -15,9 +15,25 @@ Desde Claude Code, parado en cualquier carpeta de `Plataformas`:
 - `/ui-agregar <url | descripción | captura>` — guarda algo que te gustó. Te pregunta
   qué te gustó y para qué lo usarías. Nada más.
 
-Para verlo vivo: `npm install && npm run dev` y abrí `http://localhost:3000`. El
-selector de arriba pinta cada componente con los tokens de `mi`, `etconecta`, `campus`
-o `proyectos`.
+Para verlo vivo: `npm install && npm run dev` y abrí `http://localhost:3100` (puerto
+propio, para no chocar con la app que tengas corriendo en el 3000). El selector de
+arriba pinta cada componente con los tokens de `mi`, `etconecta`, `campus` o
+`proyectos`.
+
+## Para capturar (sólo quien agrega componentes)
+
+`npm run capturar` saca `preview.png` y `preview.webp` de cada adoptado. Necesita dos
+cosas que `npm install` no trae:
+
+```
+npx playwright install chromium
+```
+
+y **ffmpeg** en el PATH (`winget install Gyan.FFmpeg` en Windows, `brew install ffmpeg`
+en macOS). Si falta alguna, el script lo dice antes de arrancar.
+
+Los chequeos del repo: `npm run verificar` (tests + catálogo). En CI corre además
+`verificar:ci`, que exige que lo generado esté commiteado.
 
 ## El contrato de tokens
 

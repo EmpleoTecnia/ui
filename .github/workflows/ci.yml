@@ -13,11 +13,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Tests del catalogador
-        run: npm test
-      - name: Catalogar y comprobar que lo generado está commiteado
-        run: |
-          node scripts/catalogar.mjs
-          git diff --exit-code -- catalog.json README.md components patterns playground/registro.generado.tsx || (echo "::error::Hay salidas generadas sin commitear. Corré npm run catalogar y commiteá." && exit 1)
+      - name: Tests, catálogo y comprobar que lo generado está commiteado
+        run: npm run verificar:ci
       - name: Build del playground
         run: npm run build

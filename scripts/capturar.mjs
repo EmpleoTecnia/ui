@@ -4,7 +4,7 @@
 //   npm run capturar            → sólo los que lo necesitan
 //   npm run capturar -- --todos → todos
 //   npm run capturar -- --solo boton-iman
-import { spawn } from 'node:child_process'
+import { spawn, spawnSync } from 'node:child_process'
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs'
 import { dirname, join, resolve } from 'node:path'
 import { pathToFileURL, fileURLToPath } from 'node:url'
@@ -14,6 +14,16 @@ import { comprimirHastaEntrar } from './lib/webp.mjs'
 import { TOPE_WEBP } from './lib/contrato.mjs'
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+
+// ── prerrequisitos que npm install no trae ──
+if (spawnSync('ffmpeg', ['-version'], { stdio: 'ignore' }).error) {
+  console.error('✗ Falta ffmpeg en el PATH. Windows: `winget install Gyan.FFmpeg`; macOS: `brew install ffmpeg`. Después abrí una terminal nueva.')
+  process.exit(1)
+}
+if (!existsSync(chromium.executablePath())) {
+  console.error('✗ Falta el Chromium de Playwright. Corré: npx playwright install chromium')
+  process.exit(1)
+}
 const args = process.argv.slice(2)
 const todos = args.includes('--todos')
 const solo = args.includes('--solo') ? args[args.indexOf('--solo') + 1] : null
@@ -55,10 +65,17 @@ function apagarServidor() {
 }
 
 const fallas = []
+let navegador
 try {
-  await esperarServidor()
+  try {
+    await esperarServidor()
+    navegador = await chromium.launch()
+  } catch (err) {
+    console.error(`✗ No se pudo arrancar: ${err.message}`)
+    apagarServidor()
+    process.exit(1)
+  }
   rmSync(tmp, { recursive: true, force: true }); mkdirSync(tmp)
-  const navegador = await chromium.launch()
 
   for (const e of pendientes) {
     const dir = join(raiz, e.ruta)

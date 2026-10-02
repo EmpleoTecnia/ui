@@ -4,13 +4,14 @@
   "type": "module",
   "engines": { "node": ">=22" },
   "scripts": {
-    "dev": "next dev playground",
+    "dev": "next dev playground -p 3100",
     "build": "next build playground",
-    "start": "next start playground",
+    "start": "next start playground -p 3100",
     "catalogar": "node scripts/catalogar.mjs",
     "capturar": "node scripts/capturar.mjs",
     "test": "vitest run",
-    "verificar": "vitest run && node scripts/catalogar.mjs && git diff --exit-code -- catalog.json README.md components patterns playground/registro.generado.tsx"
+    "verificar": "vitest run && node scripts/catalogar.mjs",
+    "verificar:ci": "vitest run && node scripts/catalogar.mjs && node scripts/comprobar-limpio.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.11.0",

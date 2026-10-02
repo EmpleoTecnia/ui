@@ -50,7 +50,7 @@ export function validarFicha(ficha, { carpeta, tipo }) {
     e.push(`publicable no puede ser true con licencia "${ficha.origen.licencia}"`)
   }
 
-  const razon = (ficha.por_que_entro ?? '').trim().toLowerCase().replace(/[.!]+$/, '')
+  const razon = (typeof ficha.por_que_entro === 'string' ? ficha.por_que_entro : '').trim().toLowerCase().replace(/[.!]+$/, '')
   if (!razon) e.push('por_que_entro está vacío')
   else if (razon.length < 20 || FRASES_VACIAS.includes(razon)) {
     e.push(`por_que_entro "${ficha.por_que_entro}" no dice nada concreto; contá qué detalle te gustó`)

@@ -57,6 +57,7 @@ describe('validarFicha', () => {
     expect(validarFicha({ ...buena(), por_que_entro: 'me gusta' }, ctx).join()).toMatch(/por_que_entro/)
     expect(validarFicha({ ...buena(), por_que_entro: 'Está bueno.' }, ctx).join()).toMatch(/por_que_entro/)
     expect(validarFicha({ ...buena(), por_que_entro: '' }, ctx).join()).toMatch(/por_que_entro/)
+    expect(validarFicha({ ...buena(), por_que_entro: 123 }, ctx).join()).toMatch(/por_que_entro/)
   })
 
   it('el carácter es opcional pero, si viene, con valores cerrados', () => {
