@@ -43,7 +43,7 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 ## Catálogo
 
 <!-- catalogo:inicio -->
-18 entradas, 4 adoptadas.
+18 entradas, 5 adoptadas.
 
 - **[Componentes](components/)** (18): [buttons](components/buttons/) · [feedback](components/feedback/) · [fields](components/fields/) · [menus](components/menus/) · [pickers](components/pickers/) · [toggles](components/toggles/)
 
@@ -52,9 +52,9 @@ Tu app las mapea una vez a sus propios tokens, y listo.
 <table>
 <tr>
 <td width="33%" valign="top">
-<a href="components/buttons/action-button/"><img src="components/buttons/action-button/preview.png" width="100%" alt="Botón con estado"></a><br><b><a href="components/buttons/action-button/">Botón con estado</a></b> · referencia<br>
+<a href="components/buttons/action-button/"><img src="components/buttons/action-button/preview.webp" width="100%" alt="Botón con estado"></a><br><b><a href="components/buttons/action-button/">Botón con estado</a></b> · adoptado<br>
 <sub>Muy simple, pero tiene movimiento y la acción ahí mismo, sin depender de un label o mensajes fuera del botón: guardar, guardando, guardado.</sub><br>
-<sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/action-button/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="components/buttons/confirm-morph/"><img src="components/buttons/confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="components/buttons/confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>

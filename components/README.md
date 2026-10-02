@@ -11,9 +11,9 @@
 <table>
 <tr>
 <td width="33%" valign="top">
-<a href="buttons/action-button/"><img src="buttons/action-button/preview.png" width="100%" alt="Botón con estado"></a><br><b><a href="buttons/action-button/">Botón con estado</a></b> · referencia<br>
+<a href="buttons/action-button/"><img src="buttons/action-button/preview.webp" width="100%" alt="Botón con estado"></a><br><b><a href="buttons/action-button/">Botón con estado</a></b> · adoptado<br>
 <sub>Muy simple, pero tiene movimiento y la acción ahí mismo, sin depender de un label o mensajes fuera del botón: guardar, guardando, guardado.</sub><br>
-<sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a></sub>
+<sub><a href="https://uiarc.dev/components/action-button">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/buttons/action-button/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
 <a href="buttons/confirm-morph/"><img src="buttons/confirm-morph/preview.png" width="100%" alt="Confirmar con deshacer"></a><br><b><a href="buttons/confirm-morph/">Confirmar con deshacer</a></b> · referencia<br>

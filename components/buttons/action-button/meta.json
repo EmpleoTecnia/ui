@@ -2,7 +2,7 @@
   "slug": "action-button",
   "nombre": "Botón con estado",
   "categoria": "buttons",
-  "estado": "referencia",
+  "estado": "adoptado",
   "origen": {
     "nombre": "Arc UI",
     "url": "https://uiarc.dev/components/action-button",
@@ -25,18 +25,30 @@
     "boton",
     "feedback"
   ],
-  "tokens": [],
+  "tokens": [
+    "--ui-accent",
+    "--ui-dur",
+    "--ui-ink",
+    "--ui-radius",
+    "--ui-font-text",
+    "--ui-accent-ink",
+    "--ui-ease",
+    "--ui-radius-lg",
+    "--ui-line",
+    "--ui-surface",
+    "--ui-ink-muted"
+  ],
   "dependencias": [
-    "lucide-react",
-    "motion"
+    "motion",
+    "lucide-react"
   ],
   "usado_en": [],
   "agregado_por": "francovassallo",
   "fecha": "2026-10-02",
-  "capturas": "manual",
   "caracter": {
     "movimiento": "sutil",
     "tono": "sobrio",
     "densidad": "compacto"
-  }
+  },
+  "captura_de": "350e578fbcef"
 }
