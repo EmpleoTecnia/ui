@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T14:41:04.440Z",
+  "generado": "2026-10-02T14:41:12.268Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -401,6 +401,52 @@
         "NewPasswordForm.tsx",
         "PasswordStrength.tsx"
       ]
+    },
+    {
+      "slug": "billing-toggle",
+      "nombre": "Mensual o anual",
+      "categoria": "forms",
+      "estado": "referencia",
+      "origen": {
+        "nombre": "Arc UI",
+        "url": "https://uiarc.dev/components/billing-toggle",
+        "licencia": "desconocida"
+      },
+      "publicable": false,
+      "por_que_entro": "Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.",
+      "sirve_para": [
+        "páginas de precios o planes con poco detalle"
+      ],
+      "no_sirve_para": [
+        "cuando hay que explicar las diferencias entre planes"
+      ],
+      "etiquetas": [
+        "toggle",
+        "facturacion",
+        "planes",
+        "precios",
+        "mensual",
+        "anual"
+      ],
+      "tokens": [],
+      "dependencias": [
+        "motion"
+      ],
+      "usado_en": [],
+      "agregado_por": "francovassallo",
+      "fecha": "2026-10-02",
+      "capturas": "manual",
+      "caracter": {
+        "movimiento": "sutil",
+        "tono": "sobrio",
+        "densidad": "compacto"
+      },
+      "tipo": "components",
+      "ruta": "components/forms/billing-toggle",
+      "url_github": "https://github.com/EmpleoTecnia/ui/tree/main/components/forms/billing-toggle",
+      "preview_png": "components/forms/billing-toggle/preview.png",
+      "preview_webp": null,
+      "archivos_codigo": []
     },
     {
       "slug": "multi-select",

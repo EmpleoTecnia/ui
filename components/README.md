@@ -3,7 +3,7 @@
 
 - [buttons](buttons/) · 3
 - [feedback](feedback/) · 1
-- [forms](forms/) · 6
+- [forms](forms/) · 7
 - [navigation](navigation/) · 1
 
 <table>
@@ -53,12 +53,17 @@
 <sub><a href="https://uiarc.dev/components/password-strength">Ver original en Arc UI ↗</a> · <a href="https://empleotecnia.github.io/ui/c/forms/password-strength/">Probarlo ↗</a></sub>
 </td>
 <td width="33%" valign="top">
+<a href="forms/billing-toggle/"><img src="forms/billing-toggle/preview.png" width="100%" alt="Mensual o anual"></a><br><b><a href="forms/billing-toggle/">Mensual o anual</a></b> · referencia<br>
+<sub>Muy simple: mensual o anual, para cuando no hay que dar mucho detalle de los planes u opciones.</sub><br>
+<sub><a href="https://uiarc.dev/components/billing-toggle">Ver original en Arc UI ↗</a></sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
 <a href="forms/multi-select/"><img src="forms/multi-select/preview.png" width="100%" alt="Selección múltiple"></a><br><b><a href="forms/multi-select/">Selección múltiple</a></b> · referencia<br>
 <sub>Elegís sin checkbox, no te saca del desplegable cada vez que elegís uno y te va mostrando arriba lo que fuiste agregando.</sub><br>
 <sub><a href="https://uiarc.dev/components/multi-select">Ver original en Arc UI ↗</a></sub>
 </td>
-</tr>
-<tr>
 <td width="33%" valign="top">
 <a href="forms/phone-input/"><img src="forms/phone-input/preview.png" width="100%" alt="Teléfono con país"></a><br><b><a href="forms/phone-input/">Teléfono con país</a></b> · referencia<br>
 <sub>Elegir el código de país y escribir el número en un solo campo. El botón de probar no me gusta, lo quitaría.</sub><br>

@@ -1,0 +1,293 @@
+Arc
+Components
+Blocks
+Docs
+Pricing
+Try the demo
+Search
+⌘ K
+Appearance
+Sign in
+Ctrl K
+All
+Free
+Pro
+More
+Docs
+Introduction
+Installation
+Theming
+Motion
+AI and MCP
+Changelog
+Components
+107
+Buttons
+9
+Button
+Action button
+Split button
+Button group
+New
+Floating button group
+New
+Expanding button group
+New
+Copy button
+Confirm morph
+New
+Theme switcher
+Gestures
+2
+Hold to confirm
+Swipe actions
+Menus
+3
+Dropdown menu
+Context menu
+User menu
+Text fields
+7
+Input
+Textarea
+Password field
+Password strength
+Search field
+Expanding search
+Inline edit
+Special inputs
+5
+Number field
+Phone input
+New
+Tag input
+Mention input
+New
+Shortcut recorder
+New
+Selects
+4
+Select
+Combobox
+Multi-select
+Chip group
+Toggles
+6
+Radio cards
+New
+Billing toggle
+New
+Checkbox
+Radio group
+Switch
+Segmented control
+Sliders
+1
+Slider
+Pickers
+5
+Calendar
+Date picker
+Date range picker
+New
+Time picker
+Color picker
+New
+Editors
+3
+Rich text editor
+New
+Signature pad
+New
+File dropzone
+Navigation
+3
+Tabs
+Breadcrumb
+Pagination
+Expand
+4
+Scroll area
+New
+Accordion
+Expandable card
+Resizable panels
+Overlays
+6
+Dialog
+Drawer
+Bottom sheet
+Popover
+Hover card
+Tooltip
+Messages
+4
+Alert
+Toast
+Toast stack
+Announcement bar
+New
+Progress
+4
+Progress
+Skeleton
+Stepper
+Usage meter
+Avatars
+3
+Avatar
+Avatar group
+Badge
+Cards
+3
+Card
+Metric card
+Empty state
+Charts
+13
+Line chart
+New
+Bar chart
+Donut chart
+New
+Streamgraph
+New
+Brush chart
+New
+Waffle chart
+New
+Slope chart
+New
+Sparkline
+Gauge
+Activity heatmap
+Animated counter
+Ridgeline
+New
+Treemap
+New
+Advanced charts
+7
+Pro
+Sunburst
+New
+Sankey flow
+New
+Funnel chart
+New
+Radar chart
+New
+Realtime stream
+New
+Race bar chart
+New
+Data grid
+New
+Tables
+5
+Sortable data table
+Tree view
+Filter toolbar
+Code block
+JSON viewer
+New
+Activity
+3
+Timeline
+Comment thread
+New
+Chat thread
+New
+Media
+3
+Image compare
+Carousel
+Card stack
+Text effects
+4
+Text reveal
+In-view title
+Text morph
+Text shimmer
+Blocks
+77
+Special components
+34
+What’s new
+84 new
+Components
+Billing toggle
+Billing toggle
+
+A monthly and yearly switch with a savings badge and prices that roll to the new amount.
+
+$
+pnpm dlx shadcn@latest add @uiarc/billing-toggle
+Copy page
+Copied
+Copy failed
+Preview
+Code
+Live · keyboard ready
+Plans
+Monthly
+Yearly
+Saving 20%
+
+Solo
+
+One person, every device
+
+$
+8
+8
+$10
+/ mo
+$96 billed yearly
+
+Team
+
+Shared spaces for up to 20
+
+$
+16
+1
+6
+$20
+/ mo
+$192 billed yearly
+
+Company
+
+SSO, audit log, and admin roles
+
+$
+32
+3
+2
+$40
+/ mo
+$384 billed yearly
+When to use
+The billing period switch at the top of a pricing page.
+Any price display that should roll to a new amount when a period or plan changes, using BillingPrice.
+A small plan picker with a savings note, such as yearly versus lifetime.
+When not to use
+Use segmented-control for switching views or filters with no pricing meaning.
+Use radio-group when options need descriptions or a vertical layout.
+Use switch for a single on or off setting.
+Installation
+
+Add Billing toggle with the shadcn CLI, or copy the source by hand.
+
+CLI
+Manual
+pnpm
+npm
+yarn
+bun
+Copy
+Copied
+Failed
+$
+pnpm dlx shadcn
