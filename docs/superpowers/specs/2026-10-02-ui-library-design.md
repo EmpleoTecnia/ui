@@ -98,6 +98,9 @@ documentación en español, porque las apps son en español.
 
 Reglas de la ficha:
 
+- **Desde el 2/10 todo lo que entra se portea** ("tiene que estar ready cuando te voy
+  pasando, para que el uso luego sea fácil", Franco). `referencia` queda como estado de
+  excepción: sólo cuando no se pudo portear, y se dice por qué.
 - **`estado`** es `referencia` o `adoptado`. Dos, no tres: un estado intermedio es un
   cajón donde las cosas se pudren.
   - `referencia`: ficha, README, capturas (las que se puedan sacar del origen) y link.

@@ -55,9 +55,10 @@ antes de agregar o cambiar algo.
 
 ## Cómo se agrega algo (barato en tokens)
 
-Los scripts hacen lo mecánico; vos sólo decidís categoría y slug, hacés tres preguntas
-y corrés dos comandos. No leas páginas enteras ni `codigo-origen/` salvo que vayas a
-portear.
+**Todo lo que entra se portea** (Franco, 2/10): "tiene que estar ready cuando te voy
+pasando, para que el uso luego sea fácil". No existe guardar una idea para después. Los
+scripts hacen lo mecánico; vos decidís categoría y slug, hacés dos preguntas, porteás y
+corrés dos comandos. No leas páginas enteras: `codigo-origen/` sí, porque vas a portear.
 
 1. `node scripts/agregar.mjs <url> --categoria <cat> --slug <slug> --nombre "<Nombre>"`
    baja el código del registry (o rescata la página con Chromium), detecta licencia y
@@ -69,11 +70,18 @@ portear.
    avisos, progreso) · backgrounds · animations · sections (bloques enteros de página).
    De patterns (`--tipo patterns`): landing, profile, onboarding, dashboard, auth,
    pricing. Slug en inglés, `--nombre` en español.
-2. Tres preguntas, de a una: ¿qué te gustó? (frase concreta, ≥20 caracteres) · ¿para
-   qué lo usarías? · ¿lo guardo como idea o lo armo ahora? Nada más.
-3. `node scripts/guardar.mjs <slug> --razon "..." --usos "a; b" --etiquetas "a,b,c"
-   --caracter movimiento=…,tono=…,densidad=…` cataloga, commitea y pushea. Con
-   `--adoptar` si ya porteaste el código a la carpeta (captura y pasa a adoptado).
+2. Dos preguntas, de a una: ¿qué te gustó? (frase concreta, ≥20 caracteres) · ¿para
+   qué lo usarías? Nada más. Si en la misma frase ya dijo las dos cosas, no preguntes.
+3. **Porteá** a la carpeta: React 19 + TypeScript + Tailwind v4 + `motion` + Lucide,
+   sólo tokens `--ui-*`, textos en español, `demo.tsx` y `guion.mjs`. El modelo es
+   `components/fields/password-strength/`. Si son varios, un agente por dos o tres
+   componentes, en paralelo, con `docs/porteo.md` como brief. Mientras porteás,
+   `node scripts/revisar.mjs <slug>` dice si el código está limpio.
+4. `node scripts/guardar.mjs <slug> --adoptar --razon "..." --usos "a; b"
+   --etiquetas "a,b,c" --caracter movimiento=…,tono=…,densidad=…` captura, cataloga,
+   commitea y pushea. Sin `--adoptar` sólo si de verdad no se pudo portear (una
+   dependencia imposible, un color que no se deriva): entonces queda como `referencia`
+   y se lo decís a la persona con el motivo.
 
 Si alguien dice "agregá este" con una URL, es esto, sin slash.
 

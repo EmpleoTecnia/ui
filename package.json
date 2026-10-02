@@ -16,6 +16,7 @@
     "verificar:ci": "vitest run && node scripts/catalogar.mjs && node scripts/comprobar-limpio.mjs && node scripts/comprobar-publico.mjs"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.3.7",
     "lucide-react": "^1.11.0",
     "marked": "^18.0.14",
     "motion": "^12.38.0",

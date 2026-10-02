@@ -121,18 +121,27 @@ try {
         }
       })()
       const rutaGuion = join(dir, 'guion.mjs')
-      if (existsSync(rutaGuion)) {
-        const { default: guion } = await import(pathToFileURL(rutaGuion).href)
-        await guion(grabando)
-      } else {
-        await grabando.mouse.move(300, 200, { steps: 20 })
-        await grabando.waitForTimeout(1200)
-        await grabando.mouse.move(40, 40, { steps: 20 })
-        await grabando.waitForTimeout(1200)
+      // Si el guion falla, hay que frenar el muestreo ANTES de cerrar la página: si no, el
+      // muestreo sigue sacando capturas de una página cerrada y tira el proceso entero.
+      let errorGuion = null
+      try {
+        if (existsSync(rutaGuion)) {
+          const { default: guion } = await import(pathToFileURL(rutaGuion).href)
+          await guion(grabando)
+        } else {
+          await grabando.mouse.move(300, 200, { steps: 20 })
+          await grabando.waitForTimeout(1200)
+          await grabando.mouse.move(40, 40, { steps: 20 })
+          await grabando.waitForTimeout(1200)
+        }
+      } catch (err) {
+        errorGuion = err
+      } finally {
+        grabar = false
+        await muestreo.catch(() => {})
       }
-      grabar = false
-      await muestreo
       await contexto.close()
+      if (errorGuion) throw new Error(`guion.mjs falló: ${errorGuion.message.split('\n')[0]}`)
       const { bytes, intento } = await comprimirHastaEntrar({ entrada: join(cuadros, 'f%04d.png'), salida: join(dir, 'preview.webp'), tope: TOPE_WEBP, fpsOrigen: FPS_CAPTURA })
 
       // anotar de qué código son estas capturas
