@@ -109,11 +109,12 @@ const rowMotion = (d: number): Variants => ({ closed: { opacity: 0, y: 3 }, open
 
 /** Lee --ui-dur de la app (en segundos). Antes de montar, 0.18. */
 function useDur() {
-  const [dur, setDur] = useState(0.18)
-  useEffect(() => {
+  // Se lee una vez al montar (sólo mueve animaciones, no cambia lo que se dibuja).
+  const [dur] = useState(() => {
+    if (typeof window === 'undefined') return 0.18
     const ms = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--ui-dur'))
-    if (ms) setDur(ms / 1000)
-  }, [])
+    return ms ? ms / 1000 : 0.18
+  })
   return dur
 }
 

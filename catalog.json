@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-02T17:38:46.538Z",
+  "generado": "2026-10-03T18:12:00.958Z",
   "entradas": [
     {
       "slug": "action-button",
@@ -635,7 +635,9 @@
         "lucide-react",
         "motion"
       ],
-      "usado_en": [],
+      "usado_en": [
+        "campus"
+      ],
       "agregado_por": "francovassallo",
       "fecha": "2026-10-02",
       "caracter": {
